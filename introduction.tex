@@ -1,0 +1,38 @@
+Spoofing refers to the presentation of a falsified or manipulated sample 
+to the sensor of a biometric system in order to provoke a high score and 
+thus illegitimate acceptance.
+In recent years, the automatic speaker verification (ASV) community has 
+started to investigate spoofing and countermeasures 
+actively~\cite{interspeechSpecialSession, handbookChapter}.  A growing 
+body of independent work has now demonstrated the vulnerability of ASV 
+systems to spoofing through 
+impersonation~\cite{Blomberg2004,Farrus2008}, voice 
+conversion~\cite{Perrot2005, Bonastre2007}, speech 
+synthesis~\cite{Masuko1999, Leon2010} and attacks with non-speech, 
+artificial tone-like signals~\cite{Alegre2012b}.
+
+Common to the bulk of previous work is the consideration of attacks 
+which require either specific skills, e.g.~impersonation, or high-level 
+technology, e.g.~speech synthesis and voice conversion. With the 
+noteworthy exceptions of~\cite{Lindberg1999,Villalba2010}, relatively 
+little attention has been paid to low-effort spoofing attacks such as 
+replay.  Replay attacks can be performed without any specific expertise 
+nor any sophisticated equipment.  Since they are the most easily 
+implemented, it is natural to assume that replay attacks will be the 
+most commonly encountered in practice.  Nonetheless, the threat of 
+replay attacks has neither been quantified using large, standard 
+datasets nor compared to that of voice conversion or speech synthesis 
+attacks.  This paper accordingly aims to re-assess ASV vulnerabilities 
+to replay attacks using the same ASV systems and corpora used in 
+previous assessments involving voice conversion and speech synthesis 
+spoofing attacks.  The results of this contribution are in contrast to 
+our original hypothesis that lower effort spoofing attacks are less 
+effective.  
+
+The paper is organised as follows.  Section~2 describes an approach to 
+simulate replay attacks in order that their effect can be compared to 
+those of voice conversion and speech synthesis using the same corpora. 
+A common experimental setup in which the vulnerabilities of six 
+different ASV systems is presented in Section~3. Results are presented 
+in Section~4 and our conclusions and ideas for future work are presented 
+in Section~5.

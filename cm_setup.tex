@@ -1,0 +1,21 @@
+The countermeasure was set up according to the algorithm proposed in~\cite{Villalba2011}. Each recording, both from the training and the testing datasets, was additionally described using the following 12 parameters:
+\begin{itemize}
+\item spectral ratio -- the ratio between
+the signal energy from 0 to 2 kHz and from 2 kHz to 4 kHz;
+\item low frequency ratio -- ratio between the signal energy from 100 Hz to 300 Hz
+and from 300 Hz to 500 Hz;
+\item total signal modulation index; and
+\item nine sub-band modulation indices, for sub-bands: 1kHz-3kHz, 1kHz-2kHz,
+2kHz-3kHz, 0.5kHz-1kHz, 1kHz-1.5kHz, 1.5kHz-2kHz, 2kHz-2.5kHz, 2.5kHz-3kHz and 3kHz-3.5kHz.
+\end{itemize}
+
+The countermeasure algorithm was trained using a set of 1000 recordings generated using 200 recordings taken from NIST'05 and emulation of various acoustic conditions. In order to make the experiment as close as possible to reality, we decided to use different room impulse responses than the ones used for simulation of replay attack. Therefore we emulated the following environment:
+\begin{itemize}
+\item a lecture room, with concrete walls, glass windows and a parquet;
+\item a staircase, with concrete walls and steps;
+\item a meeting room, with concrete walls, glass windows and a carpet.
+\end{itemize}
+
+Similarly to emulation of replay attack, the corresponding impulse responses were taken from the AIR database. To train the far-field recording detector, we also needed to emulate the replay device. We chose a stand-alone speaker impulse response, different from the one used for replay attack emulation, to avoid overfitting to testing data. Original NIST'05 recordings were used to model the licit client access trials.
+
+A binary SVM classifier with polynomial kernel of 3rd degree was used for data classification. After being trained with the training data in 12-dimensional space defined by the parameters described above, it was applied to detect replay attacks in both spoofing accesses and licit client trials.

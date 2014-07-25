@@ -1,0 +1,14 @@
+
+All experiments reported below were performed on the male subsets of the 2005 NIST Speaker Recognition Evaluation (NIST'05) and NIST'06 datasets.  
+The former were used for optimising the ASV configurations whereas all results reported later relate to the latter.
+
+In all cases the data used for UBM learning comes from the NIST'04 dataset.  Due to the significant amount of data necessary to estimate the total variability matrix $T$ used in the IV-PLDA system, the NIST`06 dataset was additionally used as background data for development whereas the NIST`05 dataset was used as backgroud data for evaluation. 
+%{\bf What???}  
+In all cases the background datasets were augmented with the NIST'04 and NIST'08 datasets.  $T$ is thus learned using approximately 11,000 utterances from 900 speakers, while independence between development and evaluation experiments is always respected.
+
+%For consistency with our prior work, e.g.~\cite{Alegre2013}, 
+All experiments related to the 8conv4w-1conv4w condition where one conversation provides an average of 2.5 minutes of speech (one side of a 5 minute conversation).  In all cases, however, only one of the eight, randomly selected training conversations was used for enrolment.  Experimental results should thus be compared to those produced by other authors for the 1conv4w-1conv4w condition. Standard NIST protocols dictate in the order of 1,000 true client tests and 10,000 impostor tests for development and evaluation datasets. In our experiments with replay attacks, all genuine client tests were unchanged, whereas impostor tests were replaced with spoofed (replay) accesses. 
+
+Given the consideration of spoofing, and without any specific, standard operating criteria under such a scenario, the equal error rate (EER) is preferred to the minimum detection cost function (minDCF) for ASV assessment.  Also reported is the false acceptance rate (FAR) for a false rejection rate (FRR) which is fixed to the EER of the baseline.  
+
+%The countermeasure is assessed independently of ASV, also in terms of EER.  
