@@ -1,0 +1,369 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.10.5)  25 JUL 2014 23:37
+entering extended mode
+**IEEE_Forensics.tex
+
+("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
+\trunk\IEEE_Forensics.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+
+("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
+\trunk\IEEEtran.cls"
+Document Class: IEEEtran 2012/12/27 V1.8 by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 368.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen104
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen105
+\CLASSINFOnormalsizeunitybaselineskip=\dimen106
+\IEEEnormaljot=\dimen107
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+\IEEEilabelindentA=\dimen108
+\IEEEilabelindentB=\dimen109
+\IEEEilabelindent=\dimen110
+\IEEEelabelindent=\dimen111
+\IEEEdlabelindent=\dimen112
+\IEEElabelindent=\dimen113
+\IEEEiednormlabelsep=\dimen114
+\IEEEiedmathlabelsep=\dimen115
+\IEEEiedtopsep=\skip41
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@IEEEsubequation=\count85
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count86
+\c@table=\count87
+\@IEEEeqnnumcols=\count88
+\@IEEEeqncolcnt=\count89
+\@IEEEsubeqnnumrollback=\count90
+\@IEEEtmpitemindent=\dimen116
+\c@IEEEbiography=\count91
+\@IEEEtranrubishbin=\box26
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count92
+))
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
+)
+("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
+\trunk\IEEE_Forensics.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+
+(C:\Users\Artur\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count93
+\scratchdimen=\dimen119
+\scratchbox=\box27
+\nofMPsegments=\count94
+\nofMParguments=\count95
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count96
+\MPscratchDim=\dimen120
+\MPnumerator=\count97
+\makeMPintoPDFobject=\count98
+\everyMPtoPDFconversion=\toks17
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 268.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 268.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 268.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 268.
+
+("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
+\trunk\introduction.tex")
+("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
+\trunk\replay_vs_others.tex"
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 6.
+
+<Figs/replay.png, id=1, 726.46407pt x 133.24782pt>
+File: Figs/replay.png Graphic file (type png)
+ <use Figs/replay.png>
+Package pdftex.def Info: Figs/replay.png used on input line 13.
+(pdftex.def)             Requested size: 252.0pt x 46.22063pt.
+
+[1{C:/Users/Artur/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+ <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Forensics/IEEE-Forensics-2014.git
+/trunk/Figs/replay.png>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 45.
+ [2])
+("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
+\trunk\ASVs.tex"
+Underfull \hbox (badness 4981) in paragraph at lines 8--9
+[]\OT1/ptm/m/n/10 All ASV sys-tems were based on the LIA-SpkDet
+ []
+
+)
+("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
+\trunk\datasets.tex" [3])
+("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
+\trunk\exper_setup.tex" <Figs/IRs.png, id=25, 422.32782pt x 316.18124pt>
+File: Figs/IRs.png Graphic file (type png)
+
+<use Figs/IRs.png>
+Package pdftex.def Info: Figs/IRs.png used on input line 27.
+(pdftex.def)             Requested size: 252.0pt x 188.6681pt.
+ <Figs/Room_IRs.png, id=26, 888.31876pt x 645.91313pt>
+File: Figs/Room_IRs.png Graphic file (type png)
+
+<use Figs/Room_IRs.png>
+Package pdftex.def Info: Figs/Room_IRs.png used on input line 54.
+(pdftex.def)             Requested size: 252.0pt x 183.22969pt.
+)
+("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
+\trunk\cm_setup.tex" [4 <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Forensics/
+IEEE-Forensics-2014.git/trunk/Figs/IRs.png (PNG copy)> <C:/Users/Artur/Document
+s/Dropbox/14 06 IEEE Forensics/IEEE-Forensics-2014.git/trunk/Figs/Room_IRs.png 
+(PNG copy)>])
+("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
+\trunk\results.tex" <Figs/DETs_GMM.pdf, id=30, 578.16pt x 563.70598pt>
+File: Figs/DETs_GMM.pdf Graphic file (type pdf)
+
+<use Figs/DETs_GMM.pdf>
+Package pdftex.def Info: Figs/DETs_GMM.pdf used on input line 6.
+(pdftex.def)             Requested size: 258.0pt x 251.5494pt.
+ <Figs/DETs_IV.pdf, id=31, 578.16pt x 563.70598pt>
+File: Figs/DETs_IV.pdf Graphic file (type pdf)
+
+<use Figs/DETs_IV.pdf>
+Package pdftex.def Info: Figs/DETs_IV.pdf used on input line 11.
+(pdftex.def)             Requested size: 258.0pt x 251.5494pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 5--15
+ []$[]$ 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 5--15
+ []$ 
+ []
+
+<Figs/dist_IV_off.pdf, id=32, 578.16pt x 433.62pt>
+File: Figs/dist_IV_off.pdf Graphic file (type pdf)
+ <use Figs/dist_IV_off.pdf>
+Package pdftex.def Info: Figs/dist_IV_off.pdf used on input line 24.
+(pdftex.def)             Requested size: 258.0pt x 193.49953pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 23--26
+ []$[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[][][]\OT1/ptm/m/n/8 Produced with the TAB-ULA RASA Score-toolkit
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+\OT1/ptm/m/n/8 (http://publications.idiap.ch/downolads/reports/2012/Anjos[]Idia
+p-Com-
+ []
+
+<Figs/dist_GMM_corr_iPhone.pdf, id=33, 578.16pt x 433.62pt>
+File: Figs/dist_GMM_corr_iPhone.pdf Graphic file (type pdf)
+
+<use Figs/dist_GMM_corr_iPhone.pdf>
+Package pdftex.def Info: Figs/dist_GMM_corr_iPhone.pdf used on input line 56.
+(pdftex.def)             Requested size: 258.0pt x 193.49953pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 55--60
+ []$[]$ 
+ []
+
+<Figs/dist_GMM_T_corr_iPhone.pdf, id=34, 578.16pt x 433.62pt>
+File: Figs/dist_GMM_T_corr_iPhone.pdf Graphic file (type pdf)
+
+<use Figs/dist_GMM_T_corr_iPhone.pdf>
+Package pdftex.def Info: Figs/dist_GMM_T_corr_iPhone.pdf used on input line 63.
+
+(pdftex.def)             Requested size: 258.0pt x 193.49953pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 62--66
+ []$[]$ 
+ []
+
+<Figs/DET_IV_ss_vc_rp.png, id=35, 578.16pt x 563.706pt>
+File: Figs/DET_IV_ss_vc_rp.png Graphic file (type png)
+
+<use Figs/DET_IV_ss_vc_rp.png>
+Package pdftex.def Info: Figs/DET_IV_ss_vc_rp.png used on input line 99.
+(pdftex.def)             Requested size: 252.0pt x 245.70041pt.
+ [5]
+<Figs/Scores_cohort.png, id=39, 446.41782pt x 359.09157pt>
+File: Figs/Scores_cohort.png Graphic file (type png)
+
+<use Figs/Scores_cohort.png>
+Package pdftex.def Info: Figs/Scores_cohort.png used on input line 119.
+(pdftex.def)             Requested size: 252.0pt x 202.70628pt.
+ [6 <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Forensics/IEEE-Forensics-2014.
+git/trunk/Figs/DETs_GMM.pdf> <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Foren
+sics/IEEE-Forensics-2014.git/trunk/Figs/DETs_IV.pdf> <C:/Users/Artur/Documents/
+Dropbox/14 06 IEEE Forensics/IEEE-Forensics-2014.git/trunk/Figs/dist_IV_off.pdf
+>] [7 <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Forensics/IEEE-Forensics-201
+4.git/trunk/Figs/dist_GMM_corr_iPhone.pdf> <C:/Users/Artur/Documents/Dropbox/14
+ 06 IEEE Forensics/IEEE-Forensics-2014.git/trunk/Figs/dist_GMM_T_corr_iPhone.pd
+f> <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Forensics/IEEE-Forensics-2014.g
+it/trunk/Figs/DET_IV_ss_vc_rp.png> <C:/Users/Artur/Documents/Dropbox/14 06 IEEE
+ Forensics/IEEE-Forensics-2014.git/trunk/Figs/Scores_cohort.png (PNG copy)>]
+<Figs/EER_PLDA.png, id=185, 422.32782pt x 316.18124pt>
+File: Figs/EER_PLDA.png Graphic file (type png)
+ <use Figs/EER_PLDA.png>
+Package pdftex.def Info: Figs/EER_PLDA.png used on input line 160.
+(pdftex.def)             Requested size: 252.0pt x 188.6681pt.
+
+<Figs/DET_IVPLDA_counter_vil3_iPad.pdf, id=186, 578.16pt x 563.70598pt>
+File: Figs/DET_IVPLDA_counter_vil3_iPad.pdf Graphic file (type pdf)
+
+<use Figs/DET_IVPLDA_counter_vil3_iPad.pdf>
+Package pdftex.def Info: Figs/DET_IVPLDA_counter_vil3_iPad.pdf used on input li
+ne 226.
+(pdftex.def)             Requested size: 252.0pt x 245.70041pt.
+)
+("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
+\trunk\conclusions.tex")
+("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
+\trunk\IEEE_Forensics.bbl" [8 <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Fore
+nsics/IEEE-Forensics-2014.git/trunk/Figs/EER_PLDA.png (PNG copy)> <C:/Users/Art
+ur/Documents/Dropbox/14 06 IEEE Forensics/IEEE-Forensics-2014.git/trunk/Figs/DE
+T_IVPLDA_counter_vil3_iPad.pdf>] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 198--200
+[]\OT1/ptm/m/n/8 A. Brown, ``Aaron brown sound web page,''
+ []
+
+) [10
+
+]
+("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
+\trunk\IEEE_Forensics.aux") ) 
+Here is how much of TeX's memory you used:
+ 2007 strings out of 494045
+ 33656 string characters out of 3148387
+ 93896 words of memory out of 3000000
+ 5280 multiletter control sequences out of 15000+200000
+ 46212 words of font info for 82 fonts, out of 3000000 for 9000
+ 718 hyphenation exceptions out of 8191
+ 27i,13n,20p,1286b,319s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontn
+ame/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helve
+tic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/urw/times/utmri8a.pfb>
+Output written on IEEE_Forensics.pdf (10 pages, 580706 bytes).
+PDF statistics:
+ 238 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+
