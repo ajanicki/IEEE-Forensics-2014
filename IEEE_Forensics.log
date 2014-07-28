@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.10.5)  25 JUL 2014 23:37
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.10.5)  28 JUL 2014 08:49
 entering extended mode
 **IEEE_Forensics.tex
 
@@ -134,43 +134,79 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen117
 \Gin@req@width=\dimen118
 )
+(C:\Users\Artur\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(C:\Users\Artur\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen119
+\captionmargin@=\dimen120
+\captionwidth=\dimen121
+\caption@tempdima=\dimen122
+\caption@indent=\dimen123
+\caption@parindent=\dimen124
+\caption@hangindent=\dimen125
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\norma
+lfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace
+ {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptio
+nsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspac
+e \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\nor
+malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
+ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
+ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
+\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
+\fi .
+\c@ContinuedFloat=\count93
+)
 ("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
 \trunk\IEEE_Forensics.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
 
 (C:\Users\Artur\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count93
-\scratchdimen=\dimen119
+\scratchcounter=\count94
+\scratchdimen=\dimen126
 \scratchbox=\box27
-\nofMPsegments=\count94
-\nofMParguments=\count95
+\nofMPsegments=\count95
+\nofMParguments=\count96
 \everyMPshowfont=\toks16
-\MPscratchCnt=\count96
-\MPscratchDim=\dimen120
-\MPnumerator=\count97
-\makeMPintoPDFobject=\count98
+\MPscratchCnt=\count97
+\MPscratchDim=\dimen127
+\MPnumerator=\count98
+\makeMPintoPDFobject=\count99
 \everyMPtoPDFconversion=\toks17
 )
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 268.
+(Font)              <9> on input line 269.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 268.
+(Font)              <6> on input line 269.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 268.
+(Font)              <5> on input line 269.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 268.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 269.
 
 ("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
 \trunk\introduction.tex")
@@ -326,12 +362,12 @@ ne 226.
 (pdftex.def)             Requested size: 252.0pt x 245.70041pt.
 )
 ("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\conclusions.tex")
+\trunk\conclusions.tex" [8 <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Forensi
+cs/IEEE-Forensics-2014.git/trunk/Figs/EER_PLDA.png (PNG copy)> <C:/Users/Artur/
+Documents/Dropbox/14 06 IEEE Forensics/IEEE-Forensics-2014.git/trunk/Figs/DET_I
+VPLDA_counter_vil3_iPad.pdf>])
 ("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\IEEE_Forensics.bbl" [8 <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Fore
-nsics/IEEE-Forensics-2014.git/trunk/Figs/EER_PLDA.png (PNG copy)> <C:/Users/Art
-ur/Documents/Dropbox/14 06 IEEE Forensics/IEEE-Forensics-2014.git/trunk/Figs/DE
-T_IVPLDA_counter_vil3_iPad.pdf>] [9]
+\trunk\IEEE_Forensics.bbl" [9]
 Underfull \hbox (badness 10000) in paragraph at lines 198--200
 []\OT1/ptm/m/n/8 A. Brown, ``Aaron brown sound web page,''
  []
@@ -342,13 +378,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 198--200
 ("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
 \trunk\IEEE_Forensics.aux") ) 
 Here is how much of TeX's memory you used:
- 2007 strings out of 494045
- 33656 string characters out of 3148387
- 93896 words of memory out of 3000000
- 5280 multiletter control sequences out of 15000+200000
- 46212 words of font info for 82 fonts, out of 3000000 for 9000
+ 3050 strings out of 494045
+ 52641 string characters out of 3148387
+ 119723 words of memory out of 3000000
+ 6319 multiletter control sequences out of 15000+200000
+ 43410 words of font info for 79 fonts, out of 3000000 for 9000
  718 hyphenation exceptions out of 8191
- 27i,13n,20p,1286b,319s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,13n,38p,1286b,329s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontn
 ame/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/P
@@ -361,7 +397,7 @@ tic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on IEEE_Forensics.pdf (10 pages, 580706 bytes).
+Output written on IEEE_Forensics.pdf (10 pages, 579465 bytes).
 PDF statistics:
  238 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
