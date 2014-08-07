@@ -1,25 +1,4 @@
-\begin{table*}
-\begin{center}
-    \begin{tabular}{ l l || c c c c c c c}
-    \hline
-Score norm & Replay env. &  GMM & SGL & SGL-NAP  & SGL-FA & FA & IV & IV-PLDA \\ 
 
- \hline \hline
-& (Baseline) & 9.08 & 7.89 & 6.35 & 6.08 & 5.60 & 6.67 & 3.20\\
-No & Office  & 40.26 & 34.43 & 33.52 & 30.72 & 33.85 & 27.83 & 29.11\\
-norm & Corridor & 35.71 & 28.24 & 28.53 & 25.75 & 29.92 & 23.02 & 22.78\\
-& None & 51.59 & 49.64 & 49.49 & 49.73 & 49.37 & 49.38 & 49.37\\
-\hline
-& (Baseline) & 8.63 & 8.13 & 6.31 & 5.72 & 5.61 & 6.72 & 2.98\\
-With & Office  & 60.32 & 92.98 & 29.92 & 28.54 & 30.12 & 28.89 & 30.30\\
-norm & Corridor & 55.91 & 88.20 & 23.59 & 21.62 & 24.97 & 23.31 & 24.53\\
-& None & 64.40 & 96.67 & 49.44 & 49.31 & 49.67 & 49.06 & 49.46\\
-\hline
-    \end{tabular}
-    \caption{EER values for different ASV systems for various acoustic environment of replay attacks, with and without score normalisation. }
-		\label{tab::results_EER}
-   \end{center}
-\end{table*}
 
 
 \begin{figure}
@@ -52,7 +31,7 @@ The impulse responses of these speakers are publicly available~\cite{Brown2014}.
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{Figs/Room_IRs.png}
-	\caption{Impulse responses (left) and corresponding frequency transmittance (right) of the three speakers used for playback emulation.}
+	\caption{Impulse responses (left) and corresponding frequency transmittance (right) of the office and the corridor used for playback emulation.}
 	\label{fig::Room_IRs}
 \end{figure}
 

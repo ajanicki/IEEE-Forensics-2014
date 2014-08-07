@@ -15,15 +15,24 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Schematic diagram of replay.\relax }}{1}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig::Replay}{{1}{1}}
-\@writefile{toc}{\contentsline {section}{\numberline {II}Replay vs. other spoofing methods}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Replay and other spoofing methods}{1}}
 \newlabel{sec::algorithms}{{II}{1}}
-\newlabel{eq::playback}{{1}{1}}
 \citation{interspeechSpecialSession}
 \citation{Lindberg1999}
 \citation{Villalba2010}
 \citation{Shang2010}
 \citation{Wang2011}
 \citation{Villalba2011}
+\citation{Alegre2013a}
+\citation{Ojala2002}
+\citation{Ojala2002}
+\citation{Alegre2013a}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Schematic diagram of forming a feature vector in the LBP-based countermeasure.\relax }}{2}}
+\newlabel{fig:LBPfeature}{{2}{2}}
+\newlabel{eq::playback}{{1}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-A}}Research on replay spoofing and replay countermeasures}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-B}}A countermeasure based on local binary patterns}{2}}
+\citation{Alegre2014a}
 \citation{Matrouf2005}
 \citation{Matrouf2005}
 \citation{Bonastre2006}
@@ -31,15 +40,18 @@
 \citation{Yamagishi2009}
 \citation{Russell1985}
 \citation{Yamagishi2009a}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-A}}Research on replay spoofing and replay countermeasures}{2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-B}}Replay vs. other spoofing algorithms}{2}}
-\newlabel{sec::algorithms::playback}{{\unhbox \voidb@x \hbox {II-B}}{2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-C}}Voice conversion}{2}}
-\newlabel{ssec:vconv}{{\unhbox \voidb@x \hbox {II-C}}{2}}
-\newlabel{eq:conversioneq}{{2}{2}}
-\newlabel{eq:EMit}{{3}{2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-D}}Speech synthesis}{2}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Comparison of four different attacks in terms of speech used, required effort and effectiveness.\relax }}{3}}
+\newlabel{tab::attacks}{{I}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-C}}Replay vs. other spoofing algorithms}{3}}
+\newlabel{sec::algorithms::playback}{{\unhbox \voidb@x \hbox {II-C}}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-D}}Voice conversion}{3}}
+\newlabel{ssec:vconv}{{\unhbox \voidb@x \hbox {II-D}}{3}}
+\newlabel{eq:conversioneq}{{2}{3}}
+\newlabel{eq:EMit}{{3}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-E}}Speech synthesis}{3}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Aim of this work}{3}}
 \citation{Villalba2011}
+\citation{Alegre2013a}
 \citation{Campbell2006}
 \citation{Fauve2007}
 \citation{Dehak2011}
@@ -54,63 +66,66 @@
 \citation{Bonastre2008}
 \citation{Bonastre2004}
 \citation{Fauve2007}
-\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Comparison of four different attacks in terms of speech used, required effort and effectiveness.\relax }}{3}}
-\newlabel{tab::attacks}{{I}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-E}}Aim of this work}{3}}
-\@writefile{toc}{\contentsline {section}{\numberline {III}Experimental setup}{3}}
-\newlabel{sec::evaluation}{{III}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}ASV systems}{3}}
-\newlabel{subsec::evaluation::asvSystems}{{\unhbox \voidb@x \hbox {III-A}}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-B}}Datasets, protocols and metrics}{3}}
-\newlabel{subsec::evaluation::datasets}{{\unhbox \voidb@x \hbox {III-B}}{3}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Experimental setup}{4}}
+\newlabel{sec::evaluation}{{IV}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}ASV systems}{4}}
+\newlabel{subsec::evaluation::asvSystems}{{\unhbox \voidb@x \hbox {IV-A}}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Datasets, protocols and metrics}{4}}
+\newlabel{subsec::evaluation::datasets}{{\unhbox \voidb@x \hbox {IV-B}}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Impulse responses (left) and corresponding frequency transmittance (right) of the three speakers used for playback emulation.\relax }}{4}}
+\newlabel{fig::IRs}{{3}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}}Replay attack setup}{4}}
 \citation{Brown2014}
 \citation{Jeub2009}
 \citation{Villalba2011}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Impulse responses (left) and corresponding frequency transmittance (right) of the three speakers used for playback emulation.\relax }}{4}}
-\newlabel{fig::IRs}{{2}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-C}}Replay attack setup}{4}}
-\newlabel{eq:playback_simple}{{4}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Impulse responses (left) and corresponding frequency transmittance (right) of the three speakers used for playback emulation.\relax }}{4}}
-\newlabel{fig::Room_IRs}{{3}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-D}}Replay countermeasure setup}{4}}
+\citation{Ojala2002}
+\citation{Ojala2002}
+\citation{Alegre2013a}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Impulse responses (left) and corresponding frequency transmittance (right) of the office and the corridor used for playback emulation.\relax }}{5}}
+\newlabel{fig::Room_IRs}{{4}{5}}
+\newlabel{eq:playback_simple}{{4}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-D}}Replay countermeasure setup}{5}}
 \citation{Matrouf2005}
 \citation{Wester2010}
-\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces EER values for different ASV systems for various acoustic environment of replay attacks, with and without score normalisation. \relax }}{5}}
-\newlabel{tab::results_EER}{{II}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-E}}Setup of other spoofing attacks}{5}}
-\@writefile{toc}{\contentsline {section}{\numberline {IV}Results}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Comparison of replay threat vs. other spoofing methods}{5}}
-\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces EER values for different ASV systems for various spoofing attacks, without score normalisation.\relax }}{6}}
-\newlabel{tab::results_EER_4attacks}{{III}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces DET plots for the GMM-UBM system for various replay configurations, compared to the baseline performance.\relax }}{6}}
-\newlabel{fig::DETs_replay_GMM}{{4}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces DET plots for the IV-PLDA system for various replay configurations, compared to the baseline performance.\relax }}{6}}
-\newlabel{fig::DETs_replay_IV}{{5}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Score distribution for the IV-PLDA system for replay attacks using a stand-alone speaker and with simulation of an office.\relax }}{6}}
-\newlabel{fig::Dist_IV}{{6}{6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Impact of score normalisation}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Score distribution for the GMM-UBM system without (top) and with (bottom) score normalisation.\relax }}{7}}
-\newlabel{fig::Dist_GMM.T_corr}{{7}{7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}}Impact of using PLDA with iVector systems}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces DET plots for iVector-PLDA system and various attacks.\relax }}{7}}
-\newlabel{fig::DETs_4attacks}{{8}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Score distribution for replay attacks vs. client accesses calculated against cohort speaker models, for various ASVs.\relax }}{7}}
-\newlabel{fig::Scores_cohort}{{9}{7}}
-\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Standard deviation of client access scores calculated against cohort speaker models during score normalisation.\relax }}{7}}
-\newlabel{tab::scores_cohort}{{IV}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces EER results for iVector-based ASV system with and without PLDA, with score normalisation used.\relax }}{8}}
-\newlabel{fig::EER_PLDA}{{10}{8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-D}}Results of experiments with the replay countermeasure}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces DET plots for IV-PLDA system for various replay environments, with and without the countermeasure.\relax }}{8}}
-\newlabel{fig::DETs_CM}{{11}{8}}
-\@writefile{toc}{\contentsline {section}{\numberline {V}Conclusions}{8}}
-\newlabel{sec::conclusions}{{V}{8}}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces EER values for different ASV systems for various acoustic environment of replay attacks, with and without score normalisation. \relax }}{6}}
+\newlabel{tab::results_EER}{{II}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-E}}Setup of other spoofing attacks}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Results}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-A}}Comparison of replay threat vs. other spoofing methods}{6}}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces EER values for different ASV systems for various spoofing attacks, without score normalisation.\relax }}{7}}
+\newlabel{tab::results_EER_4attacks}{{III}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces DET plots for the GMM-UBM system for various replay configurations, compared to the baseline performance.\relax }}{7}}
+\newlabel{fig::DETs_replay_GMM}{{5}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces DET plots for the IV-PLDA system for various replay configurations, compared to the baseline performance.\relax }}{7}}
+\newlabel{fig::DETs_replay_IV}{{6}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Score distribution for the IV-PLDA system for replay attacks using a stand-alone speaker and emulation of an office.\relax }}{7}}
+\newlabel{fig::Dist_IV}{{7}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-B}}Impact of score normalisation}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Score distribution for the GMM-UBM system without (top) and with (bottom) score normalisation.\relax }}{8}}
+\newlabel{fig::Dist_GMM.T_corr}{{8}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-C}}Results of experiments with the replay countermeasure}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces DET plots for iVector-PLDA system and various attacks.\relax }}{8}}
+\newlabel{fig::DETs_4attacks}{{9}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Score distribution for replay attacks vs. client accesses calculated against cohort speaker models, for various ASVs.\relax }}{8}}
+\newlabel{fig::Scores_cohort}{{10}{8}}
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Standard deviation of client access scores calculated against cohort speaker models during score normalisation.\relax }}{8}}
+\newlabel{tab::scores_cohort}{{IV}{8}}
+\citation{Villalba2011}
 \bibstyle{IEEEtran}
 \bibdata{IEEE_forensics}
 \bibcite{interspeechSpecialSession}{1}
 \bibcite{handbookChapter}{2}
 \bibcite{Blomberg2004}{3}
 \bibcite{Farrus2008}{4}
+\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces EER and SFAR values for various environment of replay attacks, with and without the FFD or LBP countermeasures applied, for IV-PLDA. The SFAR was measured for FRR equal to the baseline EER (2.98\%).\relax }}{9}}
+\newlabel{tab::results_CM_rooms}{{V}{9}}
+\@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces EER and SFAR values for various replay devices used for attacks, with and without the FFD or LBP countermeasures applied, for IV-PLDA. The SFAR was measured for FRR equal to the baseline EER (2.98\%).\relax }}{9}}
+\newlabel{tab::results_CM_spk}{{VI}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Conclusions}{9}}
+\newlabel{sec::conclusions}{{VI}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces DET plots for IV-PLDA system for various replay environments, with and without the FFD or LBP countermeasures.\relax }}{9}}
+\newlabel{fig::DETs_CM}{{11}{9}}
+\@writefile{toc}{\contentsline {section}{References}{9}}
 \bibcite{Perrot2005}{5}
 \bibcite{Bonastre2007}{6}
 \bibcite{Masuko1999}{7}
@@ -121,32 +136,31 @@
 \bibcite{Shang2010}{12}
 \bibcite{Wang2011}{13}
 \bibcite{Villalba2011}{14}
-\bibcite{Matrouf2005}{15}
-\bibcite{Bonastre2006}{16}
-\bibcite{Yamagishi2009}{17}
-\bibcite{Russell1985}{18}
-\bibcite{Yamagishi2009a}{19}
-\bibcite{Campbell2006}{20}
-\bibcite{Fauve2007}{21}
-\bibcite{Dehak2011}{22}
-\bibcite{Li2012}{23}
-\bibcite{Garcia2011}{24}
-\bibcite{Kenny2010}{25}
-\bibcite{Auckenthaler2000}{26}
-\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Replay attack recognition rate, EER and FAR values for various environment of replay attacks, with and without the countermeasure applied. The FAR was measured for FRR equal to the baseline EER (2.98\%), replay recognition rate given for false positive rate of 11.53\%.\relax }}{9}}
-\newlabel{tab::results_CM_rooms}{{V}{9}}
-\@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces Replay attack recognition rate, EER and FAR values for various replay devices used for attacks, with and without the countermeasure applied. The FAR was measured for FRR equal to the baseline EER (2.98\%), replay recognition rate given for false positive rate of 11.53\%.\relax }}{9}}
-\newlabel{tab::results_CM_spk}{{VI}{9}}
-\@writefile{toc}{\contentsline {section}{References}{9}}
-\bibcite{Bimbot2004}{27}
-\bibcite{magrin2001}{28}
-\bibcite{fauve2008}{29}
-\bibcite{sahidullah2012}{30}
-\bibcite{Bonastre2008}{31}
-\bibcite{Bonastre2004}{32}
-\bibcite{Brown2014}{33}
-\bibcite{Jeub2009}{34}
-\bibcite{Wester2010}{35}
+\bibcite{Alegre2013a}{15}
+\bibcite{Ojala2002}{16}
+\bibcite{Alegre2014a}{17}
+\bibcite{Matrouf2005}{18}
+\bibcite{Bonastre2006}{19}
+\bibcite{Yamagishi2009}{20}
+\bibcite{Russell1985}{21}
+\bibcite{Yamagishi2009a}{22}
+\bibcite{Campbell2006}{23}
+\bibcite{Fauve2007}{24}
+\bibcite{Dehak2011}{25}
+\bibcite{Li2012}{26}
+\bibcite{Garcia2011}{27}
+\bibcite{Kenny2010}{28}
+\bibcite{Auckenthaler2000}{29}
+\bibcite{Bimbot2004}{30}
+\bibcite{magrin2001}{31}
+\bibcite{fauve2008}{32}
+\bibcite{sahidullah2012}{33}
+\bibcite{Bonastre2008}{34}
+\bibcite{Bonastre2004}{35}
+\bibcite{Brown2014}{36}
+\bibcite{Jeub2009}{37}
+\bibcite{Wester2010}{38}
 \@writefile{toc}{\contentsline {section}{Biographies}{10}}
-\@writefile{toc}{\contentsline {subsection}{John Doe}{10}}
-\@writefile{toc}{\contentsline {subsection}{Jane Doe}{10}}
+\@writefile{toc}{\contentsline {subsection}{Artur Janicki}{10}}
+\@writefile{toc}{\contentsline {subsection}{Nicholas Evans}{10}}
+\@writefile{toc}{\contentsline {subsection}{Federico Alegre}{10}}

@@ -17,6 +17,15 @@ When modelling a replay attack one should take into account the impact of the fo
 \end{figure}
 
 
+\begin{figure*}
+	\includegraphics[width=1\linewidth]{Figs/LBPfeature.pdf}
+
+	\caption{Schematic diagram of forming a feature vector in the LBP-based countermeasure.}
+	\label{fig:LBPfeature}
+\end{figure*}
+
+
+
 If $x(t)$ is the speech signal of the client, the playback (spoofing) signal $y(t)$ can be represented by:
 
 \begin{equation}
@@ -25,18 +34,6 @@ y(t) = x(t)* mic(t) * a(t) * spk(t) * b(t)
 \end{equation}
 
 where * denotes convolution, $mic(t)$ and $spk(t)$ are impulse responses of the microphone and the speaker, respectively, and $a(t)$ and $b(t)$ are impulse responses of recording and replay environments, respectively (see Fig.~\ref{fig::Replay}). 
-
-\subsection{Research on replay spoofing and replay countermeasures}
-
-While a great deal of attention has been paid to medium- and high-effort spoofing algorithms (a thorough review of these can be found, e.g., in ~\cite{interspeechSpecialSession}), surprisingly, only few studies have been published so far on replay spoofing. The work in~\cite{Lindberg1999} assessed the vulnerabilities of an HMM-based text-dependent ASV system with concatenated digits. They showed that replay attacks are highly effective, but their experiments related to only two speakers. In the study of~\cite{Villalba2010} several playback cases were analysed: recording using a close-talk or a far-field microphone and transmission over an analogue or digital channel. Using their own corpus with five speakers the work showed that a joint factor analysis (JFA) ASV system is vulnerable to replay attacks -- the FAR at the EER threshold increased from 1\% to almost 70\%. 
-
-Some measures were also proposed to prevent replay attacks. As far as text-dependent ASV systems are concerned, one of them is the use of challenge-response systems, which require the speaker to utter an ad hoc phrase which may not be easily expected. Another method which was developed for text-dependent systems (but may be easily adopted for text-independent systems) is based on comparing a new access trial with stored previous attempts ~\cite{Shang2010}. The experiments showed that this method caused a decrease in EER in  most of the cases, however, this method is useless if there were no previous access trials with a given recording. In other work~\cite{Wang2011} measuring of the channel noise is proposed in order to find a difference between the expected (simpler) channel and the more noisy replay channel, which includes also the recording device. The authors proposed two variants of their countermeasure, and they managed to decrease the EER from 40\% to 10\% with a baseline GMM-UBM system under replay spoofing.
-
-Villalba and Lleida~\cite{Villalba2011} proposed a countermeasure which was based on detecting far-field recordings, bearing in mind that both telephone-based ASV systems and stand-alone ASV systems (e.g., installed at the entrance to a room) expect close-talk speech. The authors observed that far-field recordings cause changes in speech signal envelope; therefore they extracted 12 parameters describing the envelope and, based on them, trained a binary SVM classifier in order to discriminate far-field speech from close-talk speech. The authors claimed that they reached the far-field recognition rate of more than 90\%.
-
-
-\subsection{Replay vs. other spoofing algorithms}
-\label{sec::algorithms::playback}
 
 
 \begin{table*}
@@ -58,12 +55,33 @@ Effectiveness & low &  \textbf{(?)} & medium-high & high\\
 \end{table*}
 
 
-Table \ref{tab::attacks} shows a comparison of replay spoofing and na\"{i}ve (zero-effort) impostors, voice conversion and speech synthesis. The attacks are ordered in terms of the effort involved in each case. Replay attacks require slightly increased effort compared to na\"{i}ve imposture (need for target voice acquisition and replay hardware). Voice conversion and speech synthesis require specialised algorithms, in addition to appropriate hardware and parameters describing the target voice. They belong to a class of higher-effort spoofing attacks. While voice conversion is still based upon the conversion of an original speech signal, speech synthesis starts with text input. In this sense the attack requires the most effort of all to implement successfully. One may reasonably suppose that the effectiveness of each attack is linked to the effort involved; the higher the effort, the greater the impact on ASV performance. This hypothesis will be verified later in this work.
+\subsection{Research on replay spoofing and replay countermeasures}
+
+While a great deal of attention has been paid to medium- and high-effort spoofing algorithms (a thorough review of these can be found, e.g., in ~\cite{interspeechSpecialSession}), surprisingly, only few studies have been published so far on replay spoofing. The work in~\cite{Lindberg1999} assessed the vulnerabilities of an HMM-based text-dependent ASV system with concatenated digits. They showed that replay attacks are highly effective, but their experiments related to only two speakers. In the study of~\cite{Villalba2010} several playback cases were analysed: recording using a close-talk or a far-field microphone and transmission over an analogue or digital channel. Using their own corpus with five speakers the work showed that a joint factor analysis (JFA) ASV system is vulnerable to replay attacks -- the FAR at the EER threshold increased from 1\% to almost 70\%. 
+
+Some measures were also proposed to prevent replay attacks. As far as text-dependent ASV systems are concerned, one of them is the use of challenge-response systems, which require the speaker to utter an ad hoc phrase which may not be easily expected. Another method which was developed for text-dependent systems (but may be easily adopted for text-independent systems) is based on comparing a new access trial with stored previous attempts ~\cite{Shang2010}. The experiments showed that this method caused a decrease in EER in  most of the cases, however, this method is useless if there were no previous access trials with a given recording. In other work~\cite{Wang2011} measuring of the channel noise is proposed in order to find a difference between the expected (simpler) channel and the more noisy replay channel, which includes also the recording device. The authors proposed two variants of their countermeasure, and they managed to decrease the EER from 40\% to 10\% with a baseline GMM-UBM system under replay spoofing.
+
+Villalba and Lleida~\cite{Villalba2011} proposed a countermeasure which was based on detecting far-field recordings, bearing in mind that both telephone-based ASV systems and stand-alone ASV systems (e.g., installed at the entrance to a room) expect close-talk speech. The authors observed that far-field recordings cause changes in speech signal envelope; therefore they extracted 12 parameters describing the envelope and, based on them, trained a binary SVM classifier in order to discriminate far-field speech from close-talk speech. The authors claimed that they reached the far-field recognition rate of more than 90\%.
+
+\subsection{A countermeasure based on local binary patterns}
+Local binary patterns (LBP) technique is a countermeasure which we previously proposed in~\cite{Alegre2013a} against attacks using voice conversion, speech synthesis and artificial signals. It is based on the hypothesis that modifications made through spoofing disturb the natural 'texture' of genuine speech. This technique was adopted from a standard texture analysis approach, known in image processing~\cite{Ojala2002}, to a 2-dimensional 'image' of a speech utterance, where here the image is a mel-scaled cepstrogram appended with dynamic features.
+
+The standard LBP operator is a non-parametric 3x3 kernel which assigns a binary code to each pixel in an image according to the comparison of its intensity value to that of its eight surrounding pixels~\cite{Ojala2002}. This procedure is illustrated in Figure~\ref{fig:LBPfeature}.  A binary value of '1' is assigned when the intensity of neighbouring pixels (here feature components) is higher, whereas a value of '0' is assigned when neighbouring pixels are of lower or equal intensity. Each pixel is thus assigned one of $2^8=256$ binary patterns.
+
+LBPs are determined for each pixel in the mel-scaled cepstrogram thus resulting in a new matrix of reduced dynamic range, here referred to as a 'textrogram'.  The textrogram captures short-time feature motion beyond that in conventional dynamic parametrisation.  The LBP-based countermeasure is based on concatenated histograms formed from the pixel values across each row in the textrogram.  The histograms are individually normalised and their resulting bin values are stacked vertically to obtain a new vector in the same manner as GMM mean-vectors are stacked to form supervectors.  
+
+In~\cite{Alegre2013a} we showed that a LBP-based countermeasure was highly effective for artificial signals, yielding 0\% EER for the five tested ASVs, very effective for speech synthesis attacks (EER values below 1\%) and quite effective for voice conversion -- EERs less than 7\%. Considering the fact that the LBP-based countermeasure hardly relies on prior knowledge on the attack, in this work we decided to try to use it also as a countermeasure against replay attacks.
+
+\subsection{Replay vs. other spoofing algorithms}
+\label{sec::algorithms::playback}
+
+
+Table \ref{tab::attacks} shows a comparison of replay spoofing and na\"{i}ve (zero-effort) impostors, voice conversion and speech synthesis. The attacks are ordered in terms of the effort involved in each case. Replay attacks require slightly increased effort compared to na\"{i}ve imposture (need for target voice acquisition and replay hardware). Voice conversion and speech synthesis require specialised algorithms, in addition to appropriate hardware and parameters describing the target voice. They belong to a class of higher-effort spoofing attacks. While voice conversion is still based upon the conversion of an original speech signal, speech synthesis starts with text input. In this sense the attack requires the most effort of all to implement successfully. One may reasonably suppose that the effectiveness of each attack is linked to the effort involved; the higher the effort, the greater the impact on ASV performance. However, the results of preliminary experiments described in~\cite{Alegre2014a} are against this hypothesis, showing that the risk of replay attack is in fact very high, taking into account low-effort required to undertake the attack. This observation will be further verified in this work.
 
 \subsection{Voice conversion}
 \label{ssec:vconv}
 
-We used the approach to voice conversion originally presented in~\cite{Matrouf2005}. At the frame level, the speech signal of a spoofer denoted by $y(t)$ is filtered in the spectral domain as follows:
+When comparing the replay threat with that of voice conversion, we used the approach to voice conversion originally presented in~\cite{Matrouf2005}. At the frame level, the speech signal of a spoofer denoted by $y(t)$ is filtered in the spectral domain as follows:
 
 \begin{equation}
 Y'(f) = \frac{\left|H_{x}(f)\right|}{\left|H_{y}(f)\right|}Y(f)
@@ -88,10 +106,4 @@ There is a large variety of speech synthesis algorithms, such as formant, diphon
 
 Accordingly, in this paper we consider spoofing with HTS synthesis, following the approach described in~\cite{Yamagishi2009}, and using the HMM-based Speech Synthesis System (HTS)\footnote{http://hts.sp.nitech.ac.jp/}. Parametrisation includes STRAIGHT (Speech Transformation and Representation using Adaptive Interpolation of weiGHTed spectrum) features, Mel-cepstrum coefficients and the logarithm of the fundamental frequency (log $F_{0}$) with their delta and acceleration coefficients. Acoustic spectral characteristics and duration probabilities are modelled using multispace distribution hidden semi-Markov models (MSD-HSMM)~\cite{Russell1985}.  Speaker dependent  excitation, spectral and duration models are adapted from corresponding independent models according to a speaker adaptation strategy referred to as constrained structural maximum a posteriori linear regression (CSMAPLR)~\cite{Yamagishi2009a}.  Finally, time domain signals are synthesised using a vocoder based on Mel-logarithmic spectrum approximation (MLSA) filters.  They correspond to STRAIGHT Mel-cepstral coefficients and are driven by a mixed excitation signal and waveforms reconstructed using the pitch synchronous overlap add (PSOLA) method.
 
-
-\subsection{Aim of this work}
-
-This paper aims at analysing threat of replay attacks when using large speaker databases and most effective speaker verification systems, and compare it with the threat of other spoofing algorithms: voice conversion and speech synthesis. The impact of acoustic environment and playback devices on performance of speaker verification systems will be investigated. 
-
-This work will also verify the effectiveness of replay detection, using the previously described replay countermeasure ~\cite{Villalba2011}, which had been  shown to be effective in detecting far-field recordings. Therefore, we are going to identify a relative threat of replay using the state-of-the-art ASV systems and a replay countermeasure.
 

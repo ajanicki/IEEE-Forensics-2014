@@ -1,4 +1,28 @@
-The countermeasure was set up according to the algorithm proposed in~\cite{Villalba2011}. Each recording, both from the training and the testing datasets, was additionally described using the following 12 parameters:
+\begin{table*}
+\begin{center}
+    \begin{tabular}{ l l || c c c c c c c}
+    \hline
+Score norm & Replay env. &  GMM & SGL & SGL-NAP  & SGL-FA & FA & IV & IV-PLDA \\ 
+
+ \hline \hline
+& (Baseline) & 9.08 & 7.89 & 6.35 & 6.08 & 5.60 & 6.67 & 3.20\\
+No & Office  & 40.26 & 34.43 & 33.52 & 30.72 & 33.85 & 27.83 & 29.11\\
+norm & Corridor & 35.71 & 28.24 & 28.53 & 25.75 & 29.92 & 23.02 & 22.78\\
+& None & 51.59 & 49.64 & 49.49 & 49.73 & 49.37 & 49.38 & 49.37\\
+\hline
+& (Baseline) & 8.63 & 8.13 & 6.31 & 5.72 & 5.61 & 6.72 & 2.98\\
+With & Office  & 60.32 & 92.98 & 29.92 & 28.54 & 30.12 & 28.89 & 30.30\\
+norm & Corridor & 55.91 & 88.20 & 23.59 & 21.62 & 24.97 & 23.31 & 24.53\\
+& None & 64.40 & 96.67 & 49.44 & 49.31 & 49.67 & 49.06 & 49.46\\
+\hline
+    \end{tabular}
+    \caption{EER values for different ASV systems for various acoustic environment of replay attacks, with and without score normalisation. }
+		\label{tab::results_EER}
+   \end{center}
+\end{table*}
+
+
+The FFD countermeasure was set up according to the algorithm proposed in~\cite{Villalba2011}. Each recording, both from the training and the testing datasets, was additionally described using the following 12 parameters:
 \begin{itemize}
 \item spectral ratio -- the ratio between
 the signal energy from 0 to 2 kHz and from 2 kHz to 4 kHz;
@@ -9,7 +33,13 @@ and from 300 Hz to 500 Hz;
 2kHz-3kHz, 0.5kHz-1kHz, 1kHz-1.5kHz, 1.5kHz-2kHz, 2kHz-2.5kHz, 2.5kHz-3kHz and 3kHz-3.5kHz.
 \end{itemize}
 
-The countermeasure algorithm was trained using a set of 1000 recordings generated using 200 recordings taken from NIST'05 and emulation of various acoustic conditions. In order to make the experiment as close as possible to reality, we decided to use different room impulse responses than the ones used for simulation of replay attack. Therefore we emulated the following environment:
+As for the LBP countermeasure, we reduced the number of possible patterns according to the standard Uniform LBP approach described in~\cite{Ojala2002}.  Uniform LBPs are the subset of $58$ patterns which contain at most two bitwise transitions from 0 to 1 or 1 to 0 when the bit pattern is traversed in circularly fashion.  As an example, the subset includes patterns $00000001$ and $00111100$ but not $00110001$.  As reported by~\cite{Ojala2002}, most patterns are naturally uniform and empirical evidence suggests that their use in many image recognition applications leads to better performance then the full set of uniform and non-uniform patterns.  We observed similar findings in our previous work~\cite{Alegre2013a} and thus pixels corresponding to any of the 198 non-uniform patterns are simply ignored.
+
+Normalized features used in the LBP countermeasure are composed of 51 coefficients: 16 LFCCs and energy plus their corresponding delta and delta-delta coefficients. We take into account only those frames determined to contain speech, i.e. those also used for ASV.  
+
+We used the implementation made publicly available by The University of Oulu\footnote{http://www.cse.oulu.fi/CMV/Downloads/LBPMatlab} and considered only the 58 possible uniform patterns.  Histograms of LBPs are created for all but the first and last frames, thereby obtaining a $58 \times 49 = 2842$ length feature vector.
+
+Both countermeasure algorithms were trained using a set of 1000 recordings generated using 200 recordings taken from NIST'05 and emulation of various acoustic conditions. In order to make the experiment as close as possible to reality, we decided to use different room impulse responses than the ones used for simulation of replay attack. Therefore we emulated the following environment:
 \begin{itemize}
 \item a lecture room, with concrete walls, glass windows and a parquet;
 \item a staircase, with concrete walls and steps;
@@ -18,4 +48,4 @@ The countermeasure algorithm was trained using a set of 1000 recordings generate
 
 Similarly to emulation of replay attack, the corresponding impulse responses were taken from the AIR database. To train the far-field recording detector, we also needed to emulate the replay device. We chose a stand-alone speaker impulse response, different from the one used for replay attack emulation, to avoid overfitting to testing data. Original NIST'05 recordings were used to model the licit client access trials.
 
-A binary SVM classifier with polynomial kernel of 3rd degree was used for data classification. After being trained with the training data in 12-dimensional space defined by the parameters described above, it was applied to detect replay attacks in both spoofing accesses and licit client trials.
+A binary SVM classifier with polynomial kernel of 3rd degree was used for data classification for the FFD countermeasure, while a classifier based on decision table was used for LBP. Those classifiers returned the best results for those two detectors in terms of the area under the ROC curve. Having been trained, both classifiers were applied to detect replay attacks in both spoofing accesses and licit client trials.

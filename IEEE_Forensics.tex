@@ -79,7 +79,7 @@
 
 \usepackage{graphicx}
 
-
+\usepackage{multirow}
 
 
 
@@ -184,14 +184,13 @@
 % was not built to handle multiple paragraphs
 %
 
-\author{Michael~Shell,~\IEEEmembership{Member,~IEEE,}
-        John~Doe,~\IEEEmembership{Fellow,~OSA,}
-        and~Jane~Doe,~\IEEEmembership{Life~Fellow,~IEEE}% <-this % stops a space
-\thanks{M. Shell is with the Department
-of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta,
-GA, 30332 USA e-mail: (see http://www.michaelshell.org/contact.html).}% <-this % stops a space
-\thanks{J. Doe and J. Doe are with Anonymous University.}% <-this % stops a space
-\thanks{Manuscript received April 19, 2005; revised December 27, 2012.}}
+\author{Artur~Janicki,
+        Nicholas~Evans,
+        and~Federico~Alegre% <-this % stops a space
+\thanks{A. Janicki is with the Institute of Telecomunications, Warsaw University of Technology, Warsaw, Poland, e-mail: A.Janicki@tele.pw.edu.pl.}% <-this % stops a space
+\thanks{N. Evans and F. Alegre are with EURECOM, Sophia Antipolis, France, e-mail: \{evans,alegre\}@eurecom.fr.}% <-this % stops a space
+\thanks{The work of A. Janicki was supported by the European Union in the framework of the European Social Fund through the Warsaw University of Technology Development Programme.}% <-this % stops a space
+\thanks{Manuscript received MMMM DD, YYYY; revised MMMM DD, YYYY.}}
 
 % note the % following the last \IEEEmembership and also \thanks - 
 % these prevent an unwanted space from occurring between the last author name
@@ -247,26 +246,13 @@ GA, 30332 USA e-mail: (see http://www.michaelshell.org/contact.html).}% <-this %
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
 \begin{abstract}
-This paper re-examines the threat of spoofing or presentation attacks in 
-the context of automatic speaker verification (ASV).  While voice 
-conversion and speech synthesis attacks present a serious threat, and 
-have accordingly received a great deal of attention in the recent 
-literature, they can only be implemented with a high level of technical 
-know-how.  In contrast, the implementation of replay attacks require no 
-specific expertise nor any sophisticated equipment and thus they 
-arguably present a greater risk.  The comparative threat of each attack 
-is re-examined in this paper against six different ASV systems including a 
-state-of-the-art iVector-PLDA system.  Despite the lack of attention in 
-the literature, experiments show that low-effort replay attacks provoke 
-higher levels of false acceptance than comparatively higher-effort 
-spoofing attacks such as voice conversion and speech synthesis.  Results 
-therefore show the need to refocus research effort and to develop 
-countermeasures against replay attacks in future work.
+This article analyses the threat of spoofing or presentation attacks in 
+the context of automatic speaker verification (ASV). The implementation of replay attacks require no specific expertise nor any sophisticated equipment and thus they arguably present a greater risk than voice conversion or speech synthesis.  The comparative threat of each attack is verified in this paper against seven different ASV systems including a state-of-the-art iVector-PLDA system.  Despite the lack of attention in the literature, experiments show that low-effort replay attacks provoke higher equal error rates (EER) than comparatively higher-effort spoofing attacks such as voice conversion and speech synthesis. Surprisingly, techniques such as score normalisation in some circumstances turned out to work in favour of the replay spoofer. The paper verifies also the effectiveness of two replay countermeasures. Proposed method based on local binary patterns (LBP) yielded better results than detection of far-field recordings.
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
 \begin{IEEEkeywords}
-IEEEtran, journal, \LaTeX, paper, template.
+speaker verification, spoofing, replay, iVector-PLDA, spoofing countermeasure, local binary patterns.
 \end{IEEEkeywords}
 
 
@@ -292,7 +278,7 @@ IEEEtran, journal, \LaTeX, paper, template.
 
 
 
-\section{Replay vs. other spoofing methods}
+\section{Replay and other spoofing methods}
 \label{sec::algorithms}
 \input replay_vs_others
 
@@ -300,11 +286,14 @@ IEEEtran, journal, \LaTeX, paper, template.
 %\label{sec::countermeasure}
 %\input replay_CMs
 
+\section{Aim of this work}
+\input aim_of_the_work
+
 
 \section{Experimental setup}
 \label{sec::evaluation}
 
-In the following we describe the ASV systems used in this study, the datasets, protocols and metrics, and then the implementation of replay emulation and implementation of the countermeasure, based on detection of far-field recordings.
+In the following we describe the ASV systems used in this study, the datasets, protocols and metrics, and then the implementation of replay emulation and implementation of the countermeasures.
 
 
 \subsection{ASV systems}
@@ -325,7 +314,7 @@ In the following we describe the ASV systems used in this study, the datasets, p
 
 \subsection{Setup of other spoofing attacks}
 
-The experiments with attacks using voice conversion were conducted with our implementation of the approach originally proposed in~\cite{Matrouf2005}. We again consider the worst-case scenario where the attacker/spoofer has full prior knowledge of the ASV system, and so the front-end processing used in voice conversion was exactly the same as that used for ASV. The filtering model and filter $H_x(f)$ used 19 LPCC and LPC coefficients, respectively.
+The experiments with attacks using voice conversion were conducted with our implementation of the approach originally proposed in~\cite{Matrouf2005}. We again considered the worst-case scenario where the attacker/spoofer has full prior knowledge of the ASV system, and so the front-end processing used in voice conversion was exactly the same as that used for ASV. The filtering model and filter $H_x(f)$ used 19 LPCC and LPC coefficients, respectively.
 
 
 Speech synthesis attacks were implemented using the voice cloning toolkit\footnote{http://homepages.inf.ed.ac.uk/jyamagis/software/page37/page37.html}
@@ -484,7 +473,7 @@ with a default configuration.  We used standard speaker-independent models provi
 
 
 % if you will not have a photo at all:
-\begin{IEEEbiographynophoto}{John Doe}
+\begin{IEEEbiographynophoto}{Artur Janicki}
 Biography text here.
 \end{IEEEbiographynophoto}
 
@@ -492,9 +481,14 @@ Biography text here.
 % biographies
 %\newpage
 
-\begin{IEEEbiographynophoto}{Jane Doe}
+\begin{IEEEbiographynophoto}{Nicholas Evans}
 Biography text here.
 \end{IEEEbiographynophoto}
+
+\begin{IEEEbiographynophoto}{Federico Alegre}
+Biography text here.
+\end{IEEEbiographynophoto}
+
 
 % You can push biographies down or up by placing
 % a \vfill before or after them. The appropriate

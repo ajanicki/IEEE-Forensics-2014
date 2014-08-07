@@ -94,6 +94,22 @@ J.~Villalba and E.~Lleida, ``Preventing replay attacks on speaker verification
   systems,'' in \emph{Security Technology (ICCST), 2011 IEEE International
   Carnahan Conference on}, Oct 2011, pp. 1--8.
 
+\bibitem{Alegre2013a}
+F.~Alegre, R.~Vipperla, A.~Amehraye, and N.~Evans, ``A new speaker verification
+  spoofing countermeasure based on local binary patterns,'' Lyon, France, 2013.
+
+\bibitem{Ojala2002}
+T.~Ojala, M.~Pietikainen, and T.~Maenpaa, ``Multiresolution gray-scale and
+  rotation invariant texture classification with local binary patterns,''
+  \emph{Transactions on Pattern Analysis and Machine Intelligence}, vol.~24,
+  no.~7, pp. 971--987, 2002.
+
+\bibitem{Alegre2014a}
+F.~Alegre, A.~Janicki, and N.~Evans, ``Re-assessing the threat of replay
+  spoofing attacks against automatic speaker verification,'' in \emph{Proc.
+  International Conference of the Biometrics Special Interest Group (BIOSIG
+  2014)}, September 2014.
+
 \bibitem{Matrouf2005}
 D.~Matrouf, J.-F. Bonastre, and J.-P. Costa, ``Effect of impostor speech
   transformation on automatic speaker recognition,'' \emph{Biometrics on the

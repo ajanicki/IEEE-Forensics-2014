@@ -32,23 +32,20 @@
 %	\includegraphics[width=1\linewidth]{Figs/dist_IV_none.pdf}
 %	\end{minipage}
 
-	\caption{Score distribution for the IV-PLDA system for replay attacks using a stand-alone speaker and with simulation of an office.}
+	\caption{Score distribution for the IV-PLDA system for replay attacks using a stand-alone speaker and emulation of an office.}
 	\label{fig::Dist_IV}
 \end{figure}
 
 %DETs described
-Fig.~\ref{fig::DETs_replay_GMM} and Fig.~\ref{fig::DETs_replay_IV} present the detection error trade-off (DET) plots\footnote{Produced with the TABULA RASA Scoretoolkit (http://publications.idiap.ch/downolads/reports/2012/Anjos\_Idiap-Com-02-2012.pdf)}  for the basic GMM-UBM and the state-of-the-art IV-PLDA systems, exposed to various replay attacks. They show that all replay attacks caused a significant degradation of the ASV performance. However, there are major differences in ASV performance depending on acoustic environment. If the acoustic environment is omitted, the ASV system is almost ideally spoofed -- the DET lines are close to straight, with the EER values close to 50\%. In realistic cases, when the room acoustics is taken into account, the spoofing is slightly less severe. It can be easily observed that the ASV performance under replay attack in a corridor is better than in an office, probably due to higher level of reverberation for the corridor. 
-
-These results are confirmed by score distribution presented in Fig.~\ref{fig::Dist_IV} -- they show that without considering the acoustic environment (the bottom plot) the scores for replay attacks overlap the scores of genuine client accesses, whilst the scores returned by the IV-PLDA system with a replay attack realised in a corridor (or with speech acquired in a corridor) are shifted towards impostor trials, however still with a significant overlap with true client accesses (see the middle plot of Fig.~\ref{fig::Dist_IV}).
+Fig.~\ref{fig::DETs_replay_GMM} and Fig.~\ref{fig::DETs_replay_IV} present the detection error trade-off (DET) plots\footnote{Produced with the TABULA RASA Scoretoolkit (http://publications.idiap.ch/downolads/reports/2012/Anjos\_Idiap-Com-02-2012.pdf)}  for the basic GMM-UBM and the state-of-the-art IV-PLDA systems, exposed to various replay attacks. They show that all replay attacks caused a significant degradation of the ASV performance. However, there are major differences in ASV performance depending on acoustic environment. If the acoustic environment is omitted, the ASV system is almost ideally spoofed -- the DET lines are close to straight, with the EER values close to 50\%. In realistic cases, when the room acoustics is taken into account, the spoofing is slightly less severe. It can be easily observed that the ASV performance under replay attack in a corridor is better than in an office, probably due to higher level of reverberation for the corridor. Fig.~\ref{fig::Dist_IV} shows a sample score distribution, here for the IV-PLDA system with a replay attack realised in an office (or with speech acquired in an office). A significant overlap of replay attacks with true client accesses can be observed.
 
 In contrast, despite major differences in speakers' impulse responses (see Fig.~\ref{fig::IRs}), the differences between the DET plots corresponding to different speakers are only minor. It suggests a relatively low impact of a replay device on the effectiveness of replay attack. Since all seven ASV systems tested showed similar behaviour, therefore, for the sake of clearness, the next results will present the average of the three speakers used in experiments.
-
-
 
 
 %EER table described
 Table~\ref{tab::results_EER} shows the detailed EER results for replay attacks in various acoustic conditions against the seven various ASV systems, with and without score normalisation. All systems are shown to be severely sensitive to replay attacks. Even for the highly-reverberant corridor and the most resistant (in terms of EER) GSL kernel system with factor analysis and with T-norm, the EER rose to more than 22\% compared to the baseline 5.7\%. What was already visible in the DET plots (see Fig.~\ref{fig::DETs_replay_IV}), the results for the office are much worse -- the most resistant IV system (without PLDA and without score normalisation) and GSL-FA systems yielded the EER of ca. 28\%, whilst the other systems returned EERs of 30\% and more. If acoustic conditions are not emulated, the spoofing is almost perfect and the ASV systems yield EER values of 50\% or even more. 
 
+It is noteworthy that under replay attack the iVector system with probabilistic linear discriminant analysis (PLDA) often shows worse results than the iVector system alone, even though the PLDA significantly decreases the EER for the baseline system (from 6.7\% down to less than 3\%, with score normalisation). This can be explained that in normal conditions the PLDA improves the performance of iVector-based ASV system as it compensates the intersession differences caused by channel or speaker variation. However, in the case of replay attack this can be disadvantageous, because it also seems to compensate the differences caused by replay devices and replay environments.
 
 \begin{figure}
 	\centering
@@ -146,21 +143,19 @@ Replay attacks & 0.072 & 0.060 & 0.068 & 0.059 & 0.027\\
 \end{table}
 
 
-\subsection{Impact of using PLDA with iVector systems}
-
-When analysing operation of various ASV systems, we also compared the performance of both iVector systems used in experiments - with and without probabilistic linear discriminant analysis (PLDA). The results in Table~\ref{tab::results_EER}, confirmed by Fig.~\ref{fig::EER_PLDA}, clearly show that even though the PLDA significantly decreases the EER for the baseline system (from 6.7\% down to less than 3\%, with score normalisation), it mostly increases the EER when under replay attack. E.g., for an office and score normalisation the EER rose from less to 29\% to 30.3\%. 
-
-%Similar tendency can be seen in DET plots shown in Fig.~\ref{fig::DETs_PLDA}. 
-
-This behaviour of PLDA can be explained as follows: in normal conditions the PLDA improves significantly the performance of iVector-based ASV system as it compensates the intersession differences caused by channel or speaker variation. However, in the case of replay attack this can be disadvantageous, because it also seems to compensate the differences caused by replay devices and replay environments.
-
+%\subsection{Impact of using PLDA with iVector systems}
+%
+%When analysing operation of various ASV systems, we also compared the performance of both iVector systems used in experiments - with and without probabilistic linear discriminant analysis (PLDA). The results in Table~\ref{tab::results_EER}, confirmed by Fig.~\ref{fig::EER_PLDA}, clearly show that even though the PLDA significantly decreases the EER for the baseline system (from 6.7\% down to less than 3\%, with score normalisation), it mostly increases the EER when under replay attack. E.g., for an office and score normalisation the EER rose from less to 29\% to 30.3\%. 
+%
+%This behaviour of PLDA can be explained as follows: in normal conditions the PLDA improves significantly the performance of iVector-based ASV system as it compensates the intersession differences caused by channel or speaker variation. However, in the case of replay attack this can be disadvantageous, because it also seems to compensate the differences caused by replay devices and replay environments.
+%
 %% EER w/wo PLDA
-\begin{figure}
-	\centering
-\includegraphics[width=1\linewidth]{Figs/EER_PLDA.png}
-	\caption{EER results for iVector-based ASV system with and without PLDA, with score normalisation used.}
-	\label{fig::EER_PLDA}
-\end{figure}
+%\begin{figure}
+%	\centering
+%\includegraphics[width=1\linewidth]{Figs/EER_PLDA.png}
+%	\caption{EER results for iVector-based ASV system with and without PLDA, with score normalisation used.}
+%	\label{fig::EER_PLDA}
+%\end{figure}
 
 
 %\begin{figure}
@@ -177,17 +172,18 @@ This behaviour of PLDA can be explained as follows: in normal conditions the PLD
 \begin{table*}
 %\ninept
 \begin{center}
-    \begin{tabular}{ l || c c c c c }
+    \begin{tabular}{ l || c c c | c c c}
     \hline
-     	 Environment & \% attacks detected & EER no CM & EER with CM & FAR no CM & FAR with CM\\ 
+ \multirow{2}{*}{Environment}  & \multicolumn{3}{c|}{EER (\%)} & \multicolumn{3}{c}{SFAR (\%)} \\
+     	 & no CM & with FFD & with LBP & no CM & with FFD & with LBP\\ 
 
  \hline \hline
-Office   & 80.46 & 30.30 & 14.46 & 88.70 & 52.88\\
-Corridor & 73.09 & 24.53 & 13.82 & 80.91 & 48.02\\
-None & 62.90 & 49.46 & 30.03 & 97.00 & 86.30\\
+Office   & 30.30 & 13.62 & 9.56 & 88.70 & 63.93 & 46.29\\
+Corridor & 24.53 & 11.34 & 7.00 & 80.91 & 50.25 & 30.52\\
+None & 49.46 & 42.14 & 46.77 & 97.00 & 95.17 & 95.76\\
 \hline
     \end{tabular}
-    \caption{Replay attack recognition rate, EER and FAR values for various environment of replay attacks, with and without the countermeasure applied. The FAR was measured for FRR equal to the baseline EER (2.98\%), replay recognition rate given for false positive rate of 11.53\%.}
+    \caption{EER and SFAR values for various environment of replay attacks, with and without the FFD or LBP countermeasures applied, for IV-PLDA. The SFAR was measured for FRR equal to the baseline EER (2.98\%).}
 		\label{tab::results_CM_rooms}
    \end{center}
 \end{table*}
@@ -196,43 +192,32 @@ None & 62.90 & 49.46 & 30.03 & 97.00 & 86.30\\
 \begin{table*}
 %\ninept
 \begin{center}
-    \begin{tabular}{ l || c c c c c }
+    \begin{tabular}{ l || c c c | c c c}
     \hline
-     	 Environment & \% attacks detected & EER no CM & EER with CM & FAR no CM & FAR with CM\\ 
-
+ \multirow{2}{*}{Environment}  & \multicolumn{3}{c|}{EER (\%)} & \multicolumn{3}{c}{SFAR (\%)} \\
+     	 & no CM & with FFD & with LBP & no CM & with FFD & with LBP\\ 
  \hline \hline
-Smartphone   & 96.01 & 33.96 & 11.47 & 88.38 & 49.31\\
-Tablet & 87.82 & 34.48 & 14.58 & 88.42 & 54.93\\
-Stand-alone speaker & 32.61 & 35.84 & 32.25 & 89.80 & 82.96\\
+Smartphone   & 33.96 & 11.66 & 7.52 & 88.38 & 54.83 & 36.79\\
+Tablet & 34.48 & 11.82 & 7.50 & 88.42 & 55.33 & 36.83\\
+Stand-alone speaker & 35.84 & 13.96 & 9.83 & 89.80 & 61.11 & 41.60\\
 \hline
     \end{tabular}
-    \caption{Replay attack recognition rate, EER and FAR values for various replay devices used for attacks, with and without the countermeasure applied. The FAR was measured for FRR equal to the baseline EER (2.98\%), replay recognition rate given for false positive rate of 11.53\%.}
+    \caption{EER and SFAR values for various replay devices used for attacks, with and without the FFD or LBP countermeasures applied, for IV-PLDA. The SFAR was measured for FRR equal to the baseline EER (2.98\%).}
 		\label{tab::results_CM_spk}
    \end{center}
 \end{table*}
 
 
-The detailed results of experiments with far-field detection countermeasure for various replay environment, averaged across the replay devices, are presented in Table~\ref{tab::results_CM_rooms}. It shows that the countermeasure performance varies depending on acoustic environment. The relative improvement caused by the countermeasure turned out to be the highest for the most difficult case, i.e., when the acoustic conditions are not taken into account -- in this case the EER decreased from almost 50\% down to 30\%. The relative improvement was the lowest for the case where spoofing was initially least successful, i.e. for the corridor -- it decreased from 24\% to less than 14\%. Anyway, after applying the countermeasure, it was for the corridor where the absolute EER value was the lowest, what we believe is caused by the high reverberation of the corridor.
+The detailed results of experiments with FFD and LBP countermeasures for various replay environment, averaged across the replay devices, are presented in Table~\ref{tab::results_CM_rooms}. It shows that the countermeasure performance varies depending on acoustic environment. The relative improvement caused by the countermeasures turned out to be the highest for the office -- in this case the EER decreased from 30\% down to less than 14\% for FFD and less than 10\% for LBP. Also for the corridor LBP turned out to be more effective than FFD -- 7\% EER vs. 11\%, respectively, also the SFAR result was much lower (30\% vs. 46\%). When acoustic conditions were not considered, both countermeasures performed poorly, with the EER results slightly better for FFD. This is also visualised by the shape of the DET plots presented in Fig~\ref{fig::DETs_CM}.
 
-Table~\ref{tab::results_CM_spk}, in contrast, displays the results of the countermeasure experiments for various replay devices, averaged across different acoustic environments. Even though surprisingly the reply devices had no major impact on spoofing effectiveness (all three devices made the IV-PLDA system yield the EER of ca. 35\%), they do have strong impact of effectiveness of reply countermeasure. The far-field detection countermeasure seems to help best for a smartphone and slightly worse for a tablet (the EER values decreased to less than 12\% and 15\%, respectively). However, the countermeasure worked poorly for a stand-alone speaker -- the EER decreased here on average only by ca. 3\%. 
+Table~\ref{tab::results_CM_spk} displays the results of the countermeasure experiments for various replay devices, averaged across different acoustic environments (only office and corridor were taken into account, as they are by far most realistic). Also here the LBP-based countermeasure yields better results than FFD. Both countermeasures helped most for a smartphone and a tablet (the EER values decreased to less than 12\% for FFD and to 7.5\% for LBP). The results for a stand-alone speaker are only slightly worse (14\% and 10\%, respectively), most likely due to higher quality of this device (see much better frequency response shown in Fig.~\ref{fig::IRs}). 
 
-These results may seem somewhat surprising, considering the fact it was the IR of a stand-alone speaker which was used to train the far-field recording detector, while neither any smartphone IR nor any tablet IR were used to create the training corpus. Anyway we believe that the poor detection of replay attacks caused by the stand-alone speaker is caused by high quality of audio playback provided by such speakers (see e.g. much better frequency response for a stand0alone speaker shown in Fig.~\ref{fig::IRs}), what obviously makes reply detection much more difficult (less than one third of attacks detected if no acoustic conditions considered, at the level of 11.5\% of false rejections). 
-
-Even though the countermeasure applied detected more than 90\% of replay attacks when using a smartphone and a tablet (at the level of 11.5\% of false rejections), and the EER and also FAR values decreased significantly, the FAR values at the false rejection rate set to baseline EER (2.98\%) remain still high (e.g., 49\% for a smartphone and 54\% for a tablet). This is also confirmed by the shape of DET plots presented in Fig~\ref{fig::DETs_CM}. This, however, can be modified within certain limits by adjusting the threshold of the far-field recording classifier.
 
 %% DETs w/wo CM
 \begin{figure}
 	\centering
-\includegraphics[width=1\linewidth]{Figs/DET_IVPLDA_counter_vil3_iPad.pdf}
-	\caption{DET plots for IV-PLDA system for various replay environments, with and without the countermeasure.}
+\includegraphics[width=1\linewidth]{Figs/DET_IVPLDA_counter_iPad.pdf}
+	\caption{DET plots for IV-PLDA system for various replay environments, with and without the FFD or LBP countermeasures.}
 	\label{fig::DETs_CM}
 \end{figure}
 
-
-%% EER w/wo CM
-%\begin{figure}
-%	\centering
-%\includegraphics[width=1\linewidth]{Figs/EER_CM.png}
-%	\caption{EER results for IV-PLDA under replay attack  with and without countermeasure applied.}
-%	\label{fig:EER_PLDA}
-%\end{figure}

@@ -1,11 +1,9 @@
 
-Despite the lack of attention to replay attacks in the literature and 
-contrary to our hypothesis, results show that low-effort replay attacks pose a 
-significant risk, surpassing that of comparatively high-effort attacks 
-such as voice conversion and speech synthesis.  Worthy of note is the 
-performance of the state-of-the-art iVector-PLDA system which, despite 
-showing the best baseline performance, is the most vulnerable to replay 
-attacks, especially for FARs below 10\%.
+Despite the lack of attention to replay attacks in the literature, results show that low-effort replay attacks pose a significant risk, surpassing that of comparatively high-effort attacks such as voice conversion and speech synthesis.
+The important contribution of the presented work is the conclusion that the techniques which normally improve the performance of ASV systems, such as score normalisation or PLDA (for iVectors), in fact can work in favour of the spoofer.
 
-Future work should thus pay greater attention to replay attacks and, in 
-particular, suitable replay attack countermeasures.  The assumption that higher-effort attacks pose the greatest threat might be ill-founded. Given that the implementation of replay attacks demands neither specific expertise nor any sophisticated equipment, the risk to ASV is arguably greater than that of voice conversion and speech synthesis which currently receive the most attention in the literature. Future evaluation should not only consider the threat of any particular attack, but also the ease with which they can be performed. We suggest that a risk-based approach should be adopted.
+We have also showed that the proposed countermeasure based on local binary patterns can be quite effective in detecting replay attacks, outperforming in realistic acoustic conditions the far-field recording detection described in~\cite{Villalba2011}. However, it must be stressed that an attack using high-quality recordings (e.g., acquired in an anechoic booth) can be very difficult to detect.
+ 
+%Future work should thus pay greater attention to replay attacks and, in particular, suitable replay attack countermeasures.  The assumption that higher-effort attacks pose the greatest threat might be ill-founded. 
+
+Given that the implementation of replay attacks demands neither specific expertise nor any sophisticated equipment, the risk to ASV is arguably greater than that of voice conversion and speech synthesis which currently receive the most attention in the literature. Future evaluation should not only consider the threat of any particular attack, but also the ease with which they can be performed. We suggest that a risk-based approach should be adopted.
