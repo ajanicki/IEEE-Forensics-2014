@@ -31,6 +31,21 @@ N.~Evans, T.~Kinnunen, J.~Yamagishi, Z.~Wu, F.~Alegre, and P.~L.~D. Leon,
   \emph{Speaker recognition anti-spoofing}, S.~Marcel, S.~Li, and M.~Nixon,
   Eds.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2014.
 
+\bibitem{Wu2014a}
+Z.~Wu, N.~Evans, T.~Kinnunen, J.~Yamagishi, F.~Alegre, and H.~Li, ``Spoofing
+  and countermeasures for speaker verification: a survey,'' \emph{Speech
+  Communications}, vol.~66, pp. 130--153, 10 2014.
+
+\bibitem{Lindberg1999}
+J.~Lindberg and M.~Blomberg, ``Vulnerability in speaker verification - a study
+  of technical impostor techniques,'' in \emph{European Conference on Speech
+  Communication and Technology}, 1999, pp. 1211--1214.
+
+\bibitem{Villalba2010}
+J.~Villalba and E.~Lleida, ``Speaker verification performance degradation
+  against spoofing and tampering attacks,'' in \emph{FALA workshop}, 2010, pp.
+  131--134.
+
 \bibitem{Blomberg2004}
 M.~Blomberg, D.~Elenius, and E.~Zetterholm, ``Speaker verification scores and
   acoustic analysis of a professional impersonator,'' in \emph{Proc. FONETIK},
@@ -68,15 +83,48 @@ F.~Alegre, R.~Vipperla, and N.~Evans, ``Spoofing countermeasures for the
   protection of automatic speaker recognition from attacks with artificial
   signals,'' in \emph{Proc. 13th Interspeech}, 2012.
 
-\bibitem{Lindberg1999}
-J.~Lindberg and M.~Blomberg, ``Vulnerability in speaker verification - a study
-  of technical impostor techniques,'' in \emph{European Conference on Speech
-  Communication and Technology}, 1999, pp. 1211--1214.
+\bibitem{Yamagishi2009}
+J.~Yamagishi, T.~Nose, H.~Zen, Z.-H. Ling, T.~Toda, K.~Tokuda, S.~King, and
+  S.~Renals, ``Robust speaker adaptive {HMM} based {Text-to-Speech}
+  {S}ynthesis,'' \emph{IEEE Transactions on Acoustics, Speech and Signal
+  Processing}, vol.~17, no.~6, pp. 1208--1230, 2009.
 
-\bibitem{Villalba2010}
-J.~Villalba and E.~Lleida, ``Speaker verification performance degradation
-  against spoofing and tampering attacks,'' in \emph{FALA workshop}, 2010, pp.
-  131--134.
+\bibitem{Russell1985}
+M.~Russell and R.~Moore, ``Explicit modelling of state occupancy in hidden
+  markov models for automatic speech recognition,'' in \emph{Proc. IEEE Int.
+  Conf. Acoust., Speech and Signal Process. (ICASSP)}, 1985, pp. 5--8.
+
+\bibitem{Yamagishi2009a}
+J.~Yamagishi, T.~Kobayashi, Y.~Nakano, K.~Ogata, and J.~Isogai, ``Analysis of
+  {S}peaker {A}daptation {A}lgorithms for {HMM}-based {S}peech {S}ynthesis and
+  a {C}onstrained {SMAPLR} {A}daptation {A}lgorithm,'' \emph{IEEE transactions
+  on Audio, Speech \& Language Processing}, vol.~17, no.~1, pp. 66--83, 2009.
+
+\bibitem{Matrouf2005}
+D.~Matrouf, J.-F. Bonastre, and J.-P. Costa, ``Effect of impostor speech
+  transformation on automatic speaker recognition,'' \emph{Biometrics on the
+  Internet}, p.~37, 2005.
+
+\bibitem{Bonastre2006}
+J.-F. Bonastre, D.~Matrouf, and C.~Fredouille, ``Transfer function-based voice
+  transformation for speaker recognition,'' in \emph{Proc. {IEEE ODYSSEY} - The
+  Speaker and Language Recognition Workshop}, 2006, pp. 1--6.
+
+\bibitem{Wu2014}
+Z.~Wu, S.~Gao, E.~S. Chng, and H.~Li, ``A study on replay attack and
+  anti-spoofing for text-dependent speaker verification,'' in \emph{Proc.
+  APSIPA ASC 2014}, 2014.
+
+\bibitem{Alegre2014a}
+F.~Alegre, A.~Janicki, and N.~Evans, ``Re-assessing the threat of replay
+  spoofing attacks against automatic speaker verification,'' in \emph{Proc.
+  International Conference of the Biometrics Special Interest Group (BIOSIG
+  2014)}, September 2014.
+
+\bibitem{Petrovska1998}
+D.~Petrovska-Delacr\'{e}taz and J.~Hennebert, ``Text-prompted speaker
+  verification experiments with phoneme specific mlps,'' in \emph{Proc.
+  ICASSP'98}, 1998.
 
 \bibitem{Shang2010}
 W.~Shang and M.~Stevenson, ``Score normalization in playback attack
@@ -103,39 +151,6 @@ T.~Ojala, M.~Pietikainen, and T.~Maenpaa, ``Multiresolution gray-scale and
   rotation invariant texture classification with local binary patterns,''
   \emph{Transactions on Pattern Analysis and Machine Intelligence}, vol.~24,
   no.~7, pp. 971--987, 2002.
-
-\bibitem{Alegre2014a}
-F.~Alegre, A.~Janicki, and N.~Evans, ``Re-assessing the threat of replay
-  spoofing attacks against automatic speaker verification,'' in \emph{Proc.
-  International Conference of the Biometrics Special Interest Group (BIOSIG
-  2014)}, September 2014.
-
-\bibitem{Matrouf2005}
-D.~Matrouf, J.-F. Bonastre, and J.-P. Costa, ``Effect of impostor speech
-  transformation on automatic speaker recognition,'' \emph{Biometrics on the
-  Internet}, p.~37, 2005.
-
-\bibitem{Bonastre2006}
-J.-F. Bonastre, D.~Matrouf, and C.~Fredouille, ``Transfer function-based voice
-  transformation for speaker recognition,'' in \emph{Proc. {IEEE ODYSSEY} - The
-  Speaker and Language Recognition Workshop}, 2006, pp. 1--6.
-
-\bibitem{Yamagishi2009}
-J.~Yamagishi, T.~Nose, H.~Zen, Z.-H. Ling, T.~Toda, K.~Tokuda, S.~King, and
-  S.~Renals, ``Robust speaker adaptive {HMM} based {Text-to-Speech}
-  {S}ynthesis,'' \emph{IEEE Transactions on Acoustics, Speech and Signal
-  Processing}, vol.~17, no.~6, pp. 1208--1230, 2009.
-
-\bibitem{Russell1985}
-M.~Russell and R.~Moore, ``Explicit modelling of state occupancy in hidden
-  markov models for automatic speech recognition,'' in \emph{Proc. IEEE Int.
-  Conf. Acoust., Speech and Signal Process. (ICASSP)}, 1985, pp. 5--8.
-
-\bibitem{Yamagishi2009a}
-J.~Yamagishi, T.~Kobayashi, Y.~Nakano, K.~Ogata, and J.~Isogai, ``Analysis of
-  {S}peaker {A}daptation {A}lgorithms for {HMM}-based {S}peech {S}ynthesis and
-  a {C}onstrained {SMAPLR} {A}daptation {A}lgorithm,'' \emph{IEEE transactions
-  on Audio, Speech \& Language Processing}, vol.~17, no.~1, pp. 66--83, 2009.
 
 \bibitem{Campbell2006}
 W.~M. Campbell, D.~Sturim, D.~A. Reynolds, and A.~Solomonoff, ``Svm based

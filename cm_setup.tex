@@ -1,45 +1,38 @@
-\begin{table*}
-\begin{center}
-    \begin{tabular}{ l l || c c c c c c c}
-    \hline
-Score norm & Replay env. &  GMM & SGL & SGL-NAP  & SGL-FA & FA & IV & IV-PLDA \\ 
 
- \hline \hline
-& (Baseline) & 9.08 & 7.89 & 6.35 & 6.08 & 5.60 & 6.67 & 3.20\\
-No & Office  & 40.26 & 34.43 & 33.52 & 30.72 & 33.85 & 27.83 & 29.11\\
-norm & Corridor & 35.71 & 28.24 & 28.53 & 25.75 & 29.92 & 23.02 & 22.78\\
-& None & 51.59 & 49.64 & 49.49 & 49.73 & 49.37 & 49.38 & 49.37\\
-\hline
-& (Baseline) & 8.63 & 8.13 & 6.31 & 5.72 & 5.61 & 6.72 & 2.98\\
-With & Office  & 60.32 & 92.98 & 29.92 & 28.54 & 30.12 & 28.89 & 30.30\\
-norm & Corridor & 55.91 & 88.20 & 23.59 & 21.62 & 24.97 & 23.31 & 24.53\\
-& None & 64.40 & 96.67 & 49.44 & 49.31 & 49.67 & 49.06 & 49.46\\
-\hline
-    \end{tabular}
-    \caption{EER values for different ASV systems for various acoustic environment of replay attacks, with and without score normalisation. }
-		\label{tab::results_EER}
-   \end{center}
-\end{table*}
+\begin{figure*}
+	\includegraphics[width=1\linewidth]{Figs/LBPfeature.pdf}
+
+	\caption{Schematic diagram of forming a feature vector in the LBP-based countermeasure.}
+	\label{fig:LBPfeature}
+\end{figure*}
 
 
-The FFD countermeasure was set up according to the algorithm proposed in~\cite{Villalba2011}. Each recording, both from the training and the testing datasets, was additionally described using the following 12 parameters:
+\subsubsection{FFD setup} The FFD countermeasure was set up according to the algorithm proposed in~\cite{Villalba2011}. Each recording, both from the training and the testing datasets, was additionally described using the following 12 parameters:
 \begin{itemize}
 \item spectral ratio -- the ratio between
-the signal energy from 0 to 2 kHz and from 2 kHz to 4 kHz;
-\item low frequency ratio -- ratio between the signal energy from 100 Hz to 300 Hz
-and from 300 Hz to 500 Hz;
+the signal energy from 0 to 2 kHz and from 2 kHz to 4 kHz.  The average value of the spectral ratio for the speech segment was calculated using speech frames only. By using this value we hoped to detect the flattening of the spectrum due to noise and reverberation, caused by far-field recording;
+\item low frequency ratio -- ratio between the signal energy from 100 Hz to 300 Hz and from 300 Hz to 500 Hz, calculated using speech frames only. This value is useful for detecting the effect of the loudspeaker on the low part of the spectrum of the replayed signal;
 \item total signal modulation index; and
 \item nine sub-band modulation indices, for sub-bands: 1kHz-3kHz, 1kHz-2kHz,
 2kHz-3kHz, 0.5kHz-1kHz, 1kHz-1.5kHz, 1.5kHz-2kHz, 2kHz-2.5kHz, 2.5kHz-3kHz and 3kHz-3.5kHz.
 \end{itemize}
 
-As for the LBP countermeasure, we reduced the number of possible patterns according to the standard Uniform LBP approach described in~\cite{Ojala2002}.  Uniform LBPs are the subset of $58$ patterns which contain at most two bitwise transitions from 0 to 1 or 1 to 0 when the bit pattern is traversed in circularly fashion.  As an example, the subset includes patterns $00000001$ and $00111100$ but not $00110001$.  As reported by~\cite{Ojala2002}, most patterns are naturally uniform and empirical evidence suggests that their use in many image recognition applications leads to better performance then the full set of uniform and non-uniform patterns.  We observed similar findings in our previous work~\cite{Alegre2013a} and thus pixels corresponding to any of the 198 non-uniform patterns are simply ignored.
+The total modulation index was calculated based on the speech signal's envelope. The envelope was approximated by the absolute value of the signal downsampled to 60 Hz. The average modulation index of the signal was calculated for
+the frames whose index was above a threshold of 0.75. According to the authors of the algorithm, the envelope of the far-field recording has higher local minima mainly due to the additive noise, what should result in lower modulation indices. 
 
-Normalized features used in the LBP countermeasure are composed of 51 coefficients: 16 LFCCs and energy plus their corresponding delta and delta-delta coefficients. We take into account only those frames determined to contain speech, i.e. those also used for ASV.  
+Sub-band modulation indices were added to detect far-field recordings disturbed with coloured noises. If a narrow-band noise affected only to a small frequency band it might not have a noticeable effect on the total modulation index.  
 
-We used the implementation made publicly available by The University of Oulu\footnote{http://www.cse.oulu.fi/CMV/Downloads/LBPMatlab} and considered only the 58 possible uniform patterns.  Histograms of LBPs are created for all but the first and last frames, thereby obtaining a $58 \times 49 = 2842$ length feature vector.
 
-Both countermeasure algorithms were trained using a set of 1000 recordings generated using 200 recordings taken from NIST'05 and emulation of various acoustic conditions. In order to make the experiment as close as possible to reality, we decided to use different room impulse responses than the ones used for simulation of replay attack. Therefore we emulated the following environment:
+
+\subsubsection{LBP setup} The standard LBP operator is a non-parametric 3x3 kernel which assigns a binary code to each pixel in an image according to the comparison of its intensity value to that of its eight surrounding pixels~\cite{Ojala2002}. This procedure is illustrated in Figure~\ref{fig:LBPfeature}.  A binary value of '1' is assigned when the intensity of neighbouring pixels (here feature components) is higher, whereas a value of '0' is assigned when neighbouring pixels are of lower or equal intensity. Each pixel is thus assigned one of $2^8=256$ binary patterns.
+
+LBPs are determined for each pixel in the mel-scaled cepstrogram thus resulting in a new matrix of reduced dynamic range, here referred to as a 'textrogram'.  The textrogram captures short-time feature motion beyond that in conventional dynamic parametrisation.  The LBP-based countermeasure is based on concatenated histograms formed from the pixel values across each row in the textrogram.  The histograms are individually normalised and their resulting bin values are stacked vertically to obtain a new vector in the same manner as GMM mean-vectors are stacked to form supervectors.  
+
+Compared to the original implementation, we reduced the number of possible patterns according to the standard Uniform LBP approach. Uniform LBPs are the subset of $58$ patterns which contain at most two bitwise transitions from 0 to 1 or 1 to 0 when the bit pattern is traversed in circularly fashion.  As an example, the subset includes patterns $00000001$ and $00111100$ but not $00110001$.  As reported by~\cite{Ojala2002}, most patterns are naturally uniform and empirical evidence suggests that their use in many image recognition applications leads to better performance then the full set of uniform and non-uniform patterns.  We observed similar findings in our previous work~\cite{Alegre2013a} and thus decided to ignore pixels corresponding to any of the 198 non-uniform patterns.
+
+We used the implementation made publicly available by The University of Oulu\footnote{http://www.cse.oulu.fi/CMV/Downloads/LBPMatlab}. Normalised features used in the LBP countermeasure were composed of 51 coefficients: 16 LFCCs and energy plus their corresponding delta and delta-delta coefficients. We took into account only those frames determined to contain speech, i.e. those also used for ASV. Histograms of LBPs are created for all but the first and last frames, thereby obtaining a $58 \times 49 = 2842$ length feature vector.
+
+\subsubsection{Training the replay detectors} Both countermeasure algorithms were trained using a set of 1000 recordings generated using 200 recordings taken from NIST'05 and emulation of various acoustic conditions. In order to make the experiment as close as possible to reality, we decided to use different room impulse responses than the ones used for simulation of replay attack. Therefore we emulated the following environment:
 \begin{itemize}
 \item a lecture room, with concrete walls, glass windows and a parquet;
 \item a staircase, with concrete walls and steps;

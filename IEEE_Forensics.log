@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.10.5)  7 AUG 2014 22:12
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.10.19)  11 DEC 2014 12:59
 entering extended mode
 **IEEE_Forensics.tex
 
@@ -202,48 +202,32 @@ LaTeX Font Info:    ... okay on input line 170.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 244.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 246.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 244.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 246.
 
 ("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
 \trunk\introduction.tex")
 ("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
 \trunk\replay_vs_others.tex"
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 6.
+(Font)              <7> on input line 7.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 6.
-
-<Figs/replay.png, id=1, 726.46407pt x 133.24782pt>
-File: Figs/replay.png Graphic file (type png)
- <use Figs/replay.png>
-Package pdftex.def Info: Figs/replay.png used on input line 13.
-(pdftex.def)             Requested size: 252.0pt x 46.22063pt.
-
-<Figs/LBPfeature.pdf, id=3, 1149.29375pt x 274.02374pt>
-File: Figs/LBPfeature.pdf Graphic file (type pdf)
-
-<use Figs/LBPfeature.pdf>
-Package pdftex.def Info: Figs/LBPfeature.pdf used on input line 21.
-(pdftex.def)             Requested size: 516.0pt x 123.02939pt.
+(Font)              <5> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 7.
  [1{C:/Users/Artur/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
- <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Forensics/IEEE-Forensics-2014.git
-/trunk/Figs/replay.png>]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 42.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 42.
- [2 <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Forensics/IEEE-Forensics-2014.
-git/trunk/Figs/LBPfeature.pdf>])
+] [2])
 ("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\aim_of_the_work.tex" [3])
+\trunk\aim_of_the_work.tex")
 ("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
 \trunk\ASVs.tex"
 Underfull \hbox (badness 4981) in paragraph at lines 8--9
@@ -252,140 +236,161 @@ Underfull \hbox (badness 4981) in paragraph at lines 8--9
 
 )
 ("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\datasets.tex")
+\trunk\datasets.tex" [3])
 ("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\exper_setup.tex" <Figs/IRs.png, id=49, 422.32782pt x 316.18124pt>
+\trunk\exper_setup.tex" <Figs/IRs.png, id=23, 422.32782pt x 316.18124pt>
 File: Figs/IRs.png Graphic file (type png)
 
 <use Figs/IRs.png>
 Package pdftex.def Info: Figs/IRs.png used on input line 6.
 (pdftex.def)             Requested size: 252.0pt x 188.6681pt.
- [4 <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Forensics/IEEE-Forensics-2014.
-git/trunk/Figs/IRs.png (PNG copy)>]
-<Figs/Room_IRs.png, id=53, 888.31876pt x 645.91313pt>
+ <Figs/replay.png, id=24, 726.46407pt x 133.24782pt>
+File: Figs/replay.png Graphic file (type png)
+
+<use Figs/replay.png>
+Package pdftex.def Info: Figs/replay.png used on input line 21.
+(pdftex.def)             Requested size: 252.0pt x 46.22063pt.
+ <Figs/Room_IRs.png, id=26, 888.31876pt x 645.91313pt>
 File: Figs/Room_IRs.png Graphic file (type png)
- <use Figs/Room_IRs.png>
-Package pdftex.def Info: Figs/Room_IRs.png used on input line 33.
+
+<use Figs/Room_IRs.png>
+Package pdftex.def Info: Figs/Room_IRs.png used on input line 60.
 (pdftex.def)             Requested size: 252.0pt x 183.22969pt.
 )
 ("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\cm_setup.tex") [5 <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Forensics
-/IEEE-Forensics-2014.git/trunk/Figs/Room_IRs.png (PNG copy)>]
+\trunk\cm_setup.tex" <Figs/LBPfeature.pdf, id=27, 1149.29375pt x 274.02374pt>
+File: Figs/LBPfeature.pdf Graphic file (type pdf)
+
+<use Figs/LBPfeature.pdf>
+Package pdftex.def Info: Figs/LBPfeature.pdf used on input line 3.
+(pdftex.def)             Requested size: 516.0pt x 123.02939pt.
+ [4 <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Forensics/IEEE-Forensics-2014.
+git/trunk/Figs/IRs.png (PNG copy)> <C:/Users/Artur/Documents/Dropbox/14 06 IEEE
+ Forensics/IEEE-Forensics-2014.git/trunk/Figs/replay.png>] [5 <C:/Users/Artur/D
+ocuments/Dropbox/14 06 IEEE Forensics/IEEE-Forensics-2014.git/trunk/Figs/LBPfea
+ture.pdf> <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Forensics/IEEE-Forensics
+-2014.git/trunk/Figs/Room_IRs.png (PNG copy)>])
 ("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
 \trunk\results.tex" <Figs/DETs_GMM.pdf, id=57, 578.16pt x 563.70598pt>
 File: Figs/DETs_GMM.pdf Graphic file (type pdf)
 
 <use Figs/DETs_GMM.pdf>
-Package pdftex.def Info: Figs/DETs_GMM.pdf used on input line 6.
+Package pdftex.def Info: Figs/DETs_GMM.pdf used on input line 28.
 (pdftex.def)             Requested size: 258.0pt x 251.5494pt.
  <Figs/DETs_IV.pdf, id=58, 578.16pt x 563.70598pt>
 File: Figs/DETs_IV.pdf Graphic file (type pdf)
 
 <use Figs/DETs_IV.pdf>
-Package pdftex.def Info: Figs/DETs_IV.pdf used on input line 11.
+Package pdftex.def Info: Figs/DETs_IV.pdf used on input line 33.
 (pdftex.def)             Requested size: 258.0pt x 251.5494pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 5--15
+Overfull \hbox (6.0pt too wide) in paragraph at lines 27--37
  []$[]$ 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 5--15
+Overfull \hbox (6.0pt too wide) in paragraph at lines 27--37
  []$ 
  []
 
 <Figs/dist_IV_off.pdf, id=59, 578.16pt x 433.62pt>
 File: Figs/dist_IV_off.pdf Graphic file (type pdf)
  <use Figs/dist_IV_off.pdf>
-Package pdftex.def Info: Figs/dist_IV_off.pdf used on input line 24.
+Package pdftex.def Info: Figs/dist_IV_off.pdf used on input line 46.
 (pdftex.def)             Requested size: 258.0pt x 193.49953pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 23--26
+Overfull \hbox (6.0pt too wide) in paragraph at lines 45--48
  []$[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
 [][][]\OT1/ptm/m/n/8 Produced with the TAB-ULA RASA Score-toolkit
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
 \OT1/ptm/m/n/8 (http://publications.idiap.ch/downolads/reports/2012/Anjos[]Idia
 p-Com-
  []
 
-<Figs/dist_GMM_corr_iPhone.pdf, id=60, 578.16pt x 433.62pt>
+
+Underfull \vbox (badness 4072) has occurred while \output is active []
+
+ [6 <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Forensics/IEEE-Forensics-2014.
+git/trunk/Figs/DETs_GMM.pdf> <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Foren
+sics/IEEE-Forensics-2014.git/trunk/Figs/DETs_IV.pdf>]
+<Figs/dist_GMM_corr_iPhone.pdf, id=74, 578.16pt x 433.62pt>
 File: Figs/dist_GMM_corr_iPhone.pdf Graphic file (type pdf)
 
 <use Figs/dist_GMM_corr_iPhone.pdf>
-Package pdftex.def Info: Figs/dist_GMM_corr_iPhone.pdf used on input line 53.
+Package pdftex.def Info: Figs/dist_GMM_corr_iPhone.pdf used on input line 75.
 (pdftex.def)             Requested size: 258.0pt x 193.49953pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 52--57
+Overfull \hbox (6.0pt too wide) in paragraph at lines 74--79
  []$[]$ 
  []
 
-<Figs/dist_GMM_T_corr_iPhone.pdf, id=61, 578.16pt x 433.62pt>
+<Figs/dist_GMM_T_corr_iPhone.pdf, id=75, 578.16pt x 433.62pt>
 File: Figs/dist_GMM_T_corr_iPhone.pdf Graphic file (type pdf)
 
 <use Figs/dist_GMM_T_corr_iPhone.pdf>
-Package pdftex.def Info: Figs/dist_GMM_T_corr_iPhone.pdf used on input line 60.
+Package pdftex.def Info: Figs/dist_GMM_T_corr_iPhone.pdf used on input line 82.
 
 (pdftex.def)             Requested size: 258.0pt x 193.49953pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 59--63
+Overfull \hbox (6.0pt too wide) in paragraph at lines 81--85
  []$[]$ 
  []
 
-<Figs/DET_IV_ss_vc_rp.png, id=62, 578.16pt x 563.706pt>
+<Figs/DET_IV_ss_vc_rp.png, id=76, 578.16pt x 563.706pt>
 File: Figs/DET_IV_ss_vc_rp.png Graphic file (type png)
 
 <use Figs/DET_IV_ss_vc_rp.png>
-Package pdftex.def Info: Figs/DET_IV_ss_vc_rp.png used on input line 96.
+Package pdftex.def Info: Figs/DET_IV_ss_vc_rp.png used on input line 118.
 (pdftex.def)             Requested size: 252.0pt x 245.70041pt.
- [6]
-<Figs/Scores_cohort.png, id=66, 446.41782pt x 359.09157pt>
+ [7 <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Forensics/IEEE-Forensics-2014.
+git/trunk/Figs/dist_IV_off.pdf>]
+<Figs/Scores_cohort.png, id=123, 446.41782pt x 359.09157pt>
 File: Figs/Scores_cohort.png Graphic file (type png)
 
 <use Figs/Scores_cohort.png>
-Package pdftex.def Info: Figs/Scores_cohort.png used on input line 116.
+Package pdftex.def Info: Figs/Scores_cohort.png used on input line 138.
 (pdftex.def)             Requested size: 252.0pt x 202.70628pt.
- [7 <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Forensics/IEEE-Forensics-2014.
-git/trunk/Figs/DETs_GMM.pdf> <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Foren
-sics/IEEE-Forensics-2014.git/trunk/Figs/DETs_IV.pdf> <C:/Users/Artur/Documents/
-Dropbox/14 06 IEEE Forensics/IEEE-Forensics-2014.git/trunk/Figs/dist_IV_off.pdf
->] [8 <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Forensics/IEEE-Forensics-201
-4.git/trunk/Figs/dist_GMM_corr_iPhone.pdf> <C:/Users/Artur/Documents/Dropbox/14
- 06 IEEE Forensics/IEEE-Forensics-2014.git/trunk/Figs/dist_GMM_T_corr_iPhone.pd
-f> <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Forensics/IEEE-Forensics-2014.g
-it/trunk/Figs/DET_IV_ss_vc_rp.png> <C:/Users/Artur/Documents/Dropbox/14 06 IEEE
- Forensics/IEEE-Forensics-2014.git/trunk/Figs/Scores_cohort.png (PNG copy)>]
-<Figs/DET_IVPLDA_counter_iPad.pdf, id=212, 578.16pt x 563.70598pt>
+ [8 <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Forensics/IEEE-Forensics-2014.
+git/trunk/Figs/dist_GMM_corr_iPhone.pdf> <C:/Users/Artur/Documents/Dropbox/14 0
+6 IEEE Forensics/IEEE-Forensics-2014.git/trunk/Figs/dist_GMM_T_corr_iPhone.pdf>
+ <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Forensics/IEEE-Forensics-2014.git
+/trunk/Figs/DET_IV_ss_vc_rp.png>]
+<Figs/DET_IVPLDA_counter_iPad.pdf, id=213, 578.16pt x 563.70598pt>
 File: Figs/DET_IVPLDA_counter_iPad.pdf Graphic file (type pdf)
 
 <use Figs/DET_IVPLDA_counter_iPad.pdf>
-Package pdftex.def Info: Figs/DET_IVPLDA_counter_iPad.pdf used on input line 21
-9.
+Package pdftex.def Info: Figs/DET_IVPLDA_counter_iPad.pdf used on input line 24
+1.
 (pdftex.def)             Requested size: 252.0pt x 245.70041pt.
 )
 ("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
 \trunk\conclusions.tex")
 ("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
 \trunk\IEEE_Forensics.bbl" [9 <C:/Users/Artur/Documents/Dropbox/14 06 IEEE Fore
-nsics/IEEE-Forensics-2014.git/trunk/Figs/DET_IVPLDA_counter_iPad.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 214--216
+nsics/IEEE-Forensics-2014.git/trunk/Figs/Scores_cohort.png (PNG copy)> <C:/User
+s/Artur/Documents/Dropbox/14 06 IEEE Forensics/IEEE-Forensics-2014.git/trunk/Fi
+gs/DET_IVPLDA_counter_iPad.pdf>] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
 []\OT1/ptm/m/n/8 A. Brown, ``Aaron brown sound web page,''
  []
 
-) [10]
+) [11
+
+]
 ("C:\Users\Artur\Documents\Dropbox\14 06 IEEE Forensics\IEEE-Forensics-2014.git
 \trunk\IEEE_Forensics.aux") ) 
 Here is how much of TeX's memory you used:
- 3075 strings out of 494045
- 53357 string characters out of 3148387
+ 3078 strings out of 494045
+ 53391 string characters out of 3148386
  119922 words of memory out of 3000000
- 6339 multiletter control sequences out of 15000+200000
+ 6342 multiletter control sequences out of 15000+200000
  39736 words of font info for 73 fonts, out of 3000000 for 9000
  718 hyphenation exceptions out of 8191
  36i,13n,38p,1286b,329s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -402,9 +407,9 @@ a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on IEEE_Forensics.pdf (10 pages, 680694 bytes).
+Output written on IEEE_Forensics.pdf (11 pages, 683851 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
+ 268 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
