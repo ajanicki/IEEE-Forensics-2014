@@ -100,6 +100,12 @@ J.~Yamagishi, T.~Kobayashi, Y.~Nakano, K.~Ogata, and J.~Isogai, ``Analysis of
   a {C}onstrained {SMAPLR} {A}daptation {A}lgorithm,'' \emph{IEEE transactions
   on Audio, Speech \& Language Processing}, vol.~17, no.~1, pp. 66--83, 2009.
 
+\bibitem{Pellom1999}
+B.~Pellom and J.~Hansen, ``An experimental study of speaker verification
+  sensitivity to computer voice-altered imposters,'' in \emph{Proc. IEEE Int.
+  Conf. Acoust., Speech and Signal Process. (ICASSP)}, vol.~2, 1999, pp.
+  837--840.
+
 \bibitem{Matrouf2005}
 D.~Matrouf, J.-F. Bonastre, and J.-P. Costa, ``Effect of impostor speech
   transformation on automatic speaker recognition,'' \emph{Biometrics on the
@@ -115,11 +121,11 @@ Z.~Wu, S.~Gao, E.~S. Chng, and H.~Li, ``A study on replay attack and
   anti-spoofing for text-dependent speaker verification,'' in \emph{Proc.
   APSIPA ASC 2014}, 2014.
 
-\bibitem{Alegre2014a}
+\bibitem{Alegre2014}
 F.~Alegre, A.~Janicki, and N.~Evans, ``Re-assessing the threat of replay
   spoofing attacks against automatic speaker verification,'' in \emph{Proc.
   International Conference of the Biometrics Special Interest Group (BIOSIG
-  2014)}, September 2014.
+  2014)}, 2014, (submitted).
 
 \bibitem{Petrovska1998}
 D.~Petrovska-Delacr\'{e}taz and J.~Hennebert, ``Text-prompted speaker
@@ -152,6 +158,24 @@ T.~Ojala, M.~Pietikainen, and T.~Maenpaa, ``Multiresolution gray-scale and
   \emph{Transactions on Pattern Analysis and Machine Intelligence}, vol.~24,
   no.~7, pp. 971--987, 2002.
 
+\bibitem{Khoury2013a}
+E.~Khoury, B.~Vesnicer, J.~Franco-Pedroso, R.~Violato, Z.~Boulkcnafet,
+  L.~Mazaira~Fernandez, M.~Diez, J.~Kosmala, H.~Khemiri, T.~Cipr, R.~Saeidi,
+  M.~Gunther, J.~Zganec-Gros, R.~Candil, F.~Simoes, M.~Bengherabi,
+  A.~Alvarez~Marquina, M.~Penagarikano, A.~Abad, M.~Boulayemen, P.~Schwarz,
+  D.~Van~Leeuwen, J.~Gonzalez-Dominguez, M.~Neto, E.~Boutellaa, P.~Gomez~Vilda,
+  A.~Varona, D.~Petrovska-Delacretaz, P.~Matejka, J.~Gonzalez-Rodriguez,
+  T.~Pereira, F.~Harizi, L.~Rodriguez-Fuentes, L.~El~Shafey, M.~Angeloni,
+  G.~Bordel, G.~Chollet, and S.~Marcel, ``The 2013 speaker recognition
+  evaluation in mobile environment,'' in \emph{Biometrics (ICB), 2013
+  International Conference on}, June 2013, pp. 1--8.
+
+\bibitem{Roy2012}
+A.~Roy, M.~Magimai-Doss, and S.~Marcel, ``A fast parts-based approach to
+  speaker verification using boosted slice classifiers,'' \emph{Information
+  Forensics and Security, IEEE Transactions on}, vol.~7, no.~1, pp. 241--254,
+  Feb 2012.
+
 \bibitem{Campbell2006}
 W.~M. Campbell, D.~Sturim, D.~A. Reynolds, and A.~Solomonoff, ``Svm based
   speaker verification using a gmm supervector kernel and nap variability
@@ -178,6 +202,12 @@ P.~Li, Y.~Fu, U.~Mohammed, J.~Elder, and S.~Prince, ``Probabilistic models for
 D.~Garcia-Romero and C.~Y. Espy-Wilson, ``Analysis of i-vector length
   normalization in speaker recognition systems,'' in \emph{International
   Conference on Speech Communication and Technology}, 2011, pp. 249--252.
+
+\bibitem{McLaren2010}
+M.~McLaren, R.~Vogt, B.~Baker, and S.~Sridharan, ``A comparison of session
+  variability compensation approaches for speaker verification,''
+  \emph{Information Forensics and Security, IEEE Transactions on}, vol.~5,
+  no.~4, pp. 802--809, Dec 2010.
 
 \bibitem{Kenny2010}
 P.~Kenny, ``Bayesian speaker verification with heavy-tailed priors,'' in
@@ -225,6 +255,15 @@ J.-F. Bonastre, N.~Scheffer, C.~Fredouille, and D.~Matrouf, ``{NIST}'04 speaker
   recognition evaluation campaign: new {LIA} speaker detection platform based
   on {ALIZE} toolkit,'' in \emph{NIST SRE'04}, 2004.
 
+\bibitem{Johnson2010}
+P.~Johnson, B.~Tan, and S.~Schuckers, ``Multimodal fusion vulnerability to
+  non-zero effort (spoof) imposters,'' in \emph{Information Forensics and
+  Security (WIFS), 2010 IEEE International Workshop on}, Dec 2010, pp. 1--5.
+
+\bibitem{Wester2010}
+M.~Wester, ``The {EMIME} bilingual database,'' The University of Edinburgh,
+  Tech. Rep., 2010.
+
 \bibitem{Brown2014}
 A.~Brown, ``Aaron brown sound web page,'' http://www.aaronbrownsound.com/, Apr
   2014.
@@ -235,9 +274,5 @@ M.~Jeub, M.~Sch\"{a}fer, and P.~Vary, ``A binaural room impulse response
   \emph{Proceedings of the 16th International Conference on Digital Signal
   Processing}, ser. DSP'09.\hskip 1em plus 0.5em minus 0.4em\relax Piscataway,
   NJ, USA: IEEE Press, 2009, pp. 550--554.
-
-\bibitem{Wester2010}
-M.~Wester, ``The {EMIME} bilingual database,'' The University of Edinburgh,
-  Tech. Rep., 2010.
 
 \end{thebibliography}
