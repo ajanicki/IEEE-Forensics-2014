@@ -26,11 +26,6 @@ N.~Evans, T.~Kinnunen, and J.~Yamagishi, ``Spoofing and countermeasures for
   automatic speaker verification,'' in \emph{Proc. Interspeech 2013}, Lyon,
   France, 2013.
 
-\bibitem{handbookChapter}
-N.~Evans, T.~Kinnunen, J.~Yamagishi, Z.~Wu, F.~Alegre, and P.~L.~D. Leon,
-  \emph{Speaker recognition anti-spoofing}, S.~Marcel, S.~Li, and M.~Nixon,
-  Eds.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2014.
-
 \bibitem{Wu2014a}
 Z.~Wu, N.~Evans, T.~Kinnunen, J.~Yamagishi, F.~Alegre, and H.~Li, ``Spoofing
   and countermeasures for speaker verification: a survey,'' \emph{Speech
@@ -62,10 +57,11 @@ P.~Perrot, G.~Aversano, R.~Blouet, M.~Charbit, and G.~Chollet, ``Voice forgery
   Int. Conf. Acoust., Speech and Signal Process. (ICASSP)}, vol.~1, 2005, pp.
   17 -- 20.
 
-\bibitem{Bonastre2007}
-J.-F. Bonastre, D.~Matrouf, and C.~Fredouille, ``Artificial impostor voice
-  transformation effects on false acceptance rates,'' in \emph{Proc.
-  Interspeech}, 2007, pp. 2053--2056.
+\bibitem{Pellom1999}
+B.~Pellom and J.~Hansen, ``An experimental study of speaker verification
+  sensitivity to computer voice-altered imposters,'' in \emph{Proc. IEEE Int.
+  Conf. Acoust., Speech and Signal Process. (ICASSP)}, vol.~2, 1999, pp.
+  837--840.
 
 \bibitem{Masuko1999}
 T.~Masuko, T.~Hitotsumatsu, K.~Tokuda, and T.~Kobayashi, ``On the security of
@@ -100,21 +96,25 @@ J.~Yamagishi, T.~Kobayashi, Y.~Nakano, K.~Ogata, and J.~Isogai, ``Analysis of
   a {C}onstrained {SMAPLR} {A}daptation {A}lgorithm,'' \emph{IEEE transactions
   on Audio, Speech \& Language Processing}, vol.~17, no.~1, pp. 66--83, 2009.
 
-\bibitem{Pellom1999}
-B.~Pellom and J.~Hansen, ``An experimental study of speaker verification
-  sensitivity to computer voice-altered imposters,'' in \emph{Proc. IEEE Int.
-  Conf. Acoust., Speech and Signal Process. (ICASSP)}, vol.~2, 1999, pp.
-  837--840.
-
 \bibitem{Matrouf2005}
 D.~Matrouf, J.-F. Bonastre, and J.-P. Costa, ``Effect of impostor speech
   transformation on automatic speaker recognition,'' \emph{Biometrics on the
   Internet}, p.~37, 2005.
 
+\bibitem{Bonastre2007}
+J.-F. Bonastre, D.~Matrouf, and C.~Fredouille, ``Artificial impostor voice
+  transformation effects on false acceptance rates,'' in \emph{Proc.
+  Interspeech}, 2007, pp. 2053--2056.
+
 \bibitem{Bonastre2006}
-J.-F. Bonastre, D.~Matrouf, and C.~Fredouille, ``Transfer function-based voice
-  transformation for speaker recognition,'' in \emph{Proc. {IEEE ODYSSEY} - The
-  Speaker and Language Recognition Workshop}, 2006, pp. 1--6.
+------, ``Transfer function-based voice transformation for speaker
+  recognition,'' in \emph{Proc. {IEEE ODYSSEY} - The Speaker and Language
+  Recognition Workshop}, 2006, pp. 1--6.
+
+\bibitem{handbookChapter}
+N.~Evans, T.~Kinnunen, J.~Yamagishi, Z.~Wu, F.~Alegre, and P.~L.~D. Leon,
+  \emph{Speaker recognition anti-spoofing}, S.~Marcel, S.~Li, and M.~Nixon,
+  Eds.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2014.
 
 \bibitem{Wu2014}
 Z.~Wu, S.~Gao, E.~S. Chng, and H.~Li, ``A study on replay attack and

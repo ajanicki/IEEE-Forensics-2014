@@ -3,37 +3,36 @@
 
 Spoofing refers to the presentation of a falsified or manipulated sample 
 to the sensor of a biometric system in order to provoke a high score and 
-thus illegitimate acceptance.
+thus illegitimate verification.
 In recent years, the automatic speaker verification (ASV) community has 
 started to investigate spoofing and countermeasures 
-actively~\cite{interspeechSpecialSession, handbookChapter, Wu2014a}. 
+actively~\cite{interspeechSpecialSession, Wu2014a}. 
 A growing 
 body of independent work has now demonstrated the vulnerability of ASV 
 systems to spoofing through 
 replayed speech~\cite{Lindberg1999,Villalba2010},
 impersonation~\cite{Blomberg2004,Farrus2008}, voice 
-conversion~\cite{Perrot2005, Bonastre2007}, speech 
+conversion~\cite{Perrot2005, Pellom1999}, speech 
 synthesis~\cite{Masuko1999, Leon2010} and attacks with non-speech, 
 artificial, tone-like signals~\cite{Alegre2012b}.
 
-Common to the bulk of previous work is the consideration of attacks 
+Common to the bulk of previous work is a focus on attacks 
 which require either specific skills, e.g.~impersonation, or high-level 
 technology, e.g.~speech synthesis and voice conversion. 
 Only replay attacks can be performed with ease, requiring no specialist 
-knowledge or expertise.  Since they are the most easily 
+expertise nor equipment.  Since they are the most easily 
 implemented, it is natural to assume that replay attacks will be the 
 most commonly encountered in practice.  Nonetheless, the threat of 
-replay attacks has neither been quantified using large, standard 
-datasets nor compared to that of other attacks which, until now, have 
-received considerably more attention in the literature.
+replay attacks has not been quantified using large, standard 
+datasets and hence never compared to that of other attacks which, have 
+received considerably greater attention in the literature.
 With replay attacks being considerably the easiest to implement
 and with discreet, high quality audio equipment now available to the masses,
-it is the hypothesis in this article that replay attacks merit
-considerably greater attention.
-This paper accordingly aims to re-assess ASV vulnerabilities 
-to replay attacks using the same ASV systems and corpora used in 
+replay attacks also merit attention.
+This paper accordingly aims to assess ASV vulnerabilities 
+to replay attacks using the same ASV systems and base corpora used in 
 previous assessments involving voice conversion and speech synthesis 
-spoofing attacks.  In addition the paper investigates the effectiveness of 
+spoofing attacks.  In addition, the paper investigates the effectiveness of 
 new countermeasures which aim to distinguish between genuine and replayed speech.  
 
-The paper is organised as follows.  Section~2 describes various attacks on speaker verification systems and compares replay with speech synthesis and voice conversion. Section~3 presents previous research on countermeasures against replay attack and states the aim of the current work. A common experimental setup in which the vulnerabilities of seven different ASV systems are investigated, as well as setup of the examined countermeasures are presented in Section~4. Results are presented in Section~5 and our conclusions and ideas for future works are presented in Section~6.
+The paper is organised as follows.  Section~2 describes speech synthesis and voice conversion spoofing attacks with a comparison to replay attacks. Section~3 presents previous and ongoing work to develop countermeasures against replay attacks, including our own work using the local binary pattern analysis of speech spectrograms.  A common experimental framework for the assessment of both vulnerabilities and countermeasures is presented in Section~4. Results are presented in Section~5 and our conclusions and ideas for future works are presented in Section~6.
