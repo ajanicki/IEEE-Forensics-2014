@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.17)  22 JAN 2015 13:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.17)  22 JAN 2015 17:10
 entering extended mode
 **IEEE_Forensics.tex
 (\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\IEEE_Forensics.tex
@@ -211,34 +211,36 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 1.
 
-Underfull \hbox (badness 1968) in paragraph at lines 14--15
-[]\OT1/ptm/m/n/10 State-of-the-art text-to-speech sys-tems use ei-ther unit-
- []
-
 [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 16.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 16.
+Underfull \hbox (badness 1377) in paragraph at lines 12--13
+\OT1/ptm/m/n/10 ex-tracted or learned from a tar-get speaker $\OML/cmm/m/it/10 
+x\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )$\OT1/ptm/m/n/10 . While
+ []
 
-<Figs/replay.png, id=14, 726.46407pt x 133.24782pt>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 14.
+<Figs/replay.png, id=9, 726.46407pt x 133.24782pt>
 File: Figs/replay.png Graphic file (type png)
  <use Figs/replay.png>
-Package pdftex.def Info: Figs/replay.png used on input line 88.
+Package pdftex.def Info: Figs/replay.png used on input line 81.
 (pdftex.def)             Requested size: 252.0pt x 46.22063pt.
 
-[2 <//homes/evans/pub/latex/IEEE-Forensics-2014/trunk/Figs/replay.png>])
-(\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\aim_of_the_work.tex
-<Figs/LBPfeature.pdf, id=23, 1149.29375pt x 274.02374pt>
+[2]) (\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\aim_of_the_work.tex
+<Figs/LBPfeature.pdf, id=21, 1149.29375pt x 274.02374pt>
 File: Figs/LBPfeature.pdf Graphic file (type pdf)
 
 <use Figs/LBPfeature.pdf>
 Package pdftex.def Info: Figs/LBPfeature.pdf used on input line 7.
 (pdftex.def)             Requested size: 516.0pt x 123.02939pt.
- [3])
+ [3 <//homes/evans/pub/latex/IEEE-Forensics-2014/trunk/Figs/replay.png>]
+Underfull \vbox (badness 1577) has occurred while \output is active []
+
+)
 (\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\ASVs.tex [4 <//homes/evans/p
 ub/latex/IEEE-Forensics-2014/trunk/Figs/LBPfeature.pdf>]
 Underfull \hbox (badness 4981) in paragraph at lines 8--9
@@ -340,13 +342,6 @@ File: Figs/DETs_IV_ss_vc_rp.pdf Graphic file (type pdf)
 <use Figs/DETs_IV_ss_vc_rp.pdf>
 Package pdftex.def Info: Figs/DETs_IV_ss_vc_rp.pdf used on input line 85.
 (pdftex.def)             Requested size: 252.0pt x 245.70041pt.
-
-<Figs/Scores_cohort.png, id=123, 446.41782pt x 359.09157pt>
-File: Figs/Scores_cohort.png Graphic file (type png)
-
-<use Figs/Scores_cohort.png>
-Package pdftex.def Info: Figs/Scores_cohort.png used on input line 106.
-(pdftex.def)             Requested size: 252.0pt x 202.70628pt.
  [8 <//homes/evans/pub/latex/IEEE-Forensics-2014/trunk/Figs/dist_GMM_corr_iPhon
 e.pdf> <//homes/evans/pub/latex/IEEE-Forensics-2014/trunk/Figs/dist_GMM_T_corr_
 iPhone.pdf
@@ -354,10 +349,22 @@ iPhone.pdf
 pdfTeX warning: pdflatex (file //homes/evans/pub/latex/IEEE-Forensics-2014/trun
 k/Figs/dist_GMM_T_corr_iPhone.pdf): PDF inclusion: multiple pdfs with page grou
 p included in a single page
->] [9 <//homes/evans/pub/latex/IEEE-Forensics-2014/trunk/Figs/DETs_IV_ss_vc_rp.
-pdf> <//homes/evans/pub/latex/IEEE-Forensics-2014/trunk/Figs/Scores_cohort.png 
-(PNG copy)>]
-<Figs/DET_IVPLDA_counter_iPad.pdf, id=220, 578.16pt x 563.70598pt>
+> <//homes/evans/pub/latex/IEEE-Forensics-2014/trunk/Figs/DETs_IV_ss_vc_rp.pdf
+
+pdfTeX warning: pdflatex (file //homes/evans/pub/latex/IEEE-Forensics-2014/trun
+k/Figs/DETs_IV_ss_vc_rp.pdf): PDF inclusion: multiple pdfs with page group incl
+uded in a single page
+>] <Figs/Scores_cohort.png, id=215, 446.41782pt x 359.09157pt>
+File: Figs/Scores_cohort.png Graphic file (type png)
+
+<use Figs/Scores_cohort.png>
+Package pdftex.def Info: Figs/Scores_cohort.png used on input line 106.
+(pdftex.def)             Requested size: 252.0pt x 202.70628pt.
+
+Underfull \vbox (badness 1466) has occurred while \output is active []
+
+
+<Figs/DET_IVPLDA_counter_iPad.pdf, id=216, 578.16pt x 563.70598pt>
 File: Figs/DET_IVPLDA_counter_iPad.pdf Graphic file (type pdf)
 
 <use Figs/DET_IVPLDA_counter_iPad.pdf>
@@ -365,7 +372,8 @@ Package pdftex.def Info: Figs/DET_IVPLDA_counter_iPad.pdf used on input line 20
 9.
 (pdftex.def)             Requested size: 252.0pt x 245.70041pt.
 )
-(\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\conclusions.tex)
+(\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\conclusions.tex [9 <//homes/
+evans/pub/latex/IEEE-Forensics-2014/trunk/Figs/Scores_cohort.png (PNG copy)>])
 (\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\IEEE_Forensics.bbl [10 <//ho
 mes/evans/pub/latex/IEEE-Forensics-2014/trunk/Figs/DET_IVPLDA_counter_iPad.pdf>
 ]
@@ -376,13 +384,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 268--270
 ) [11] (\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\IEEE_Forensics.aux) )
  
 Here is how much of TeX's memory you used:
- 3085 strings out of 493921
- 52306 string characters out of 3148078
+ 3086 strings out of 493921
+ 52312 string characters out of 3148078
  119063 words of memory out of 3000000
  6350 multiletter control sequences out of 15000+200000
- 39736 words of font info for 73 fonts, out of 3000000 for 9000
+ 40843 words of font info for 74 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
- 36i,13n,38p,1286b,329s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,9n,38p,1339b,329s stack positions out of 5000i,500n,10000p,200000b,50000s
 {c:/Packages/texmf2.9.4503/fonts/enc/dvips/fontname/8r.enc}<c:/Packages/texmf2.
 9.4503/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Packages/texmf2.9.4503/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Packages/texmf2.9.4503/fonts/type1/p
@@ -395,9 +403,9 @@ fonts/type1/urw/helvetic/uhvr8a.pfb><c:/Packages/texmf2.9.4503/fonts/type1/urw/
 times/utmb8a.pfb><c:/Packages/texmf2.9.4503/fonts/type1/urw/times/utmbi8a.pfb><
 c:/Packages/texmf2.9.4503/fonts/type1/urw/times/utmr8a.pfb><c:/Packages/texmf2.
 9.4503/fonts/type1/urw/times/utmri8a.pfb>
-Output written on IEEE_Forensics.pdf (11 pages, 453902 bytes).
+Output written on IEEE_Forensics.pdf (11 pages, 455241 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
+ 271 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

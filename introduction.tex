@@ -35,4 +35,17 @@ previous assessments involving voice conversion and speech synthesis
 spoofing attacks.  In addition, the paper investigates the effectiveness of 
 new countermeasures which aim to distinguish between genuine and replayed speech.  
 
+
+============
+
+To be merged with the above:
+
+While a great deal of attention has been paid to medium- and high-effort spoofing attacks (reviews of which can be found in~\cite{Wu2014a,handbookChapter}), only few studies have addressed replay.  
+The work in~\cite{Lindberg1999} assessed the vulnerabilities of an HMM-based, text-dependent ASV system with concatenated digits.  
+While results showed that replay attacks are highly effective, experiments were conducted with data collected from only two speakers.
+The work in~\cite{Villalba2010} investigated replay using recordings which were collected with close-talk or far-field microphones and then replayed over an analogue or digital telephony channel. 
+The work was conducted with a similarly small corpus with five speakers and showed that a joint factor analysis (JFA) ASV system was vulnerable to replay attacks -- the FAR at the EER threshold increased from 1\% to almost 70\%. The authors in~\cite{Wu2014} investigated a text-dependent ASV system exposed to speech played back from a laptop. Using the RSR2015 corpus the authors showed that the EER increased from around 4\% to more than 20\%.
+
+==========
+
 The paper is organised as follows.  Section~2 describes speech synthesis and voice conversion spoofing attacks with a comparison to replay attacks. Section~3 presents previous and ongoing work to develop countermeasures against replay attacks, including our own work using the local binary pattern analysis of speech spectrograms.  A common experimental framework for the assessment of both vulnerabilities and countermeasures is presented in Section~4. Results are presented in Section~5 and our conclusions and ideas for future works are presented in Section~6.
