@@ -1,4 +1,6 @@
-This section summarises our own approaches to assess the vulnerabilities of ASV systems to different forms of spoofing attack and the . In general, all these methods generate a spoofed speech signal $s(t)$ given the speech signal of target speaker $x(t)$.  Whereas the input to a speech synthesis system is a text string, that to voice conversion and replay attacks originates from an independent input speech signal $y(t)$.  %The section is concluded with stating motivation and aim of the current research. 
+This section summarises our own approaches to assess the vulnerabilities of ASV systems to different forms of spoofing attack and the . In general, all these methods generate a spoofed speech signal $s(t)$ given the speech signal of target speaker $x(t)$.  Whereas the input to a speech synthesis system is a text string, that to voice conversion and replay attacks originates from an independent input speech signal $y(t)$.  
+
+
 
 \subsection{Speech synthesis}
 
@@ -79,7 +81,7 @@ s(t) = x(t)*h(t),
 
 \begin{figure}
 	\includegraphics[width=1\linewidth]{Figs/replay.png}
-	\caption{A schematic diagram of the assumed replay attack configuration. {\bfseries <<< Increase font size!! >>>}}
+	\caption{A schematic diagram of the assumed replay attack configuration. {\bfseries <<< Increase font sizes in the figure >>>}}
 	\label{fig::Replay}
 \end{figure}
 
@@ -93,7 +95,6 @@ h(t) = mic(t) * a(t) * spk(t) * b(t)
 
 
 
-
 \subsection{Qualitative comparison}
 \label{sec::algorithms::comparison}
 
@@ -101,7 +102,4 @@ Replay, voice conversion and speech synthesis spoofing are forms of \emph{concer
 
 Compared to na\"{i}ve impostor attacks, replay attacks require slightly increased effort; they require recording and replaying. Voice conversion and speech synthesis attacks require specialised, often complex algorithms, in addition to nay recording hardware to collect, analyse and parametrise the target and any other auxiliary speech data.  They belong to a class of higher-effort spoofing attacks.  While voice conversion is based upon the conversion of one speech signal to another, speech synthesis converts a text string to a speech signal, which requires a comparatively higher level of effort or expertise.
 
-One may reasonably suppose that the effectiveness of each attack is correlated with the effort involved in their implementation; the higher the effort, the greater the impact on ASV performance. However, the proof of concept presented in~\cite{Alegre2014} suggests the contrary, showing that replay attacks pose a high level of risk, being effective in overcoming an ASV system while being the easiest of all concerted-effort spoofing attacks to implement.  It is the objective of this paper to investigate these contradictory findings and to compare objectively and quantitatively the comparative threat of replay spoofing.
-
-
-%  The work in~\cite{Alegre2014} was, however, only  a proof of concept using a single replay attack setup.  The present paper investigates In contrast to~\cite{Alegre2014}, in this work we will consider nine different playback setups (instead of just one) and we will verify the effectiveness of two countermeasures against replay.
+One may reasonably suppose that the effectiveness of each attack is correlated with the effort involved in their implementation; the higher the effort, the greater the impact on ASV performance. However, the proof of concept presented in~\cite{Alegre2014} suggests the contrary, showing that replay attacks pose a high level of risk, being effective in overcoming an ASV system while being the easiest of all concerted-effort spoofing attacks to implement.  It is the objective of this paper to investigate these contradictory findings and to compare objectively and quantitatively the comparative threat of replay spoofing to those of speech synthesis and voice conversion.
