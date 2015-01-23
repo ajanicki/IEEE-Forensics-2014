@@ -1,5 +1,9 @@
 
-Attention now turns to the \emph{detection} of replay spoofing attacks.  Given that only little work has investigated ASV vulnerabilities to such attacks, it is hardly surprising that work to develop anti-spoofing countermeasures is similarly limited.  This section briefly reviews that past work and then describes two particular replay countermeasures which are explored further in this paper through comparative experiments.
+Attention now turns to the \emph{detection} of replay spoofing attacks.  Given that only little work has investigated ASV vulnerabilities to such attacks, it is hardly surprising that work to develop anti-spoofing countermeasures is similarly limited.  This section briefly reviews that past work and then describes two particular replay countermeasures which are explored further in this paper.
+
+
+
+\subsection{General approaches}
 
 One obvious approach to replay detection involves challenge-response systems which require the speaker to utter a prompted phrase~\cite{Petrovska1998}. 
 Challenge-response mechanisms are a form of passive countermeasure.
@@ -41,18 +45,25 @@ The spectral ratio reflect reflects the level of spectrum flattening or noise an
 
 \begin{figure*}
 	\includegraphics[width=1\linewidth]{Figs/LBPfeature.pdf}
-	\caption{Schematic diagram of LBP-based feature extraction.}
+	\caption{Schematic diagram of LBP-based feature extraction.{\bfseries Can you hyphenate antispoofing?  I also suggest to reduce the size of the speech utterance and feature extraction arrow in order that you can increase the size of the textrogram, histograms and fontsizes.  Possibly, remove the speech utterance and feature extraction arros entirely.}}
 	\label{fig:LBPfeature}
 \end{figure*}
 
 
-Another method, proposed in~\cite{Alegre2013a}, uses local binary patterns (LBP) technique. It is based on the hypothesis that modifications made through spoofing disturb the natural 'texture' of genuine speech. This technique was adopted from a standard texture analysis approach, known in image processing~\cite{Ojala2002}, to a 2-dimensional 'image' of a speech utterance, where the image is a mel-scaled cepstrogram appended with dynamic features. 
+The approach to replay detection proposed in~\cite{Alegre2014} is based on the local binary pattern (LBP) analysis of speech spectrograms.  
+Inspired by the original application to image texture analysis~\cite{Ojala2002}, the idea was introduced as an ASV spoofing countermeasure in~\cite{Alegre2013a}.  
+As illustrated in Fig.~\ref{fig:LBPfeature}, LBP analysis is applied to a mel-scaled cepstrogram with appended dynamic features.  Modifications made through spoofing are assumed to disturb the natural `texture' of genuine speech, attributes which are readily detected with LBP.   
 
-The standard LBP operator is a non-parametric 3x3 kernel which assigns a binary code to each pixel in an image according to the comparison of its intensity value to that of its eight surrounding pixels~\cite{Ojala2002}. This procedure is illustrated in Fig.~\ref{fig:LBPfeature}.  A binary value of '1' is assigned when the intensity of neighbouring pixels (here feature components) is higher, whereas a value of '0' is assigned when neighbouring pixels are of lower or equal intensity. Each pixel is thus assigned one of $2^8=256$ binary patterns.
+The standard LBP operator is a non-parametric 3x3 kernel which assigns a binary code to each pixel in an image according to the comparison of its intensity value to that of its eight surrounding pixels~\cite{Ojala2002}. 
+A binary value of 1 is assigned when the intensity of neighbouring pixels (here feature components) is higher, whereas a value of 0 is assigned when neighbouring pixels are of lower or equal intensity. Each pixel is thus assigned one of $2^8=256$ binary patterns.
 
-LBPs are determined for each pixel in the mel-scaled cepstrogram thus resulting in a new matrix of reduced dynamic range, here referred to as a 'textrogram'.  The textrogram captures short-time feature motion beyond that in conventional dynamic parametrisation.  The LBP-based countermeasure is based on concatenated histograms formed from the pixel values across each row in the textrogram.  The histograms are individually normalised and their resulting bin values are stacked vertically to obtain a new vector in the same manner as GMM mean-vectors are stacked to form supervectors.  
+LBPs are determined for each pixel in the mel-scaled cepstrogram thus resulting in a new matrix of reduced dynamic range, here referred to as a \emph{textrogram}.  
+The textrogram captures short-time feature motion beyond that in conventional dynamic parametrisations.  
+Normalised histograms of pixel values constructed for each row of the textrogram   are stacked vertically to obtain the anti-spoofing feature vector in the same manner as GMM mean-vectors are stacked to form supervectors.  
+{\bfseries What classifier - how are the anti-spoofing feature vectors used?}
+Experimental results presented in~\cite{Alegre2013a} showed that the LBP-based textrogram analysis is effective in detecting a range of spoofed speech signals, including artificial signals~\cite{Alegre2012a,Alegre2012b} and speech synthesis (EERs of below 1\%) while less effective in detecting voice conversion (EER in the order of 7\%).
 
-This method turned out to be  highly effective for artificial signals, yielding 0\% EER for the five tested ASVs, very effective for speech synthesis attacks (EER values below 1\%) and quite effective for voice conversion -- EERs less than 7\%. Considering the fact that the LBP-based countermeasure hardly relies on prior knowledge on the attack, in this work we decided to try to use it also as a countermeasure against replay attacks.
+%Considering the fact that the LBP-based countermeasure hardly relies on prior knowledge on the attack, in this work we decided to try to use it also as a countermeasure against replay attacks.
 
 
 

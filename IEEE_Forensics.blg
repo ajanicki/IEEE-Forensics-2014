@@ -15,6 +15,10 @@ Repeated entry---line 1541 of file IEEE_forensics.bib
  : @inproceedings{Alegre2012b
  :                           ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 1561 of file IEEE_forensics.bib
+ : @inproceedings{Alegre2012a
+ :                           ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 1599 of file IEEE_forensics.bib
  : @article{Auckenthaler2000
  :                          ,
@@ -165,4 +169,4 @@ I'm skipping whatever remains of this entry
 Warning--empty booktitle in Alegre2013a
 
 Done.
-(There were 39 error messages)
+(There were 40 error messages)

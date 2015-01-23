@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.17)  23 JAN 2015 14:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.17)  23 JAN 2015 16:02
 entering extended mode
 **IEEE_Forensics.tex
 (\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\IEEE_Forensics.tex
@@ -231,16 +231,16 @@ Package pdftex.def Info: Figs/replay.png used on input line 83.
 (pdftex.def)             Requested size: 252.0pt x 46.22063pt.
 )
 (\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\aim_of_the_work.tex
-Underfull \hbox (badness 5189) in paragraph at lines 4--7
+Underfull \hbox (badness 5189) in paragraph at lines 8--11
 []\OT1/ptm/m/n/10 One ob-vi-ous ap-proach to re-play de-tec-tion in-volves
  []
 
 [3 <//homes/evans/pub/latex/IEEE-Forensics-2014/trunk/Figs/replay.png>]
-<Figs/LBPfeature.pdf, id=26, 1149.29375pt x 274.02374pt>
+<Figs/LBPfeature.pdf, id=25, 1149.29375pt x 274.02374pt>
 File: Figs/LBPfeature.pdf Graphic file (type pdf)
 
 <use Figs/LBPfeature.pdf>
-Package pdftex.def Info: Figs/LBPfeature.pdf used on input line 43.
+Package pdftex.def Info: Figs/LBPfeature.pdf used on input line 47.
 (pdftex.def)             Requested size: 516.0pt x 123.02939pt.
 )
 (\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\ASVs.tex
@@ -261,7 +261,7 @@ Package pdftex.def Info: Figs/Room_IRs.png used on input line 25.
 (pdftex.def)             Requested size: 252.0pt x 183.22969pt.
 )
 (\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\datasets.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1097) has occurred while \output is active []
 
  [5 <//homes/evans/pub/latex/IEEE-Forensics-2014/trunk/Figs/LBPfeature.pdf> <//
 homes/evans/pub/latex/IEEE-Forensics-2014/trunk/Figs/IRs.png (PNG copy)> <//hom
@@ -375,7 +375,7 @@ Package pdftex.def Info: Figs/DET_IVPLDA_counter_iPad.pdf used on input line 20
 (\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\IEEE_Forensics.bbl [10 <//ho
 mes/evans/pub/latex/IEEE-Forensics-2014/trunk/Figs/DET_IVPLDA_counter_iPad.pdf>
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 268--270
+Underfull \hbox (badness 10000) in paragraph at lines 272--274
 []\OT1/ptm/m/n/8 A. Brown, ``Aaron brown sound web page,''
  []
 
@@ -384,10 +384,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 268--270
 ]
 (\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\IEEE_Forensics.aux) ) 
 Here is how much of TeX's memory you used:
- 3086 strings out of 493921
- 52312 string characters out of 3148078
+ 3087 strings out of 493921
+ 52325 string characters out of 3148078
  120063 words of memory out of 3000000
- 6350 multiletter control sequences out of 15000+200000
+ 6351 multiletter control sequences out of 15000+200000
  40843 words of font info for 74 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
  36i,9n,38p,1339b,329s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -404,7 +404,7 @@ ype1/urw/helvetic/uhvr8a.pfb><c:/Packages/texmf2.9.4503/fonts/type1/urw/times/u
 tmb8a.pfb><c:/Packages/texmf2.9.4503/fonts/type1/urw/times/utmbi8a.pfb><c:/Pack
 ages/texmf2.9.4503/fonts/type1/urw/times/utmr8a.pfb><c:/Packages/texmf2.9.4503/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on IEEE_Forensics.pdf (12 pages, 456907 bytes).
+Output written on IEEE_Forensics.pdf (12 pages, 457391 bytes).
 PDF statistics:
  275 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

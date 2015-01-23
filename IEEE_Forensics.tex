@@ -297,26 +297,14 @@ speaker verification, spoofing, replay, countermeasures, local binary patterns.
 \section{Experimental setup}
 \label{sec::evaluation}
 
-Moved from Section 3.
-\subsection{Aim of this work}
-
-This paper aims at analysing threat of replay attacks when using large speaker databases and most effective speaker verification systems, and compare it with the threat of other spoofing algorithms: voice conversion and speech synthesis. The impact of acoustic environment and playback devices on performance of speaker verification systems will be also investigated. 
-
-Due to lack of real replay recordings (e.g., similar to the MOBIO corpus collected in real environment~\cite{Khoury2013a}) we had to use artificial setup of replay environment, however, using impulse responses calculated using real playback hardware and real acoustic environments. 
-
-This work will also verify the effectiveness of replay detection, using two previously described replay countermeasures: 
+In order to help prioritise future efforts, this paper aims to determine the relative threat of replay, speech synthesis and voice conversion spoofing attacks to a representative range of ASV technologies.  
+This work requires the sensible choice and adaptation of a common, large and standard corpus.  Finally, the work aims to evaluate the likely impact of different replay scenarios, i.e.\ different recording and replaying equipment and environments.
+This section describes the specific experimental setup which was used to generate all results reported in this paper.
 
 
-\begin{itemize}
-\item the far-field detector (from here on in referred to as FFD) described in~\cite{Villalba2011}, which had been shown to be effective in detecting far-field recordings, and 
-\item the local binary patterns-based detector (from here on in referred to as LBP), described in~\cite{Alegre2013a}, which yielded satisfactory results for a variety of attacks (artificial signals, speech synthesis and voice conversion).
-\end{itemize}
-
-
-Therefore, we are going to identify a relative threat of replay using the state-of-the-art ASV systems and two replay countermeasures.
-
-
-In the following we describe the ASV systems used in this study, the datasets, protocols and metrics, and then the implementation of replay emulation and implementation of the countermeasures.
+\subsection{Methodology}
+\label{subsec::evaluation::methodology}
+\input methodology
 
 
 \subsection{ASV systems}
@@ -327,6 +315,7 @@ In the following we describe the ASV systems used in this study, the datasets, p
 \subsection{Datasets, protocols and metrics}
 \label{subsec::evaluation::datasets}
 \input datasets
+
 
 
 \subsection{Voice conversion and speech synthesis setup}
