@@ -1,26 +1,24 @@
 
+Replay attacks are emulated according to the approach described in Section~\ref{ssec:replay}.
+{\bfseries Needed here is an explanation of why you ignored $mic(t)$ and $a(t)$.}  Emulations include a random mix of three different loudspeakers impulse responses $spk(t)$ and three different replay environments $b(t)$.  Speaker impulse responses were obtained from~\cite{Brown2014} and correspond to a low-quality smartphone speaker, a medium-quality tablet speaker and a high-quality standalone speaker.  The impulse response and frequency responses of each are illustrated in Fig.~\ref{fig::IRs}.  There are significant differences in the frequency responses which show in particular the high-pass functions of the lower quality devices.
+
+The first two replay environment impulse responses were obtained from~\cite{Jeub2009} and correspond to an enclosed medium-sized office and an open corridor.  The impulse and frequency responses of each are illustrated in Fig.~\ref{fig::Room_IRs}.  {\bfseries Not sure what these show??  No significant differences as far as I can see.  Consider removing them.}  The third impulse response simulates an anechoic chamber with a flat frequency response. 
 
 
-
-Since in this study (as in the majority of other studies on speaker recognition) the NIST databases are used, it implies that the telephony speech will be used. Therefore the $mic(t)$ and $a(t)$ components from the Equation~\ref{eq::playback} are already determined by the source database, and it can be simplified to:
-
-\begin{equation}
-s(t) = x(t)* spk(t) * b(t)
-\label{eq:playback_simple}
-\end{equation}
-
-To emulate replay attacks at the sensor level we need therefore to reproduce the distortions caused by a replay device ($spk(t)$) with and without the effects introduced by acoustic conditions ($b(t)$). We decided to use the following replay devices:
-
-\begin{itemize}
-\item a speaker of a popular smartphone brand, from now on in referred to as 'smartphone';
-\item a speaker of a popular tablet brand, from now on in referred to as 'tablet';
-\item a stand-alone high-quality speaker, from now on in referred to as 'stand-alone speaker'.
-\end{itemize}
-
-The impulse responses of these speakers are publicly available~\cite{Brown2014}. Together with frequency responses, they are presented in Fig.~\ref{fig::IRs}.
-
-%\footnote{http://www.aaronbrownsound.com/}.
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{Figs/IRs.png}
+	\caption{Impulse left) and frequency (right) responses for three different speakers. {\bfseries Crop graphs so that they fit the linewidth fully.  Increase font size.  Label time axes in time, not samples.}}
+	\label{fig::IRs}
+\end{figure}
 
 
-We decided to emulate two likely environments for a spoofing attack: an office room and a corridor. The corresponding impulse responses were taken from the Aachen Impulse Response (AIR) database ~\cite{Jeub2009}. We used the impulse response of the office room sized 5.00m x 6.40m x 2.90m, with glass windows, concrete walls, a carpet and typical office furniture, and the impulse response of the corridor sized 18.25m x 2.5m x 2.90m, with concrete walls, five wooden doors and one glass door. To check the impact of replay environment we also run experiments without considering the room acoustics, what would correspond to an anechoic chamber. Impulse and frequency responses of those two rooms are presented in Fig.~\ref{fig::Room_IRs}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{Figs/Room_IRs.png}
+	\caption{Impulse (left) and frequency (right) responses for two different replay environments.}
+	\label{fig::Room_IRs}
+\end{figure}
 
+
+One potential problem here: in the use case relevant to this work, voice conversion speech synthesis and replay attacks will all involve replay, and thus a particular $b(t)$, yet your experiments only consider $b(t)$ for replay.  The comparison is therefore not fair.  I suggest to remove $b(t)$ in your replay work.  In any case there is no difference between the two impulse responses.

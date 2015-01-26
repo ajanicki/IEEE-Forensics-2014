@@ -1,14 +1,16 @@
 
-All experiments reported below were performed on the male subsets of the 2005 NIST Speaker Recognition Evaluation (NIST'05) and NIST'06 datasets.  
-The former were used for optimising the ASV configurations whereas all results reported later relate to the latter.
+Experiments were performed on the male subsets of the 2004, 2005, 2006 and 2008 NIST Speaker Recognition Evaluation datasets, which are from here on referred to as NIST'0x.  
+The NIST'04 and NIST'08 datasets were used for UBM training.
+The NIST'05 dataset was used for development, whereas the NIST'06 dataset was used for evaluation;  
+only results for the latter are reported here.
+Due to the significant amount of data necessary to estimate the total variability matrix $T$ used with the IV-PLDA system, the NIST'06 dataset was added to the pool of background data for development whereas the NIST'05 dataset was used for evaluation. 
+$T$ is thus learned using approximately 11,000 utterances from 900 speakers, while independence between development and evaluation datasets is always respected.
+ 
+All experiments relate to the 8conv4w-1conv4w condition where one conversation corresponds to an average of 2.5~minutes of speech (one side of a 5 minute conversation).  
+In all cases, however, only one of the eight, randomly selected training conversations was used for enrolment.
+Results presented in this paper are thus comparable only to those in the literature for the 1conv4w-1conv4w condition. 
+Standard NIST protocols dictate in the order of 1,000 true client tests and 10,000 impostor tests for development and evaluation datasets. 
+To assess spoofing, impostor tests are replaced with spoofed versions of the original utterance, whereas genuine client trials are unchanged.
+This setup conforms to the general protocols outlined in~\cite{Wu2014a}.
 
-In all cases the data used for UBM learning comes from the NIST'04 dataset.  Due to the significant amount of data necessary to estimate the total variability matrix $T$ used in the IV-PLDA system, the NIST`06 dataset was additionally used as background data for development whereas the NIST`05 dataset was used as backgroud data for evaluation. 
-%{\bf What???}  
-In all cases the background datasets were augmented with the NIST'04 and NIST'08 datasets.  $T$ is thus learned using approximately 11,000 utterances from 900 speakers, while independence between development and evaluation experiments is always respected.
-
-%For consistency with our prior work, e.g.~\cite{Alegre2013}, 
-All experiments related to the 8conv4w-1conv4w condition where one conversation provides an average of 2.5 minutes of speech (one side of a 5 minute conversation).  In all cases, however, only one of the eight, randomly selected training conversations was used for enrolment.  Experimental results should thus be compared to those produced by other authors for the 1conv4w-1conv4w condition. Standard NIST protocols dictate in the order of 1,000 true client tests and 10,000 impostor tests for development and evaluation datasets. In our experiments with replay attacks, all genuine client tests were unchanged, whereas impostor tests were replaced with spoofed (replay) accesses. 
-
-Given the consideration of spoofing, and without any specific, standard operating criteria under such a scenario, the equal error rate (EER) is preferred to the minimum detection cost function (minDCF) for ASV assessment.  Also reported is the spoofing false acceptance rate (SFAR,~\cite{Johnson2010}) for a false rejection rate (FRR) which is fixed to the EER of the baseline.  
-
-%The countermeasure is assessed independently of ASV, also in terms of EER.  
+Given the consideration of spoofing, and without any standard operating criteria under such a scenario, the equal error rate (EER) metric is preferred to the minimum detection cost function (minDCF).  Also reported is the spoofing false acceptance rate (SFAR,~\cite{Johnson2010}) for a false rejection rate (FRR) fixed to the baseline EER.

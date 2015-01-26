@@ -30,12 +30,14 @@
 \@writefile{toc}{\contentsline {section}{\numberline {II}Spoofing speaker verification systems}{2}}
 \newlabel{sec::algorithms}{{II}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-A}}Speech synthesis}{2}}
+\newlabel{ssec:spsyn}{{\unhbox \voidb@x \hbox {II-A}}{2}}
 \newlabel{eq:tts}{{1}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-B}}Voice conversion}{2}}
 \newlabel{ssec:vconv}{{\unhbox \voidb@x \hbox {II-B}}{2}}
 \newlabel{eq:conversioneq}{{2}{2}}
 \newlabel{eq:EMit}{{3}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-C}}Replay}{2}}
+\newlabel{ssec:replay}{{\unhbox \voidb@x \hbox {II-C}}{2}}
 \citation{Wu2014a}
 \citation{Alegre2014}
 \citation{Petrovska1998}
@@ -66,57 +68,54 @@
 \citation{Khoury2013a}
 \citation{Villalba2011}
 \citation{Alegre2013a}
-\citation{Roy2012}
 \citation{Campbell2006}
 \citation{Fauve2007}
 \citation{Dehak2011}
 \citation{Li2012}
 \citation{Garcia2011}
-\citation{McLaren2010}
 \citation{Kenny2010}
 \citation{Auckenthaler2000}
-\citation{Bimbot2004}
-\citation{magrin2001}
-\citation{fauve2008}
-\citation{sahidullah2012}
 \citation{Bonastre2008}
 \citation{Bonastre2004}
 \citation{Fauve2007}
+\citation{Bimbot2004}
+\citation{magrin2001}
+\citation{fauve2008}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-C}}Local binary patterns}{4}}
 \@writefile{toc}{\contentsline {section}{\numberline {IV}Experimental setup}{4}}
 \newlabel{sec::evaluation}{{IV}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Aim of this work}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Methodology}{4}}
+\newlabel{subsec::evaluation::methodology}{{\unhbox \voidb@x \hbox {IV-A}}{4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}ASV systems}{4}}
 \newlabel{subsec::evaluation::asvSystems}{{\unhbox \voidb@x \hbox {IV-B}}{4}}
+\citation{Wu2014a}
 \citation{Johnson2010}
-\citation{Matrouf2005}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Schematic diagram of LBP-based feature extraction.{\bfseries  Can you hyphenate antispoofing? I also suggest to reduce the size of the speech utterance and feature extraction arrow in order that you can increase the size of the textrogram, histograms and fontsizes. Possibly, remove the speech utterance and feature extraction arros entirely.}\relax }}{5}}
-\newlabel{fig:LBPfeature}{{2}{5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Impulse responses (left) and corresponding frequency transmittance (right) of the three speakers used for playback emulation.\relax }}{5}}
-\newlabel{fig::IRs}{{3}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}}Datasets, protocols and metrics}{5}}
-\newlabel{subsec::evaluation::datasets}{{\unhbox \voidb@x \hbox {IV-C}}{5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Impulse responses (left) and corresponding frequency transmittance (right) of the office and the corridor used for playback emulation.\relax }}{5}}
-\newlabel{fig::Room_IRs}{{4}{5}}
 \citation{Wester2010}
 \citation{Brown2014}
 \citation{Jeub2009}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Schematic diagram of LBP-based feature extraction.{\bfseries  Can you hyphenate antispoofing? I also suggest to reduce the size of the speech utterance and feature extraction arrow in order that you can increase the size of the textrogram, histograms and fontsizes. Possibly, remove the speech utterance and feature extraction arros entirely.}\relax }}{5}}
+\newlabel{fig:LBPfeature}{{2}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}}Datasets, protocols and metrics}{5}}
+\newlabel{subsec::evaluation::datasets}{{\unhbox \voidb@x \hbox {IV-C}}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-D}}Spoofing emulation}{5}}
+\newlabel{subsec::evaluation::vcss}{{\unhbox \voidb@x \hbox {IV-D}}{5}}
 \citation{Villalba2011}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-D}}Voice conversion and speech synthesis setup}{6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-E}}Replay attack setup}{6}}
-\newlabel{eq:playback_simple}{{6}{6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-F}}Replay countermeasure setup}{6}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-F}1}FFD setup}{6}}
+\citation{Ojala2002}
+\citation{Alegre2013a}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Impulse left) and frequency (right) responses for three different speakers. {\bfseries  Crop graphs so that they fit the linewidth fully. Increase font size. Label time axes in time, not samples.}\relax }}{6}}
+\newlabel{fig::IRs}{{3}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Impulse (left) and frequency (right) responses for two different replay environments.\relax }}{6}}
+\newlabel{fig::Room_IRs}{{4}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-E}}Replay countermeasure setup}{6}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-E}1}FFD setup}{6}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces DET plots for the GMM-UBM system for various replay configurations, compared to the baseline performance.\relax }}{6}}
 \newlabel{fig::DETs_replay_GMM}{{5}{6}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces DET plots for the IV-PLDA system for various replay configurations, compared to the baseline performance.\relax }}{6}}
 \newlabel{fig::DETs_replay_IV}{{6}{6}}
-\citation{Ojala2002}
-\citation{Alegre2013a}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Score distribution for the IV-PLDA system for replay attacks using a stand-alone speaker and emulation of an office.\relax }}{7}}
 \newlabel{fig::Dist_IV}{{7}{7}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-F}2}LBP setup}{7}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-F}3}Training the replay detectors}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-E}2}LBP setup}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-E}3}Training the replay detectors}{7}}
 \@writefile{toc}{\contentsline {section}{\numberline {V}Results}{7}}
 \citation{Alegre2014}
 \@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces EER values for different ASV systems for various acoustic environment of replay attacks, with and without score normalisation. \relax }}{8}}
@@ -145,6 +144,7 @@
 \bibcite{Farrus2008}{6}
 \bibcite{Perrot2005}{7}
 \bibcite{Pellom1999}{8}
+\bibcite{Masuko1999}{9}
 \@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces EER and SFAR values for various environment of replay attacks, with and without the FFD or LBP countermeasures applied, for IV-PLDA. The SFAR was measured for FRR equal to the baseline EER (2.98\%).\relax }}{10}}
 \newlabel{tab::results_CM_rooms}{{V}{10}}
 \@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces EER and SFAR values for various replay devices used for attacks, with and without the FFD or LBP countermeasures applied, for IV-PLDA. The SFAR was measured for FRR equal to the baseline EER (2.98\%).\relax }}{10}}
@@ -154,7 +154,6 @@
 \@writefile{toc}{\contentsline {section}{\numberline {VI}Conclusions}{10}}
 \newlabel{sec::conclusions}{{VI}{10}}
 \@writefile{toc}{\contentsline {section}{References}{10}}
-\bibcite{Masuko1999}{9}
 \bibcite{Leon2010}{10}
 \bibcite{Alegre2012a}{11}
 \bibcite{Alegre2012b}{12}
@@ -196,4 +195,4 @@
 \@writefile{toc}{\contentsline {section}{Biographies}{11}}
 \@writefile{toc}{\contentsline {subsection}{Artur Janicki}{11}}
 \@writefile{toc}{\contentsline {subsection}{Federico Alegre}{11}}
-\@writefile{toc}{\contentsline {subsection}{Nicholas Evans}{12}}
+\@writefile{toc}{\contentsline {subsection}{Nicholas Evans}{11}}

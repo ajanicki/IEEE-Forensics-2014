@@ -301,39 +301,28 @@ In order to help prioritise future efforts, this paper aims to determine the rel
 This work requires the sensible choice and adaptation of a common, large and standard corpus.  Finally, the work aims to evaluate the likely impact of different replay scenarios, i.e.\ different recording and replaying equipment and environments.
 This section describes the specific experimental setup which was used to generate all results reported in this paper.
 
-
 \subsection{Methodology}
 \label{subsec::evaluation::methodology}
 \input methodology
-
 
 \subsection{ASV systems}
 \label{subsec::evaluation::asvSystems}
 \input ASVs
 
-
 \subsection{Datasets, protocols and metrics}
 \label{subsec::evaluation::datasets}
 \input datasets
 
+%\subsection{Voice conversion and speech synthesis spoofing}
+\subsection{Spoofing emulation}
+\label{subsec::evaluation::vcss}
+\input vcss
 
-
-\subsection{Voice conversion and speech synthesis setup}
-
-The experiments with attacks using voice conversion were conducted with our implementation of the approach originally proposed in~\cite{Matrouf2005}. We again considered the worst-case scenario where the attacker/spoofer has full prior knowledge of the ASV system, and so the front-end processing used in voice conversion was exactly the same as that used for ASV. The filtering model and filter $H_x(f)$ used 19 LPCC and LPC coefficients, respectively.
-
-
-Speech synthesis attacks were implemented using the voice cloning toolkit\footnote{http://homepages.inf.ed.ac.uk/jyamagis/software/page37/page37.html}
-%which is based on HTS~\cite{Zen2007} was used 
-with a default configuration.  We used standard speaker-independent models provided with the toolkit which were trained on the EMIME corpus~\cite{Wester2010}.  The adaptation data for each target speaker comprises three utterances (with transcriptions).  Speech signals for spoofing assessment are generated using arbitrary text similar in length to that of true client test utterances.
-
-
-\subsection{Replay attack setup}
+%\subsection{Replay spoofing}
 \input exper_setup
 
-\subsection{Replay countermeasure setup}
+\subsection{Countermeasures}
 \input cm_setup
-
 
 \section{Results}
 \input results
@@ -344,7 +333,7 @@ with a default configuration.  We used standard speaker-independent models provi
 \label{sec::conclusions}
 \input conclusions
 
-
+Also say that the VC and synthesis work assumes full knowledge of the ASV system.  Even if the replay doesn't assume any, it is still more of a threat.
 
 
 

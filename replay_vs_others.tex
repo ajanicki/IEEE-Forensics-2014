@@ -3,6 +3,7 @@ This section summarises our own approaches to assess the vulnerabilities of ASV 
 
 
 \subsection{Speech synthesis}
+\label{ssec:spsyn}
 
 There is a large variety of speech synthesis algorithms, such as formant, diphone, unit-selection and statistical parametric based approaches, in addition to more recent deep-neural network architectures.  Whatever the approach, the aim is to generate intelligible, natural speech for a given text string $c$. In the context of spoofing, a synthetic speech signal is generated according to:
 
@@ -63,6 +64,7 @@ x_{fil} = \sum\limits_{i=1}^{M}p(g_{asr}^{i}|y_{asr}) \mu_{fil}^{i}
 
 
 \subsection{Replay}
+\label{ssec:replay}
 
 Replay attacks are an example of low-effort spoofing; they require simply the replaying of a previously captured speech signal to the ASV microphone.  
 In the absence of suitable countermeasures and considering the widespread availability of consumer devices with high-quality sound systems, replay attacks can typically be realised with ease.  Furthermore, used either directly, or through the cutting and pasting of short speech intervals, replayed speech has potential to overcome both text-dependent and text-independent ASV systems.  Even though the processes of recording and replaying introduce additive acoustic and convolutive channel and transducer noise, these effects can be attenuated by the noise and other intersession (channel) variability compensation techniques.  All of these factors point towards the tangible threat posed by replay attacks.
