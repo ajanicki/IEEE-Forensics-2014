@@ -249,7 +249,7 @@
 % in the abstract or keywords.
 \begin{abstract}
 This article analyses the threat of spoofing or presentation attacks in 
-the context of automatic speaker verification (ASV).  The implementation of replay attacks requires no specific expertise nor any sophisticated equipment. Replay attacks may thus present a greater risk to ASV than voice conversion or speech synthesis which.  As relatively high-technology attacks, the latter are probably beyond the means of the average fraudster.  This paper compares the efficacy of each threat under controlled conditions and using seven different ASV systems including a state-of-the-art iVector system with probabilistic linear discriminant analysis.  Even if comparatively higher-effort spoofing attacks such as voice conversion and speech synthesis have received greater attention in the recent past, experiments show that low-effort replay attacks provoke greater equal error rates (EERs).  Perhaps surprisingly, score normalisation is shown to increase the vulnerability of ASV to replay attacks.  The paper also describes and assesses two replay attack countermeasures.  A relatively new approach based on the local binary pattern (LBP) analysis of speech spectrograms is shown to outperform a competing approach based on the detection of far-field recordings.
+the context of automatic speaker verification (ASV).  The implementation of replay attacks requires no specific expertise nor any sophisticated equipment. Replay attacks may thus present a greater risk to ASV than voice conversion or speech synthesis which.  As relatively high-technology attacks, the latter are probably beyond the means of the average fraudster.  This paper compares the efficacy of each threat using strictly controlled protocols and using seven different ASV systems including a state-of-the-art iVector system with probabilistic linear discriminant analysis.  Even if comparatively higher-effort spoofing attacks such as voice conversion and speech synthesis have received greater attention in the recent past, experiments show that low-effort replay attacks provoke greater equal error rates (EERs).  Perhaps surprisingly, score normalisation is shown to increase the vulnerability of ASV to replay attacks.  The paper also describes and assesses two replay attack countermeasures.  A relatively new approach based on the local binary pattern (LBP) analysis of speech spectrograms is shown to outperform a competing approach based on the detection of far-field recordings.
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
@@ -297,9 +297,9 @@ speaker verification, spoofing, replay, countermeasures, local binary patterns.
 \section{Experimental setup}
 \label{sec::evaluation}
 
-In order to help prioritise future efforts, this paper aims to determine the relative threat of replay, speech synthesis and voice conversion spoofing attacks to a representative range of ASV technologies.  
-This work requires the sensible choice and adaptation of a common, large and standard corpus.  Finally, the work aims to evaluate the likely impact of different replay scenarios, i.e.\ different recording and replaying equipment and environments.
-This section describes the specific experimental setup which was used to generate all results reported in this paper.
+The comparison of replay, speech synthesis and voice conversion spoofing attacks requires the sensible choice and adaptation of a common, large and standard corpus and strictly controlled experimental protocols.  
+They are described here.
+
 
 \subsection{Methodology}
 \label{subsec::evaluation::methodology}
@@ -318,7 +318,24 @@ This section describes the specific experimental setup which was used to generat
 \label{subsec::evaluation::vcss}
 \input vcss
 
-%\subsection{Replay spoofing}
+
+\subsection{Voice conversion}
+
+The experiments with attacks using voice conversion were conducted with our implementation of the approach originally proposed in~\cite{Matrouf2005}. 
+We again considered the worst-case scenario where the attacker/spoofer has full prior knowledge of the ASV system, and so the front-end processing used in voice conversion was exactly the same as that used for ASV. 
+The filtering model and filter $H_x(f)$ used 19 LPCC and LPC coefficients, respectively.
+
+
+\subsection{Speech synthesis}
+
+Speech synthesis attacks were implemented using the voice cloning toolkit\footnote{http://homepages.inf.ed.ac.uk/jyamagis/software/page37/page37.html}
+with a default configuration.  
+We used standard speaker-independent models provided with the toolkit which were trained on the EMIME corpus~\cite{Wester2010}.  
+The adaptation data for each target speaker comprises three utterances (with transcriptions).  
+Speech signals for spoofing assessment are generated using arbitrary text similar in length to that of true client test utterances.
+
+
+\subsection{Replay attack setup}
 \input exper_setup
 
 \subsection{Countermeasures}
@@ -332,132 +349,6 @@ This section describes the specific experimental setup which was used to generat
 \section{Conclusions}
 \label{sec::conclusions}
 \input conclusions
-
-Also say that the VC and synthesis work assumes full knowledge of the ASV system.  Even if the replay doesn't assume any, it is still more of a threat.
-
-
-
-
-% An example of a floating figure using the graphicx package.
-% Note that \label must occur AFTER (or within) \caption.
-% For figures, \caption should occur after the \includegraphics.
-% Note that IEEEtran v1.7 and later has special internal code that
-% is designed to preserve the operation of \label within \caption
-% even when the captionsoff option is in effect. However, because
-% of issues like this, it may be the safest practice to put all your
-% \label just after \caption rather than within \caption{}.
-%
-% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
-% option should be used if it is desired that the figures are to be
-% displayed while in draft mode.
-%
-%\begin{figure}[!t]
-%\centering
-%\includegraphics[width=2.5in]{myfigure}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-%\caption{Simulation Results.}
-%\label{fig_sim}
-%\end{figure}
-
-% Note that IEEE typically puts floats only at the top, even when this
-% results in a large percentage of a column being occupied by floats.
-
-
-% An example of a double column floating figure using two subfigures.
-% (The subfig.sty package must be loaded for this to work.)
-% The subfigure \label commands are set within each subfloat command,
-% and the \label for the overall figure must come after \caption.
-% \hfil is used as a separator to get equal spacing.
-% Watch out that the combined width of all the subfigures on a 
-% line do not exceed the text width or a line break will occur.
-%
-%\begin{figure*}[!t]
-%\centering
-%\subfloat[Case I]{\includegraphics[width=2.5in]{box}%
-%\label{fig_first_case}}
-%\hfil
-%\subfloat[Case II]{\includegraphics[width=2.5in]{box}%
-%\label{fig_second_case}}
-%\caption{Simulation results.}
-%\label{fig_sim}
-%\end{figure*}
-%
-% Note that often IEEE papers with subfigures do not employ subfigure
-% captions (using the optional argument to \subfloat[]), but instead will
-% reference/describe all of them (a), (b), etc., within the main caption.
-
-
-% An example of a floating table. Note that, for IEEE style tables, the 
-% \caption command should come BEFORE the table. Table text will default to
-% \footnotesize as IEEE normally uses this smaller font for tables.
-% The \label must come after \caption as always.
-%
-%\begin{table}[!t]
-%% increase table row spacing, adjust to taste
-%\renewcommand{\arraystretch}{1.3}
-% if using array.sty, it might be a good idea to tweak the value of
-% \extrarowheight as needed to properly center the text within the cells
-%\caption{An Example of a Table}
-%\label{table_example}
-%\centering
-%% Some packages, such as MDW tools, offer better commands for making tables
-%% than the plain LaTeX2e tabular which is used here.
-%\begin{tabular}{|c||c|}
-%\hline
-%One & Two\\
-%\hline
-%Three & Four\\
-%\hline
-%\end{tabular}
-%\end{table}
-
-
-% Note that IEEE does not put floats in the very first column - or typically
-% anywhere on the first page for that matter. Also, in-text middle ("here")
-% positioning is not used. Most IEEE journals use top floats exclusively.
-% Note that, LaTeX2e, unlike IEEE journals, places footnotes above bottom
-% floats. This can be corrected via the \fnbelowfloat command of the
-% stfloats package.
-
-
-
-% use section* for acknowledgement
-%\section*{Acknowledgment}
-
-%The authors would like to thank...
-
-
-% Can use something like this to put references on a page
-% by themselves when using endfloat and the captionsoff option.
-%\ifCLASSOPTIONcaptionsoff
-%  \newpage
-%\fi
-
-
-
-% trigger a \newpage just before the given reference
-% number - used to balance the columns on the last page
-% adjust value as needed - may need to be readjusted if
-% the document is modified later
-%\IEEEtriggeratref{8}
-% The "triggered" command can be changed if desired:
-%\IEEEtriggercmd{\enlargethispage{-5in}}
-
-% references section
-
-% can use a bibliography generated by BibTeX as a .bbl file
-% BibTeX documentation can be easily obtained at:
-% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
-% The IEEEtran BibTeX style support page is at:
-% http://www.michaelshell.org/tex/ieeetran/bibtex/
-% argument is your BibTeX string definitions and bibliography database(s)
-%\bibliography{IEEEabrv,../bib/paper}
-%
-% <OR> manually copy in the resultant .bbl file
-% set second argument of \begin to the number of references
-% (used to reserve space for the reference number labels box)
 
 \bibliographystyle{IEEEtran}
 \bibliography{IEEE_forensics}
