@@ -1,11 +1,11 @@
 
-Attention now turns to the assessment of ASV vulnerabilities to replay spoofing, which are down to be comparable to those of voice conversion and speech synthesis.  These findings motivate the assessment of replay countermeasures.
+Attention now turns to the assessment of ASV vulnerabilities to replay spoofing, which are shown to be comparable to those of voice conversion and speech synthesis.  These findings motivate the assessment of replay countermeasures.
 
 
 \subsection{Replay spoofing}
 
 
-\begin{figure}
+\begin{figure}[!t]
 	\centering
 	\includegraphics[width=1\linewidth]{Figs/dist_IV_off.pdf}
 	\caption{Score distribution for the IV-PLDA system for replay attacks using a stand-alone speaker and emulation of an office.}
@@ -17,7 +17,7 @@ Attention now turns to the assessment of ASV vulnerabilities to replay spoofing,
 Fig.~\ref{fig::Dist_IV} shows the effect of replay attacks on the score distributions for the IV-PLDA system.  While the zero-effort impostor and genuine client distributions are well separated, the latter overlaps significantly with the score distribution for replay attacks collected in an office environment.  Increased overlap between these distribution will degrade ASV performance.
 
 
-\begin{figure}
+\begin{figure}[!t]
 	\centering
 	\includegraphics[width=1\linewidth]{Figs/DETs_IV.pdf}
 	\caption{DET plots for the IV-PLDA system for various replay configurations, compared to the baseline performance. {\bfseries There is too much information on this plot.  I suggest to include only three profiles: (i) the baseline, (ii) spoofing under the same conditions as in Fig.~\ref{fig::Dist_IV} and (iii) with countermeasures - to be referred to later.}}
@@ -30,96 +30,105 @@ Fig.~\ref{fig::DETs_replay_IV} illustrates a detection error trade-off (DET) plo
 
 
 \begin{table*}
+\renewcommand{\arraystretch}{1.2}
 \begin{center}
-    \begin{tabular}{ l l || c c c c c c c}
+%    \begin{tabular}{ l l || c c c c c c c}
+    \begin{tabular}{ l || c c c c c c c}
     \hline
-Score norm & Replay env. &  GMM & SGL & SGL-NAP  & SGL-FA & FA & IV & IV-PLDA \\ 
+%Score norm & Replay env. &  GMM & SGL & SGL-NAP  & SGL-FA & FA & IV & IV-PLDA \\ 
+ &  GMM & SGL & SGL-NAP  & SGL-FA & FA & IV & IV-PLDA \\ 
 
  \hline \hline
-& (Baseline) & 9.08 & 7.89 & 6.35 & 6.08 & 5.60 & 6.67 & 3.20\\
-No & Office  & 40.26 & 34.43 & 33.52 & 30.72 & 33.85 & 27.83 & 29.11\\
-norm & Corridor & 35.71 & 28.24 & 28.53 & 25.75 & 29.92 & 23.02 & 22.78\\
-& None & 51.59 & 49.64 & 49.49 & 49.73 & 49.37 & 49.38 & 49.37\\
+%& (Baseline) & 9.08 & 7.89 & 6.35 & 6.08 & 5.60 & 6.67 & 3.20\\
+%No & Office  & 40.26 & 34.43 & 33.52 & 30.72 & 33.85 & 27.83 & 29.11\\
+%norm & Corridor & 35.71 & 28.24 & 28.53 & 25.75 & 29.92 & 23.02 & 22.78\\
+%& None & 51.59 & 49.64 & 49.49 & 49.73 & 49.37 & 49.38 & 49.37\\
+%\hline
+%& (Baseline) & 8.63 & 8.13 & 6.31 & 5.72 & 5.61 & 6.72 & 2.98\\
+%With & Office  & 60.32 & 92.98 & 29.92 & 28.54 & 30.12 & 28.89 & 30.30\\
+%norm & Corridor & 55.91 & 88.20 & 23.59 & 21.62 & 24.97 & 23.31 & 24.53\\
+%& None & 64.40 & 96.67 & 49.44 & 49.31 & 49.67 & 49.06 & 49.46\\
+Baseline & 8.63 & 8.13 & 6.31 & 5.72 & 5.61 & 6.72 & 2.98\\
 \hline
-& (Baseline) & 8.63 & 8.13 & 6.31 & 5.72 & 5.61 & 6.72 & 2.98\\
-With & Office  & 60.32 & 92.98 & 29.92 & 28.54 & 30.12 & 28.89 & 30.30\\
-norm & Corridor & 55.91 & 88.20 & 23.59 & 21.62 & 24.97 & 23.31 & 24.53\\
-& None & 64.40 & 96.67 & 49.44 & 49.31 & 49.67 & 49.06 & 49.46\\
+Replay: office environment & 60.32 & 92.98 & 29.92 & 28.54 & 30.12 & 28.89 & 30.30\\
+Replay: corridor environment & 55.91 & 88.20 & 23.59 & 21.62 & 24.97 & 23.31 & 24.53\\
+Replay: anechoic environment & 64.40 & 96.67 & 49.44 & 49.31 & 49.67 & 49.06 & 49.46\\
 \hline
     \end{tabular}
-    \caption{EER values for different ASV systems for various acoustic environment of replay attacks, with and without score normalisation. }
+%    \caption{EER values for different ASV systems for various acoustic %environment of replay attacks, with and without score normalisation. }
+    \caption{Equal error rates (EERs) for seven different ASV systems and for zero-effort impostors (baseline) and three different replay attack configurations (three different acoustic environments).  Results are averaged across the three different loudspeaker configurations.}
 		\label{tab::results_EER}
    \end{center}
+
 \end{table*}
 
 
 % EER table described
-Table~\ref{tab::results_EER} shows the detailed EER results for replay attacks in various acoustic conditions against the seven various ASV systems, with and without score normalisation. All systems are shown to be severely sensitive to replay attacks. Even for the highly-reverberant corridor and the most resistant (in terms of EER) GSL kernel system with factor analysis and with T-norm, the EER rose to more than 22\% compared to the baseline 5.7\%. What was already visible in the DET plots (see Fig.~\ref{fig::DETs_replay_IV}), the results for the office are much worse -- the most resistant IV system (without PLDA and without score normalisation) and GSL-FA systems yielded the EER of ca. 28\%, whilst the other systems returned EERs of 30\% and more. If acoustic conditions are not emulated, the spoofing is almost perfect and the ASV systems yield EER values of 50\% or even more. 
+This trend is repeated across the full set of seven ASV systems and different replay attack configurations;  
+results are illustrated in Table~\ref{tab::results_EER}.
+Results in the second row show the baseline performance for each ASV system and for only zero-effort impostors.
+As expected, the IV-PLDA system delivers the lowest EER.
+
+Rows 2--5 illustrate the degradation in performance when zero-effort impostors are replaced with replay attacks.
+EERs are here averaged across the three loudspeaker configurations; other results not reported here showed greater sensitivity to the acoustic environment than to the loudspeaker characteristics.  
+The performance of all seven systems degrades significantly.
+The EER of the most sensitive GSL system increases from 8\% to in the order of 90\% for all three acoustic environments.
+Even the EER of the most resistant SGL-FA system increases to between 22\% and 50\%.  
+Finally, the EER of the state-of-the-art IV-PLDA system increases to between 25\% and 50\%.  
+
+%, the EER increases systemthe  is  are shown to be severely sensitive to replay attacks. Even for the highly-reverberant corridor and the most resistant (in terms of EER) GSL kernel system with factor analysis and with T-norm, the EER rose to more than 22\% compared to the baseline 5.7\%. What was already visible in the DET plots (see Fig.~\ref{fig::DETs_replay_IV}), the results for the office are much worse -- the most resistant IV system (without PLDA and without score normalisation) and GSL-FA systems yielded the EER of ca. 28\%, whilst the other systems returned EERs of 30\% and more. If acoustic conditions are not emulated, the spoofing is almost perfect and the ASV systems yield EER values of 50\% or even more. 
 
 
-They show that all replay attacks caused a significant degradation of the ASV performance. However, there are major differences in ASV performance depending on acoustic environment. If the acoustic environment is omitted, the ASV system is almost ideally spoofed -- the DET lines are close to straight, with the EER values close to 50\%. In realistic cases, when the room acoustics is taken into account, the spoofing is slightly less severe. It can be easily observed that the ASV performance under replay attack in a corridor is better than in an office, probably due to higher level of reverberation for the corridor.
-
-
-
-
-
-
-
-
-
-
-
-
-
+%They show that all replay attacks caused a significant degradation of the ASV performance. However, there are major differences in ASV performance depending on acoustic environment. If the acoustic environment is omitted, the ASV system is almost ideally spoofed -- the DET lines are close to straight, with the EER values close to 50\%. In realistic cases, when the room acoustics is taken into account, the spoofing is slightly less severe. It can be easily observed that the ASV performance under replay attack in a corridor is better than in an office, probably due to higher level of reverberation for the corridor.
 
 
 %\subsection{Replay speaker}
 
-In contrast, despite major differences in speakers' impulse responses (see Fig.~\ref{fig::IRs}), the differences between the DET plots corresponding to different speakers are only minor. It suggests a relatively low impact of a replay device on the effectiveness of replay attack. Since all seven ASV systems tested showed similar behaviour, therefore, for the sake of clearness, the next results will present the average of the three speakers used in experiments.
+%In contrast, despite major differences in speakers' impulse responses (see Fig.~\ref{fig::IRs}), the differences between the DET plots corresponding to different speakers are only minor. It suggests a relatively low impact of a replay device on the effectiveness of replay attack. Since all seven ASV systems tested showed similar behaviour, therefore, for the sake of clearness, the next results will present the average of the three speakers used in experiments.
 
 
 
 
-\subsection{Effect of channel compensation}
+%\subsection{Effect of channel compensation}
 
-It is noteworthy that under replay attack the iVector system with probabilistic linear discriminant analysis (PLDA) often shows worse results than the iVector system alone, even though the PLDA significantly decreases the EER for the baseline system (from 6.7\% down to less than 3\%, with score normalisation). This can be explained that in normal conditions the PLDA improves the performance of iVector-based ASV system as it compensates the intersession differences caused by channel or speaker variation. However, in the case of replay attack this can be disadvantageous, because it also seems to compensate the differences caused by replay devices and replay environments.
+%It is noteworthy that under replay attack the iVector system with probabilistic linear discriminant analysis (PLDA) often shows worse results than the iVector system alone, even though the PLDA significantly decreases the EER for the baseline system (from 6.7\% down to less than 3\%, with score normalisation). This can be explained that in normal conditions the PLDA improves the performance of iVector-based ASV system as it compensates the intersession differences caused by channel or speaker variation. However, in the case of replay attack this can be disadvantageous, because it also seems to compensate the differences caused by replay devices and replay environments.
 
-\begin{figure}
-	\centering
-	\begin{minipage}{.5\textwidth}
-	\includegraphics[width=1\linewidth]{Figs/dist_GMM_corr_iPhone.pdf}
+%\begin{figure}
+%	\centering
+%	\begin{minipage}{.5\textwidth}
+%	\includegraphics[width=1\linewidth]{Figs/dist_GMM_corr_iPhone.pdf}
 %	\caption{DET plots for GMM-UBM (left) and i-Vectors-PLDA (right) systems.}
 %	\label{fig::Dist_GMM_corr}
-	\end{minipage}
+%	\end{minipage}
 
 
-	\begin{minipage}{0.5\textwidth}
-	\includegraphics[width=1\linewidth]{Figs/dist_GMM_T_corr_iPhone.pdf}
+%	\begin{minipage}{0.5\textwidth}
+%	\includegraphics[width=1\linewidth]{Figs/dist_GMM_T_corr_iPhone.pdf}
 %	\caption{DET plots for iVectors-PLDA xxxxxxxxxxxxxxxxxxx}
-	\end{minipage}
+%	\end{minipage}
 
-	\caption{Score distribution for the GMM-UBM system without (top) and with (bottom) score normalisation.}
-	\label{fig::Dist_GMM.T_corr}
+%	\caption{Score distribution for the GMM-UBM system without (top) and with (bottom) score normalisation.}
+%	\label{fig::Dist_GMM.T_corr}
 
-\end{figure}
+%\end{figure}
 
 
 
 %% comparison with other attacks
-\subsection{Comparison of replay threat vs. other spoofing methods}
+\subsection{Comparison to voice conversion and speech synthesis}
 
-\begin{table*}
-%\ninept
+
+\begin{table*}[!t]
+\renewcommand{\arraystretch}{1.2}
 \begin{center}
     \begin{tabular}{ l || c c c c c c}
     \hline
      	 Attack & GMM & SGL & SGL-NAP & SGL-FA & FA & IV-PLDA \\ 
-
  \hline \hline
-Na\"{i}ve impostor & 9.08 & 7.89 & 6.35 & 6.08 & 5.60 & 3.20\\ 
-Replay & 37.99	& 31.33 & 31.03 & 28.24 & 31.89 & 25.95\\
-Voice conversion & 31.48 & 36.94 & 30.44 & 30.23 & 23.16 & 20.45\\ 
-Speech synthesis & 39.90 & 14.66 & 13.83 & 11.98 & 30.81 & 10.92\\ 
+Na\"{i}ve impostor &  9.08 &  7.89 & 6.35  &  6.08 &  5.60 &  3.20 \\ 
+Replay             & 37.99 & 31.33 & 31.03 & 28.24 & 31.89 & 25.95 \\
+Voice conversion   & 31.48 & 36.94 & 30.44 & 30.23 & 23.16 & 20.45 \\ 
+Speech synthesis   & 39.90 & 14.66 & 13.83 & 11.98 & 30.81 & 10.92 \\ 
 \hline
     \end{tabular}
     \caption{EER values for different ASV systems for various spoofing attacks, without score normalisation.}
@@ -128,87 +137,27 @@ Speech synthesis & 39.90 & 14.66 & 13.83 & 11.98 & 30.81 & 10.92\\
 \end{table*}
 
 
-\begin{figure}
+\begin{figure}[!t]
 	\centering
 	\includegraphics[width=1\linewidth]{Figs/DETs_IV_ss_vc_rp.pdf}
 	\caption{DET plots for iVector-PLDA system and various attacks.}
 	\label{fig::DETs_4attacks}
 \end{figure}
 
+
 To compare the reply threat with the threat of voice conversion and speech synthesis, we took the average results for all replay devices, as well as the average for office and corridor as the replay environment.
 The impact of voice conversion, despite demanding considerably more effort to implement, causes a similar degradation in performance to that of replay attacks. E.g., the SGL system yielded the EER of 37\% for voice conversion and on average 31\% for replay (see Table \ref{tab::results_EER_4attacks}); in contrast, the IV-PLDA system showed to be more resistant to voice conversion than replay (20.5\% EER vs. 26\%, respectively). 
 
 High-effort speech synthesis attacks proved much less effective -- the EER for the best IV-PLDA system reached less than 11\%, whilst replay attack caused an increase of the EER to 20.5\%. This confirms the results obtained during preliminary experiments (for smartphone-office combination only) described in~\cite{Alegre2014}. These observations are also illustrated through the DET plot in Fig.~\ref{fig::DETs_4attacks} for the IV-PLDA system.
 
-%IN CONTRAST, it turns out that..... (REFERENCE TO BIOSIG PAPER ~\cite{Alegre2014}, SUMMARY OF THE RESULTS from THERE)
-% displays... TBC.
-%Why do you mean "in contrast"? I found these results quite consistent with Biosig. The reference added above.
 
 
 
-\subsection{Impact of score normalisation}
-
-The impact of score normalisation in the case of replay attack is ambiguous.  For some of the systems, such as factor analysis, GMM supervector linear kernel with factor analysis and with nuisance attribute projection the score normalisation helped to decrease EER values in the face of spoofing, e.g., for the factor analysis system and the corridor the EER decreased from almost 30\% to around 25\%. 
-
-\begin{figure}
-	\includegraphics[width=1\linewidth]{Figs/Scores_cohort.png}
-
-	\caption{Score distribution for replay attacks vs. client accesses calculated against cohort speaker models, for various ASVs.}
-	\label{fig::Scores_cohort}
-\end{figure}
-
-In contrast, for four other ASV systems (GMM-UBM, GMM supervector linear kernel alone and both iVector systems), the score normalisation in fact helped the spoofer. The increase of EER after applying score normalisation for the GMM-UBM or SGL system is immense, e.g., for replay in an office and the GSL system, the EER increased from 34\% to 93\%. This effect is also well illustrated by score distributions presented in Fig. \ref{fig::Dist_GMM.T_corr}, using the example of replay played back from a smartphone in a corridor against a GMM-UBM system. It shows that the scores, having been normalised, got shifted even more to the right than original client accesses. 
-
-This phenomenon seems to be a side-effect of T-norm algorithm, which involves dividing the scores by standard deviation of the scores reached for a cohort of reference speaker models. Table~\ref{tab::scores_cohort} displays standard deviation values for the client accesses and replay spoofed accesses. It shows that standard deviation for client accesses is by far the largest for the GMM supervector linear kernel system (0.25) and it is also relatively high for the GMM-UBM system (0.09). We believe that this is caused by lack of any compensation mechanism for channel and intersession variability, both in the GMM-UBM and the GSL systems. Higher standard deviation causes shifting the scores of the licit client accesses to the left on the score axis. Contrary, other ASVs cause much lower score dispersion (0.06 or less), what is also visible in Fig.~\ref{fig::Scores_cohort}. 
-
-In contrast, standard deviation of scores for replay attacks is pretty low (0.07 or less, see Table~\ref{tab::scores_cohort}) -- this makes the normalised scores increase, so this is why they are shifted to the right in Fig.~\ref{fig::Dist_GMM.T_corr}, and this is why such systems are so vulnerable to replay attacks. This may pose a significant risk to those ASV systems facing a replay attack.
-
-\begin{table}
-%\ninept
-\begin{center}
-    \begin{tabular}{ l || c c c c c }
-    \hline
-     	 Scores/ASVs & GMM & GSL & GSL-NAP & GSL-FA & FA\\ 
-
- \hline \hline
-Client accesses & 0.086 & 0.252 & 0.063 & 0.057 & 0.032\\
-Replay attacks & 0.072 & 0.060 & 0.068 & 0.059 & 0.027\\
-\hline
-    \end{tabular}
-    \caption{Standard deviation of client access scores calculated against cohort speaker models during score normalisation.}
-		\label{tab::scores_cohort}
-   \end{center}
-\end{table}
-
-
-%\subsection{Impact of using PLDA with iVector systems}
-%
-%When analysing operation of various ASV systems, we also compared the performance of both iVector systems used in experiments - with and without probabilistic linear discriminant analysis (PLDA). The results in Table~\ref{tab::results_EER}, confirmed by Fig.~\ref{fig::EER_PLDA}, clearly show that even though the PLDA significantly decreases the EER for the baseline system (from 6.7\% down to less than 3\%, with score normalisation), it mostly increases the EER when under replay attack. E.g., for an office and score normalisation the EER rose from less to 29\% to 30.3\%. 
-%
-%This behaviour of PLDA can be explained as follows: in normal conditions the PLDA improves significantly the performance of iVector-based ASV system as it compensates the intersession differences caused by channel or speaker variation. However, in the case of replay attack this can be disadvantageous, because it also seems to compensate the differences caused by replay devices and replay environments.
-%
-%% EER w/wo PLDA
-%\begin{figure}
-%	\centering
-%\includegraphics[width=1\linewidth]{Figs/EER_PLDA.png}
-%	\caption{EER results for iVector-based ASV system with and without PLDA, with score normalisation used.}
-%	\label{fig::EER_PLDA}
-%\end{figure}
-
-
-%\begin{figure}
-%	\centering
-%	\includegraphics[width=1\linewidth]{Figs/DET_PLDA_iPad_Snorm.pdf}
-%	\caption{DET plots for replay attack for the ASV based on iVectors with and without PLDA, with score normalisation (a tablet used as a replay device).}
-%	\label{fig::DETs_PLDA}
-%
-%\end{figure}
-
-\subsection{Results of experiments with the replay countermeasure}
+\subsection{Replay countermeasure}
 
 
 \begin{table*}
-%\ninept
+\renewcommand{\arraystretch}{1.2}
 \begin{center}
     \begin{tabular}{ l || c c c | c c c}
     \hline
@@ -228,7 +177,7 @@ None & 49.46 & 42.14 & 46.77 & 97.00 & 95.17 & 95.76\\
 
 
 \begin{table*}
-%\ninept
+\renewcommand{\arraystretch}{1.2}
 \begin{center}
     \begin{tabular}{ l || c c c | c c c}
     \hline
@@ -259,3 +208,12 @@ Table~\ref{tab::results_CM_spk} displays the results of the countermeasure exper
 	\label{fig::DETs_CM}
 \end{figure}
 
+
+% discussion 
+\subsection{Discussion}
+
+Any other topics worth mentioning should go here - it's better not to be too noisy above in order not to obscure the simplicity of the core message: replay is a threat - it's a comparable one to VC and synth, but it's the easiest to implement, and it's hard to detect!!  We need more focus on replay.
+
+Discuss the use-case scenario here: a common criticism of all past work is the use of evaluation-based corpora.  OK, it's good for comparisons to others' work and critical in terms of scientific publication, but it doesn't reflect a likely use-case scenario of authentication.  We will over-exaggerate the threat of spoofing.  We still don't take into account the recording microphone which is IN ADDITION to the microphone of the biometric system and another opportunity to detect replay attacks.  We don't take into account that some ASV systems will have fixed microphones, but this is a criticism which could be levelled at any of the past work.  The core message is therefore that we should be thinking more about the practical application and less about the nice databases that make this work easy to perform.
+
+Also, the findings in this work corroborate those of other independent studies.  While replay is considerably more difficult to assess in a meaningful way, reflective of genuine use-case scenarios, it suggests that the current focus on voice conversion and speech synthesis do not necessarily address the most important threats facing ASV.  If this technology is to make further headway in commercial deployments, much greater emphasis should be made on ensuring that the technology is robust to replay spoofing attacks. <-- perhaps for the conclusions?
