@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.17)  27 JAN 2015 12:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.17)  27 JAN 2015 17:23
 entering extended mode
 **IEEE_Forensics.tex
 (\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\IEEE_Forensics.tex
@@ -204,23 +204,174 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 246.
 
-(\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\introduction.tex)
-! I can't write on file `IEEE_Forensics.pdf'.
-Please type another file name for output
-! Emergency stop.
-<to be read again> 
-                   \endgroup \set@typeset@protect 
-l.280 
-      
-*** (job aborted, file error in nonstop mode)
+(\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\introduction.tex) [1{C:/Prog
+ramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
- 
+
+]
+(\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\replay_vs_others.tex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1.
+
+Underfull \hbox (badness 1377) in paragraph at lines 15--16
+\OT1/ptm/m/n/10 ex-tracted or learned from a tar-get speaker $\OML/cmm/m/it/10 
+x\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )$\OT1/ptm/m/n/10 . While
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 17.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 17.
+[2] <Figs/replay.png, id=19, 726.46407pt x 133.24782pt>
+File: Figs/replay.png Graphic file (type png)
+ <use Figs/replay.png>
+Package pdftex.def Info: Figs/replay.png used on input line 85.
+(pdftex.def)             Requested size: 252.0pt x 46.22063pt.
+)
+(\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\aim_of_the_work.tex
+Underfull \hbox (badness 5189) in paragraph at lines 8--11
+[]\OT1/ptm/m/n/10 One ob-vi-ous ap-proach to re-play de-tec-tion in-volves
+ []
+
+[3 <//homes/evans/pub/latex/IEEE-Forensics-2014/trunk/Figs/replay.png>]
+<Figs/LBPfeature.pdf, id=25, 1149.29375pt x 274.02374pt>
+File: Figs/LBPfeature.pdf Graphic file (type pdf)
+
+<use Figs/LBPfeature.pdf>
+Package pdftex.def Info: Figs/LBPfeature.pdf used on input line 48.
+(pdftex.def)             Requested size: 516.0pt x 123.02939pt.
+)
+(\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\methodology.tex)
+(\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\ASVs.tex)
+(\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\datasets.tex [4])
+(\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\vcss.tex)
+(\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\exper_setup.tex
+<Figs/IRs.png, id=30, 422.32782pt x 316.18124pt>
+File: Figs/IRs.png Graphic file (type png)
+ <use Figs/IRs.png>
+Package pdftex.def Info: Figs/IRs.png used on input line 10.
+(pdftex.def)             Requested size: 252.0pt x 188.6681pt.
+
+<Figs/Room_IRs.png, id=31, 888.31876pt x 645.91313pt>
+File: Figs/Room_IRs.png Graphic file (type png)
+ <use Figs/Room_IRs.png>
+Package pdftex.def Info: Figs/Room_IRs.png used on input line 18.
+(pdftex.def)             Requested size: 252.0pt x 183.22969pt.
+)
+[5 <//homes/evans/pub/latex/IEEE-Forensics-2014/trunk/Figs/LBPfeature.pdf>]
+(\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\cm_setup.tex
+
+LaTeX Warning: Reference `' on page 6 undefined on input line 14.
+
+
+LaTeX Warning: Reference `Interspeech2013paper' on page 6 undefined on input li
+ne 26.
+
+) (\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\results.tex
+<Figs/dist_IV_off.pdf, id=57, 578.16pt x 433.62pt>
+File: Figs/dist_IV_off.pdf Graphic file (type pdf)
+ <use Figs/dist_IV_off.pdf>
+Package pdftex.def Info: Figs/dist_IV_off.pdf used on input line 10.
+(pdftex.def)             Requested size: 252.0pt x 189.00032pt.
+
+<Figs/DETs_IV.pdf, id=58, 578.16pt x 563.70598pt>
+File: Figs/DETs_IV.pdf Graphic file (type pdf)
+ <use Figs/DETs_IV.pdf>
+Package pdftex.def Info: Figs/DETs_IV.pdf used on input line 22.
+(pdftex.def)             Requested size: 252.0pt x 245.70041pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[][][]\OT1/ptm/m/n/8 Produced with the TAB-ULA RASA Score-toolkit
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+\OT1/ptm/m/n/8 (http://publications.idiap.ch/downolads/reports/2012/Anjos[]Idia
+p-Com-
+ []
+
+[6 <//homes/evans/pub/latex/IEEE-Forensics-2014/trunk/Figs/IRs.png (PNG copy)> 
+<//homes/evans/pub/latex/IEEE-Forensics-2014/trunk/Figs/Room_IRs.png (PNG copy)
+>] <Figs/DETs_IV_ss_vc_rp.pdf, id=62, 578.16pt x 563.70598pt>
+File: Figs/DETs_IV_ss_vc_rp.pdf Graphic file (type pdf)
+
+<use Figs/DETs_IV_ss_vc_rp.pdf>
+Package pdftex.def Info: Figs/DETs_IV_ss_vc_rp.pdf used on input line 144.
+(pdftex.def)             Requested size: 252.0pt x 245.70041pt.
+
+
+LaTeX Warning: Citation `yamagishi' on page 7 undefined on input line 149.
+
+
+LaTeX Warning: Citation `wu ' on page 7 undefined on input line 149.
+
+
+LaTeX Warning: Citation `deleon' on page 7 undefined on input line 149.
+
+[7 <//homes/evans/pub/latex/IEEE-Forensics-2014/trunk/Figs/dist_IV_off.pdf> <//
+homes/evans/pub/latex/IEEE-Forensics-2014/trunk/Figs/DETs_IV.pdf
+
+pdfTeX warning: pdflatex (file //homes/evans/pub/latex/IEEE-Forensics-2014/trun
+k/Figs/DETs_IV.pdf): PDF inclusion: multiple pdfs with page group included in a
+ single page
+> <//homes/evans/pub/latex/IEEE-Forensics-2014/trunk/Figs/DETs_IV_ss_vc_rp.pdf
+
+pdfTeX warning: pdflatex (file //homes/evans/pub/latex/IEEE-Forensics-2014/trun
+k/Figs/DETs_IV_ss_vc_rp.pdf): PDF inclusion: multiple pdfs with page group incl
+uded in a single page
+>]
+
+LaTeX Warning: Reference `tab::results_CM_spk' on page 8 undefined on input lin
+e 214.
+
+<Figs/DET_IVPLDA_counter_iPad.pdf, id=119, 578.16pt x 563.70598pt>
+File: Figs/DET_IVPLDA_counter_iPad.pdf Graphic file (type pdf)
+
+<use Figs/DET_IVPLDA_counter_iPad.pdf>
+Package pdftex.def Info: Figs/DET_IVPLDA_counter_iPad.pdf used on input line 22
+0.
+(pdftex.def)             Requested size: 252.0pt x 245.70041pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <//homes/evans/pub/latex/IEEE-Forensics-2014/trunk/Figs/DET_IVPLDA_counter_
+iPad.pdf>]) (\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\conclusions.tex)
+
+(\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\IEEE_Forensics.bbl [9]
+Underfull \hbox (badness 10000) in paragraph at lines 272--274
+[]\OT1/ptm/m/n/8 A. Brown, ``Aaron brown sound web page,''
+ []
+
+) [10] (\\homes\evans\pub\latex\IEEE-Forensics-2014\trunk\IEEE_Forensics.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2948 strings out of 493921
- 48966 string characters out of 3148078
- 114063 words of memory out of 3000000
- 6274 multiletter control sequences out of 15000+200000
- 25612 words of font info for 56 fonts, out of 3000000 for 9000
+ 3077 strings out of 493921
+ 52048 string characters out of 3148078
+ 117063 words of memory out of 3000000
+ 6339 multiletter control sequences out of 15000+200000
+ 40843 words of font info for 74 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
- 36i,5n,38p,1217b,200s stack positions out of 5000i,500n,10000p,200000b,50000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 36i,9n,38p,1339b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
+{c:/Packages/texmf2.9.4503/fonts/enc/dvips/fontname/8r.enc}<c:/Packages/texmf
+2.9.4503/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Packages/texmf2.9.4503/f
+onts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Packages/texmf2.9.4503/fonts/type1
+/public/amsfonts/cm/cmmi7.pfb><c:/Packages/texmf2.9.4503/fonts/type1/public/ams
+fonts/cm/cmr10.pfb><c:/Packages/texmf2.9.4503/fonts/type1/public/amsfonts/cm/cm
+r7.pfb><c:/Packages/texmf2.9.4503/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:
+/Packages/texmf2.9.4503/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/Packages/t
+exmf2.9.4503/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/Packages/texmf2.9.450
+3/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/Packages/texmf2.9.4503/fonts/type1/ur
+w/times/utmb8a.pfb><c:/Packages/texmf2.9.4503/fonts/type1/urw/times/utmbi8a.pfb
+><c:/Packages/texmf2.9.4503/fonts/type1/urw/times/utmr8a.pfb><c:/Packages/texmf
+2.9.4503/fonts/type1/urw/times/utmri8a.pfb>
+Output written on IEEE_Forensics.pdf (10 pages, 400671 bytes).
+PDF statistics:
+ 174 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+

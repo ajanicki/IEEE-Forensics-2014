@@ -22,3 +22,5 @@ Both countermeasure algorithms were trained using a random subset of 1000 uttera
 %A single high-quality speaker impulse response was used for We chose a stand-alone speaker impulse response, different from the one used for replay attack emulation, to avoid overfitting to testing data. Original NIST'05 recordings were used to model the licit client access trials.
 
 A binary support vector machines (SVM) classifier with 3rd order polynomial kernel was learned to differentiate genuine data from spoofed data in the case of the far-field channel detection countermeasure.  In contrast, a decision table classifier was used for the LBP countermeasure.  These classifiers returned the best results in each case for an area-under-the-ROC metric.  %Having been trained, both classifiers were applied to detect replay attacks in both spoofing accesses and licit client trials.
+
+{\bfseries Need to explain how trials detected as spoofs are handled - they are assigned an arbitrarily low score and are thereby automatically rejected.  Refer to protocol in~\ref{Interspeech2013paper} and possibly the new Speech comm journal if it is indeed mentioned.}
