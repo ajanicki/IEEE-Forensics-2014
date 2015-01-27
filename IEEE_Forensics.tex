@@ -319,23 +319,7 @@ They are described here.
 \input vcss
 
 
-\subsection{Voice conversion}
 
-The experiments with attacks using voice conversion were conducted with our implementation of the approach originally proposed in~\cite{Matrouf2005}. 
-We again considered the worst-case scenario where the attacker/spoofer has full prior knowledge of the ASV system, and so the front-end processing used in voice conversion was exactly the same as that used for ASV. 
-The filtering model and filter $H_x(f)$ used 19 LPCC and LPC coefficients, respectively.
-
-
-\subsection{Speech synthesis}
-
-Speech synthesis attacks were implemented using the voice cloning toolkit\footnote{http://homepages.inf.ed.ac.uk/jyamagis/software/page37/page37.html}
-with a default configuration.  
-We used standard speaker-independent models provided with the toolkit which were trained on the EMIME corpus~\cite{Wester2010}.  
-The adaptation data for each target speaker comprises three utterances (with transcriptions).  
-Speech signals for spoofing assessment are generated using arbitrary text similar in length to that of true client test utterances.
-
-
-\subsection{Replay attack setup}
 \input exper_setup
 
 \subsection{Countermeasures}
