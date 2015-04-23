@@ -249,7 +249,8 @@
 % in the abstract or keywords.
 \begin{abstract}
 This article analyses the threat of spoofing or presentation attacks in 
-the context of automatic speaker verification (ASV).  The implementation of replay attacks requires no specific expertise nor any sophisticated equipment. Replay attacks may thus present a greater risk to ASV than voice conversion or speech synthesis which.  As relatively high-technology attacks, the latter are probably beyond the means of the average fraudster.  This paper compares the efficacy of each threat using strictly controlled protocols and using seven different ASV systems including a state-of-the-art iVector system with probabilistic linear discriminant analysis.  Even if comparatively higher-effort spoofing attacks such as voice conversion and speech synthesis have received greater attention in the recent past, experiments show that low-effort replay attacks provoke greater equal error rates (EERs).  Perhaps surprisingly, score normalisation is shown to increase the vulnerability of ASV to replay attacks.  The paper also describes and assesses two replay attack countermeasures.  A relatively new approach based on the local binary pattern (LBP) analysis of speech spectrograms is shown to outperform a competing approach based on the detection of far-field recordings.
+the context of automatic speaker verification (ASV).  The implementation of replay attacks requires no specific expertise nor any sophisticated equipment. Replay attacks may thus present a greater risk to ASV than voice conversion or speech synthesis which.  As relatively high-technology attacks, the latter are probably beyond the means of the average fraudster.  This paper compares the efficacy of each threat using strictly controlled protocols and using seven different ASV systems including a state-of-the-art iVector system with probabilistic linear discriminant analysis.  Even if comparatively higher-effort spoofing attacks such as voice conversion and speech synthesis have received greater attention in the recent past, experiments show that low-effort replay attacks provoke greater equal error rates (EERs).  %Perhaps surprisingly, score normalisation is shown to increase the vulnerability of ASV to replay attacks.%
+The paper also describes and assesses two replay attack countermeasures.  A relatively new approach based on the local binary pattern (LBP) analysis of speech spectrograms is shown to outperform a competing approach based on the detection of far-field recordings.
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
@@ -304,7 +305,7 @@ They are described here.
 \subsection{Methodology}
 \label{subsec::evaluation::methodology}
 
-{\bfseries We need to say something about the noise - I presume that, since the only noise added is convolutive, there is no additive noise???  We need to be sure that the degradations in performance aren't just because the speech is more noisy.}
+%{\bfseries We need to say something about the noise - I presume that, since the only noise added is convolutive, there is no additive noise???  We need to be sure that the degradations in performance aren't just because the speech is more noisy.} [AJ] No, there is no additive noise. Where do you think we should mention this?
 
 \input methodology
 

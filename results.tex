@@ -19,14 +19,16 @@ Fig.~\ref{fig::Dist_IV} shows the effect of replay attacks on the score distribu
 
 \begin{figure}[!t]
 	\centering
-	\includegraphics[width=1\linewidth]{Figs/DETs_IV.pdf}
-	\caption{DET plots for the IV-PLDA system for various replay configurations, compared to the baseline performance. {\bfseries There is too much information on this plot.  I suggest to include only four profiles: (i) the baseline, (ii) spoofing under the same conditions as in Fig.~\ref{fig::Dist_IV} and (iii) and (iv) with FFD and LBP countermeasures - to be referred to later.}}
+	\includegraphics[width=1\linewidth]{Figs/DET_IVPLDA_counter_Behr.pdf}
+	\caption{DET plots for the IV-PLDA system: (i) the baseline, (ii) under replay spoofing with a stand-alone speaker in an office, (iii) under replay attack, but with FFD and (iv) LBP countermeasures - to be referred to later.}
+
+%% {\bfseries There is too much information on this plot.  I suggest to include only four profiles: (i) the baseline, (ii) spoofing under the same conditions as in Fig.~\ref{fig::Dist_IV} and (iii) and (iv) with FFD and LBP countermeasures - to be referred to later.}}
 	\label{fig::DETs_replay_IV}
 \end{figure}
 
 
 % DET plots
-Fig.~\ref{fig::DETs_replay_IV} illustrates a detection error trade-off (DET) plot\footnote{Produced with the TABULA RASA Scoretoolkit (http://publications.idiap.ch/downolads/reports/2012/Anjos\_Idiap-Com-02-2012.pdf)} for the same experimental setup.  The lower-most, solid profile illustrates the performance of the baseline ASV system.  The upper-most profile illustrates performance when zero-effort impostors are replaced with replay attacks.  Thus, the difference between these two profiles serves as an indication of the system vulnerability to replay spoofing; in this case the degradation in performance is significant.  
+Fig.~\ref{fig::DETs_replay_IV} illustrates a detection error trade-off (DET) plot\footnote{The DETs in this paper were produced with the TABULA RASA Scoretoolkit (http://publications.idiap.ch/downolads/reports/2012/Anjos\_Idiap-Com-02-2012.pdf) and the Bosaris toolkit (https://sites.google.com/site/bosaristoolkit/).} for the same experimental setup.  The lower-most, solid profile illustrates the performance of the baseline ASV system.  The upper-most profile illustrates performance when zero-effort impostors are replaced with replay attacks.  Thus, the difference between these two profiles serves as an indication of the system vulnerability to replay spoofing; in this case the degradation in performance is significant.  
 
 
 \begin{table*}
@@ -53,8 +55,8 @@ Replay: office environment & 60.32 & 92.98 & 29.92 & 28.54 & 30.12 & 28.89 & 30.
 Replay: corridor environment & 55.91 & 88.20 & 23.59 & 21.62 & 24.97 & 23.31 & 24.53\\
 Replay: anechoic environment & 64.40 & 96.67 & 49.44 & 49.31 & 49.67 & 49.06 & 49.46\\
 \hline
-Voice conversion &&&&&&&\\
-Speech synthesis &&&&&&&\\
+Voice conversion & 33.69 & 36.92 & 27.58 & 23.97 & 23.96 & tbc. & 19.30\\
+Speech synthesis & 27.29 & 15.04 & 13.78 & 11.91 & 16.22 & tbc. & 10.82\\
 \hline
     \end{tabular}
 %    \caption{EER values for different ASV systems for various acoustic %environment of replay attacks, with and without score normalisation. }
@@ -142,11 +144,12 @@ Finally, the EER of the state-of-the-art IV-PLDA system increases to between 25\
 \begin{figure}[!t]
 	\centering
 	\includegraphics[width=1\linewidth]{Figs/DETs_IV_ss_vc_rp.pdf}
-	\caption{DET plots for iVector-PLDA system and various attacks. {\bfseries Axis keys and labels are too small.}}
+	\caption{DET plots for iVector-PLDA system and various attacks.}
+% {\bfseries Axis keys and labels are too small.}}
 	\label{fig::DETs_4attacks}
 \end{figure}
 
-DET profiles showing the vulnerabilities to replay, voice conversion and speech synthesis attacks are illustrated in Fig.~\ref{fig::DETs_4attacks} for the IV-PLDA system.  While the comparison of such profiles is not strictly meaningful\footnote{The authors are not experts in speech synthesis, nor voice conversion.  Different spoofing algorithms may well yield different comparative results.  For example, other authors~\cite{yamagishi, wu , deleon}, show considerably greater vulnerabilities for speech synthesis} it is clear that replay attacks are at least as great a threat to ASV reliability as voice conversion and speech synthesis.  This trend is consistent across the full range of ASV systems.  Again, while the comparisons are not strictly meaningful, results in rows 6 and 7 of Tab.~\ref{tab::results_EER} show the broad vulnerability of all seven ASV systems to replay attacks. {\bfseries Can add more here once figures are available.}
+DET profiles showing the vulnerabilities to replay, voice conversion and speech synthesis attacks are illustrated in Fig.~\ref{fig::DETs_4attacks} for the IV-PLDA system.  While the comparison of such profiles is not strictly meaningful\footnote{The authors are not experts in speech synthesis, nor voice conversion.  Different spoofing algorithms may well yield different comparative results. For example, other authors~\cite{DeLeon2012}, show considerably greater vulnerabilities for speech synthesis \bfseries{Do you know other papers with higher EERs for the NIST protocol? Don't we help our reviewers too much here? ;)}} it is clear that replay attacks are at least as great a threat to ASV reliability as voice conversion and speech synthesis.  This trend is consistent across the full range of ASV systems.  Again, while the comparisons are not strictly meaningful, results in rows 6 and 7 of Tab.~\ref{tab::results_EER} show the broad vulnerability of all seven ASV systems to replay attacks. {\bfseries Can add more here once figures are available.}
 
 %To compare the reply threat with the threat of voice conversion and speech synthesis, we took the average results for all replay devices, as well as the average for office and corridor as the replay environment.
 %The impact of voice conversion, despite demanding considerably more effort to implement, causes a similar degradation in performance to that of replay attacks. E.g., the SGL system yielded the EER of 37\% for voice conversion and on average 31\% for replay (see Table \ref{tab::results_EER_4attacks}); in contrast, the IV-PLDA system showed to be more resistant to voice conversion than replay (20.5\% EER vs. 26\%, respectively). 
@@ -200,25 +203,29 @@ None & 49.46 & 42.14 & 46.77 & 97.00 & 95.17 & 95.76\\
 %   \end{center}
 %\end{table*}
 
-Fig.~\ref{fig::DETs_CM} illustrates the performance of the far-field and LBP-based countermeasures for replay data collected in an office environment.  {\bfseries Just a simple two-class classifier on its own - not integrated with the ASV systems.}
+Fig.~\ref{fig::DETs_CM} illustrates the performance of the far-field and LBP-based countermeasures for replay data collected in an office and a corridor environments. It shows directly the efficiency of spoofing detection, independently from an ASV systems. The plot illustrates that the LBP countermeasure yields much better results than the FFD one, achieving the EER of 2.87\%, while the FFD method yielded 16.53\%. The step-like shape of the DET curve for the LBP is typical to classifiers based on decision trees.
 
-The middle two profiles in Fig.~\ref{fig::DETs_replay_IV} show the impact of the far-field detection and LBP-based countermeasures when integrated with the IV-PLDA system.  While they show reductions in the EER compared to the upper-most profile, they remain far from the original baseline.
+% {\bfseries Just a simple two-class classifier on its own - not integrated with the ASV systems.}
 
-Tab.~\ref{tab::results_CM_rooms} illustrates the performance of the IV-PLDA system...
+The next results show performance of the both analysed countermeasures when integrated with the IV-PLDA system. We selected this ASV, since it is the state-of-the-art, widely used ASV solution, and therefore it is likely that it can be a victim of replay spoofing. The middle two profiles in Fig.~\ref{fig::DETs_replay_IV} show the impact of the far-field detection and LBP-based countermeasures on such a system. While they show reductions in the EER compared to the upper-most profile, they remain far from the original baseline.
+
+%Tab.~\ref{tab::results_CM_rooms} illustrates the performance of the IV-PLDA system...
 
 
-{\bfseries we need to speak about this.  It's difficult to know why you show results only for the IV-PLDA from here on.  Why not the SGL-FA system which seems to be the most robust?  I'm also wondering if we can merge tables II and III to save some space.  Probably the SFAR does not bring a great deal new to the paper beyond what the EER metrics already show. }
 
-The detailed results of experiments with FFD and LBP countermeasures for various replay environment, averaged across the replay devices, are presented in Table~\ref{tab::results_CM_rooms}. It shows that the countermeasure performance varies depending on acoustic environment. The relative improvement caused by the countermeasures turned out to be the highest for the office -- in this case the EER decreased from 30\% down to less than 14\% for FFD and less than 10\% for LBP. Also for the corridor LBP turned out to be more effective than FFD -- 7\% EER vs. 11\%, respectively, also the SFAR result was much lower (30\% vs. 46\%). When acoustic conditions were not considered, both countermeasures performed poorly, with the EER results slightly better for FFD. This is also visualised by the shape of the DET plots presented in Fig~\ref{fig::DETs_CM}.
+%{\bfseries we need to speak about this.  It's difficult to know why you show results only for the IV-PLDA from here on.  Why not the SGL-FA system which seems to be the most robust?  I'm also wondering if we can merge tables II and III to save some space.  Probably the SFAR does not bring a great deal new to the paper beyond what the EER metrics already show. } [AJ] I have no idea how to integrate it in a clear way. Table II is for 7 ASVs, Table III concerns just the IV-PLDA... We would save space, but loose on clearness...
 
-Table~\ref{tab::results_CM_spk} displays the results of the countermeasure experiments for various replay devices, averaged across different acoustic environments (only office and corridor were taken into account, as they are by far most realistic). Also here the LBP-based countermeasure yields better results than FFD. Both countermeasures helped most for a smartphone and a tablet (the EER values decreased to less than 12\% for FFD and to 7.5\% for LBP). The results for a stand-alone speaker are only slightly worse (14\% and 10\%, respectively), most likely due to higher quality of this device (see much better frequency response shown in Fig.~\ref{fig::IRs}). 
+The detailed results of experiments with FFD and LBP countermeasures for various replay environment, averaged across the replay devices, are presented in Table~\ref{tab::results_CM_rooms}. It shows that the countermeasure performance varies depending on acoustic environment. The relative improvement caused by the countermeasures turned out to be the highest for the office -- in this case the EER decreased from 30\% down to less than 14\% for FFD and less than 10\% for LBP. Also for the corridor LBP turned out to be more effective than FFD -- 7\% EER vs. 11\%, respectively, also the SFAR result was much lower (30\% vs. 46\%). When acoustic conditions were not considered, both countermeasures performed poorly, with the EER results slightly better for FFD. 
+
+%Table~\ref{tab::results_CM_spk} displays the results of the countermeasure experiments for various replay devices, averaged across different acoustic environments (only office and corridor were taken into account, as they are by far most realistic). Also here the LBP-based countermeasure yields better results than FFD. Both countermeasures helped most for a smartphone and a tablet (the EER values decreased to less than 12\% for FFD and to 7.5\% for LBP). The results for a stand-alone speaker are only slightly worse (14\% and 10\%, respectively), most likely due to higher quality of this device (see much better frequency response shown in Fig.~\ref{fig::IRs}). 
+
 
 
 %% DETs w/wo CM
 \begin{figure}
 	\centering
-\includegraphics[width=1\linewidth]{Figs/DET_IVPLDA_counter_iPad.pdf}
-	\caption{DET plots for IV-PLDA system for various replay environments, with and without the FFD or LBP countermeasures. {\bfseries  I suggest to replace this DET plot with an ASV-independent assessment - i.e. a pure assessment of the CM on its own.}}
+\includegraphics[width=1\linewidth]{Figs/DET_CM.png}
+	\caption{DET plots for replay spoofing detection using the FFD or LBP countermeasures (measured independently from ASVs).} % {\bfseries  I suggest to replace this DET plot with an ASV-independent assessment - i.e. a pure assessment of the CM on its own.}}
 	\label{fig::DETs_CM}
 \end{figure}
 
@@ -231,7 +238,7 @@ The results presented above corroborate the findings of previous work performed 
 
 First, the results show that replay attacks are of comparable threat to voice conversion and speech synthesis; they are not intended, nor sufficient to show that replay attacks cause the greatest degradations in ASV performance.  The relative degradations are naturally a function of the authors' effort and expertise in each approach, whereas they are not expert in voice conversion, nor speech synthesis.  Other, perhaps more sophisticated voice conversion and speech synthesis algorithms may well cause greater degradations in ASV performance than those reported here.  The work should therefore be taken as evidence only of the importance of ensuring ASV robustness to replay spoofing in the future.
 
-These arguments lead naturally to the comparisons regarding the effort and expertise involved in the implementation of each spoofing attack.  Whereas voice conversion and speech synthesis are relatively high-effort, high-technology attacks, replay spoofing is implemented easily, without any specific expertise or equipment.  Accordingly, the threat posed by replay attacks should be considered greater in a practical perspective, even in the case that future work shows degradations in ASV performance cased by replay are lower than those caused by voice conversion and speech synthesis; they are in any case a significant threat and the most likely form of spoofing `in the wild'.
+These arguments lead naturally to the comparisons regarding the effort and expertise involved in the implementation of each spoofing attack.  Whereas voice conversion and speech synthesis are relatively high-effort, high-technology attacks, replay spoofing is implemented easily, without any specific expertise or equipment.  Accordingly, the threat posed by replay attacks should be considered greater in a practical perspective, even in the case that future work shows degradations in ASV performance cased by replay are lower than those caused by voice conversion and speech synthesis; they are in any case a significant threat and the most likely form of spoofing 'in the wild'.
 
 
 

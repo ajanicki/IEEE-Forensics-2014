@@ -1,24 +1,28 @@
 
 Replay attacks are emulated according to the approach described in Section~\ref{ssec:replay}.
-{\bfseries Needed here is an explanation of why you ignored $mic(t)$ and $a(t)$.}  Emulations include a random mix of three different loudspeakers impulse responses $spk(t)$ and three different replay environments $b(t)$.  Speaker impulse responses were obtained from~\cite{Brown2014} and correspond to a low-quality smartphone speaker, a medium-quality tablet speaker and a high-quality standalone speaker.  The impulse response and frequency responses of each are illustrated in Fig.~\ref{fig::IRs}.  There are significant differences in the frequency responses which show in particular the high-pass functions of the lower quality devices.
+%{\bfseries Needed here is an explanation of why you ignored $mic(t)$ and $a(t)$.}  
+Emulations include a random mix of three different loudspeakers impulse responses $spk(t)$ and three different replay environments $b(t)$.  Speaker impulse responses were obtained from~\cite{Brown2014} and correspond to a low-quality smartphone speaker, a medium-quality tablet speaker and a high-quality standalone speaker.  The impulse response and frequency responses of each are illustrated in Fig.~\ref{fig::IRs}.  There are significant differences in the frequency responses which show in particular the high-pass functions of the lower quality devices. We decided to consider the worst-case example, i.e., the case when the spoofer possesses a high-quality recording of the target speaker, therefore we decided to ignore the impact of $mic(t)$ and $a(t)$.
 
-The first two replay environment impulse responses were obtained from~\cite{Jeub2009} and correspond to an enclosed medium-sized office and an open corridor.  The impulse and frequency responses of each are illustrated in Fig.~\ref{fig::Room_IRs}.  {\bfseries Not sure what these show??  No significant differences as far as I can see.  Consider removing them.}  The third impulse response simulates an anechoic chamber with a flat frequency response. 
+The first two replay environment impulse responses were obtained from~\cite{Jeub2009} and correspond to an enclosed medium-sized office and an open corridor.   %The impulse and frequency responses of each are illustrated in Fig.~\ref{fig::Room_IRs}. {\bfseries Not sure what these show??  No significant differences as far as I can see.  Consider removing them.} %
+The third impulse response simulates an anechoic chamber with a flat frequency response. 
 
 
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{Figs/IRs.png}
-	\caption{Impulse left) and frequency (right) responses for three different speakers. {\bfseries Crop graphs so that they fit the linewidth fully.  Increase font size.  Label time axes in time, not samples.}}
+	\caption{Impulse left) and frequency (right) responses for three different speakers.} %{\bfseries Crop graphs so that they fit the linewidth fully.  Increase font size.  Label time axes in time, not samples.}%
 	\label{fig::IRs}
 \end{figure}
 
 
-\begin{figure}
-	\centering
-	\includegraphics[width=1\linewidth]{Figs/Room_IRs.png}
-	\caption{Impulse (left) and frequency (right) responses for two different replay environments.}
-	\label{fig::Room_IRs}
-\end{figure}
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=1\linewidth]{Figs/Room_IRs.png}
+%	\caption{Impulse (left) and frequency (right) responses for two different replay environments.}
+%	\label{fig::Room_IRs}
+%\end{figure}
 
 
 {\bfseries One potential problem here: in the use case relevant to this work, voice conversion speech synthesis and replay attacks will all involve replay, and thus a particular $b(t)$, yet your experiments only consider $b(t)$ for replay.  The comparison is therefore not fair.  I suggest to remove $b(t)$ in your replay work.  In any case there is no difference between the two impulse responses.}
+
+{\bfseries [AJ] I think this is not always the case. We can easily imagine a VC or SS application running on a smartphone and emitting converted/synthetic voice directly to the telephone channel. Or a hardware gadget which is plugged to a smartphone instead of a headset -- there's no replay here either. If replay is involved, efficiency of SS or VC attack is even lower. Without considering $b(t)$ for them we in fact work in favour of them. In the replay attack, in the simplest usage case you don't use any dedicated applications, this is why we have to consider $b(t)$. Besides, the difference between them is remarkable, see the results in Table~\ref{tab::results_CM_rooms} and Table~\ref{tab::results_EER}.}

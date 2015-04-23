@@ -32,12 +32,12 @@ This idea was first investigated in~\cite{Villalba2011}.  The work compared clos
 \begin{itemize}
 \item spectral ratio -- sub-band energy ratio from 0-2~kHz and from 2-4~kHz; 
 \item low frequency ratio -- sub-band energy ratio from 100-300~Hz and from 300-500~Hz, calculated using speech frames only;
-\item total modulation index, and
+\item modulation index, and
 \item nine sub-band modulation indices -- see~\cite{Villalba2011} for precise sub-band bandwidths.
 \end{itemize}
 
 
-The spectral ratio reflect reflects the level of spectrum flattening or noise and reverberation introduced by far-field recording.  The low frequency ratio reflects the level of high-pass filtering, an artefact typical of speech signals  produced by small loudspeakers.  The total and sub-band modulation indices reflect the level of additive and, specifically, coloured noise; higher levels of noise present in replay recordings result in lower than average modulation indices.  Experiments showed that far-field recordings could be detected with 90\%  accuracy.  {\bfseries what classifier?}
+The spectral ratio reflect reflects the level of spectrum flattening or noise and reverberation introduced by far-field recording.  The low frequency ratio reflects the level of high-pass filtering, an artefact typical of speech signals  produced by small loudspeakers.  The total and sub-band modulation indices reflect the level of additive and, specifically, coloured noise; higher levels of noise present in replay recordings result in lower than average modulation indices.  Experiments run with the support vector machine (SVM) as a classifier showed that far-field recordings could be detected with 90\% accuracy.  %%{\bfseries what classifier?}
 
 
 
@@ -45,8 +45,9 @@ The spectral ratio reflect reflects the level of spectrum flattening or noise an
 
 
 \begin{figure*}
-	\includegraphics[width=1\linewidth]{Figs/LBPfeature.pdf}
-	\caption{Schematic diagram of LBP-based feature extraction.{\bfseries Can you hyphenate antispoofing?  I also suggest to reduce the size of the speech utterance and feature extraction arrow in order that you can increase the size of the textrogram, histograms and fontsizes.  Possibly, remove the speech utterance and feature extraction arros entirely.}}
+	\includegraphics[width=1\linewidth]{Figs/LBP_idea.png}
+	\caption{Schematic diagram of LBP-based feature extraction.}
+%{\bfseries Can you hyphenate antispoofing?  I also suggest to reduce the size of the speech utterance and feature extraction arrow in order that you can increase the size of the textrogram, histograms and fontsizes.  Possibly, remove the speech utterance and feature extraction arros entirely.}
 	\label{fig:LBPfeature}
 \end{figure*}
 
@@ -61,7 +62,8 @@ A binary value of 1 is assigned when the intensity of neighbouring pixels (here 
 LBPs are determined for each pixel in the mel-scaled cepstrogram thus resulting in a new matrix of reduced dynamic range, here referred to as a \emph{textrogram}.  
 The textrogram captures short-time feature motion beyond that in conventional dynamic parametrisations.  
 Normalised histograms of pixel values constructed for each row of the textrogram   are stacked vertically to obtain the anti-spoofing feature vector in the same manner as GMM mean-vectors are stacked to form supervectors.  
-{\bfseries What classifier - how are the anti-spoofing feature vectors used?}
+LBP-based features are calculated for the test data and that used for training client models. The two resulting feature vectors are compared using histogram intersection and the resulting score is thresholded to decide if the test signal is genuine speech or a spoofing attack.
+%{\bfseries What classifier - how are the anti-spoofing feature vectors used?}
 Experimental results presented in~\cite{Alegre2013a} showed that the LBP-based textrogram analysis is effective in detecting a range of spoofed speech signals, including artificial signals~\cite{Alegre2012a,Alegre2012b} and speech synthesis (EERs of below 1\%) while less effective in detecting voice conversion (EER in the order of 7\%).
 
 %Considering the fact that the LBP-based countermeasure hardly relies on prior knowledge on the attack, in this work we decided to try to use it also as a countermeasure against replay attacks.
