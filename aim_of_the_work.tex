@@ -1,5 +1,5 @@
 
-Attention now turns to the \emph{detection} of replay spoofing attacks.  Given that only little work has investigated ASV vulnerabilities to such attacks, it is hardly surprising that work to develop anti-spoofing countermeasures is similarly limited.  This section briefly reviews that past work and then describes two particular replay countermeasures which are explored further in this paper.
+Attention now turns to the detection of replay spoofing attacks with dedicated countermeasures.  Given that only little work has investigated ASV vulnerabilities to such attacks, it is hardly surprising that work to develop countermeasures is similarly limited.  This section briefly reviews that past work and then describes two particular replay countermeasures which are explored further in this paper.
 
 
 
@@ -16,17 +16,17 @@ A somewhat similar technique is proposed in~\cite{Wu2014}, where the authors com
 %The detection of high similarity was shown to serve as an effective means of identifying replay attack. 
 % albeit in a rather constrained scenario.   <-- replace after review
 
-Other, more generally applicable methods not restricted to any particular ASV scenario are based on the detection of unexpected channel artefacts indicative of recording and replaying.
-Two such algorithms were reported in~\cite{Wang2011} for which the EER for a baseline GMM-UBM system was shown to decrease from 40\% to 10\% with active countermeasures.  Channel detection is the basis of the first approach investigated further in this paper.
+Other, more generally applicable methods not restricted to any particular ASV scenario, are based on the detection of unexpected channel artefacts indicative of recording and replaying.
+Two such algorithms are reported in~\cite{Wang2011} for which the EER for a baseline Gaussian mixture model (GMM) system with a universal background model (UBM) was shown to decrease from 40\% to 10\% with active countermeasures.  Channel detection is the basis of the first approach investigated further in this paper.
 
 
 
 \subsection{Far-field channel detection}
 \label{subsec:ffd}
 
-Many scenarios in which user authentication is performed by ASV involve so-called close-talk speech, i.e.\ situations where speech is collected from an in-situ or closely positioned microphone.  Examples include telephone and logical access scenarios or critical infrastructure protection and physical access scenarios.  In contrast, since they are likely to be collected surreptitiously or at-distance, replay recordings will exhibit far-field channel effects, effects which can be measured and consequently used to detect replayed speech.  
+Many scenarios in which user authentication is performed by ASV involve so-called close-talk speech, i.e.\ situations where speech is collected from an in-situ or closely positioned microphone.  Examples include telephony and logical access scenarios or critical infrastructure protection and physical access scenarios.  In contrast, since they are likely to be collected surreptitiously or at-distance, replay recordings will exhibit far-field channel effects, effects which can be measured and consequently used to detect replayed speech.  
 
-This idea was first investigated in~\cite{Villalba2011}.  The work compared close-talk and far-field speech signals parametrised according to 12 channel-sensitive features:
+This idea was first investigated in~\cite{Villalba2011}.  The work compares close-talk and far-field speech signals parametrised according to 12 channel-sensitive features:
 
 
 \begin{itemize}
@@ -37,7 +37,7 @@ This idea was first investigated in~\cite{Villalba2011}.  The work compared clos
 \end{itemize}
 
 
-The spectral ratio reflect reflects the level of spectrum flattening or noise and reverberation introduced by far-field recording.  The low frequency ratio reflects the level of high-pass filtering, an artefact typical of speech signals  produced by small loudspeakers.  The total and sub-band modulation indices reflect the level of additive and, specifically, coloured noise; higher levels of noise present in replay recordings result in lower than average modulation indices.  Experiments run with the support vector machine (SVM) as a classifier showed that far-field recordings could be detected with 90\% accuracy.  %%{\bfseries what classifier?}
+The spectral ratio reflects the level of spectrum flattening or noise and reverberation introduced by far-field recording.  The low frequency ratio reflects the (potentially heightened) level of low-pass filtering, an artefact typical of speech signals produced by small loudspeakers.  The total and sub-band modulation indices reflect the level of additive and, specifically, coloured noise; higher levels of noise present in replay recordings result in lower than average modulation indices.  Experiments were performed with a support vector machine (SVM) classifier and showed that far-field recordings could be detected with 90\% accuracy.  %%{\bfseries what classifier?}
 
 
 
@@ -59,12 +59,12 @@ As illustrated in Fig.~\ref{fig:LBPfeature}, LBP analysis is applied to a mel-sc
 The standard LBP operator is a non-parametric 3x3 kernel which assigns a binary code to each pixel in an image according to the comparison of its intensity value to that of its eight surrounding pixels~\cite{Ojala2002}. 
 A binary value of 1 is assigned when the intensity of neighbouring pixels (here feature components) is higher, whereas a value of 0 is assigned when neighbouring pixels are of lower or equal intensity. Each pixel is thus assigned one of $2^8=256$ binary patterns.
 
-LBPs are determined for each pixel in the mel-scaled cepstrogram thus resulting in a new matrix of reduced dynamic range, here referred to as a \emph{textrogram}.  
+LBPs can be determined for each pixel in a mel-scaled cepstrogram thus resulting in a new matrix of reduced dynamic range, here referred to as a \emph{textrogram}.  
 The textrogram captures short-time feature motion beyond that in conventional dynamic parametrisations.  
 Normalised histograms of pixel values constructed for each row of the textrogram   are stacked vertically to obtain the anti-spoofing feature vector in the same manner as GMM mean-vectors are stacked to form supervectors.  
-LBP-based features are calculated for the test data and that used for training client models. The two resulting feature vectors are compared using histogram intersection and the resulting score is thresholded to decide if the test signal is genuine speech or a spoofing attack.
+In the work reported here, LBP-based features are calculated for the both the enrolment and test data.  The two resulting feature vectors are compared using histogram intersection and the resulting score is thresholded to decide if the test signal is genuine speech or a spoofing attack.
 %{\bfseries What classifier - how are the anti-spoofing feature vectors used?}
-Experimental results presented in~\cite{Alegre2013a} showed that the LBP-based textrogram analysis is effective in detecting a range of spoofed speech signals, including artificial signals~\cite{Alegre2012a,Alegre2012b} and speech synthesis (EERs of below 1\%) while less effective in detecting voice conversion (EER in the order of 7\%).
+Experimental results presented in~\cite{Alegre2013a} showed that the LBP-based textrogram analysis is effective in detecting a range of spoofed speech signals, including artificial signals and speech synthesis (EERs of below 1\%) though less effective in the case of voice conversion (EER in the order of 7\%).
 
 %Considering the fact that the LBP-based countermeasure hardly relies on prior knowledge on the attack, in this work we decided to try to use it also as a countermeasure against replay attacks.
 

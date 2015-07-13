@@ -1,6 +1,7 @@
 
-Since previous work in ASV anti-spoofing has shown different vulnerabilities for different ASV systems, this work was performed with a range of representative technologies, from the standard to the state-of-the-art.
-They include: (i) a standard Gaussian mixture model with universal background model (GMM-UBM) system with 1024 Gaussian components;
+Since previous work in ASV anti-spoofing has shown different vulnerabilities for different ASV systems, this work was similarly performed with a range of representative technologies, from the standard to the state-of-the-art.
+They include: 
+(i) a standard Gaussian mixture model with universal background model (GMM-UBM) system;
 (ii) a GMM supervector linear kernel (GSL) system;
 (iii) a GSL system with nuissance atribute projection (NAP)~\cite{Campbell2006};
 (iv) a GSL system with factor analysis (FA)~\cite{Fauve2007};
@@ -10,8 +11,8 @@ They include: (i) a standard Gaussian mixture model with universal background mo
 All seven ASV systems were tested with and without score normalisation.  
 Symmetric normalisation (S-norm)~\cite{Kenny2010} was applied to IV and IV-PLDA systems while test normalisation (T-norm)~\cite{Auckenthaler2000} was used for the others.
 
-All ASV systems were implemented with the same LIA-SpkDet toolkit~\cite{Bonastre2008} and the ALIZE library~\cite{Bonastre2004} and were directly derived from the work in~\cite{Fauve2007}.
+All ASV systems are implemented with the same LIA-SpkDet toolkit~\cite{Bonastre2008} and the ALIZE library~\cite{Bonastre2004} and stem from the work in~\cite{Fauve2007}.
 They use a common UBM with 1024 Gaussian components and a common feature parametrisation: linear frequency cepstral coefficients (LFCCs), their first derivatives and delta energy. 
-The speech activity detector is also common to each system.  
+A speech activity detector is also common to each system.  
 It fits a 3-component GMM to the log-energy distribution and adjusts the speech/non-speech threshold according to the GMM parameters~\cite{Bimbot2004}.
 This approach has been used successfully in many independent studies, e.g.~\cite{magrin2001,fauve2008}. 

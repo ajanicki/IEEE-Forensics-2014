@@ -2,12 +2,12 @@
 Spoofing attacks are generally assumed to be performed at the microphone level.
 In the case of voice conversion and speech synthesis, the practical scenario would then involve the recording of suitable data for the training or adaptation of conversion or synthesis systems, the fabrication of a spoofed utterance and then its presentation to the microphone of the ASV system.
 None of the past work (including the authors') follows this process, preferring instead to emulate spoofing attacks by intervening after the microphone, immediately prior to feature extraction.
-While it may not reflect the practical scenario, the approach can be justified~\cite{} and is that adopted here.
+This approach is entirely justified in the case of linear transducers and channels, and mainly telephony scenarios in which spoofing can be applied while bypassing the microphone~\cite{Alegre database book chapter}.
 
 %In keeping with the goals of this work, namely to compare the threat of replay with that of voice conversion and speech synthesis with strictly controlled protocols, all spoofing attacks are emulated in similar fashion as with the past work.
 Voice conversion spoofing attacks were emulated with the approach described in Section~\ref{ssec:vconv}. 
 A worst-case scenario is considered; conversion is performed with full prior knowledge of the ASV system, i.e.\ voice conversion is performed with exactly the same front-end processing as that used for ASV.
-The filtering model $H_y(f)$ and filter $H_x(f)$ use 19 LPCC and LPC coefficients respectively.
+$H_y(f)$ and filter $H_x(f)$ use 19 LPCC and LPC coefficients respectively.
 Voice conversion is applied to the original impostor utterances which are converted towards the genuine speaker for any given trial.
 
 Speech synthesis attacks are emulated according to the approach described in Section~\ref{ssec:spsyn} using the voice cloning toolkit\footnote{http://homepages.inf.ed.ac.uk/jyamagis/software/page37/page37.html} with a default configuration and standard speaker-independent models trained on the EMIME corpus~\cite{Wester2010}.  
