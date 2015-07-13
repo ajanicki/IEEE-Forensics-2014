@@ -2,11 +2,11 @@
 Spoofing refers to the presentation of a falsified or manipulated sample 
 to the sensor of a biometric system in order to provoke a high score and 
 thus illegitimate verification.
-In recent years, the automatic speaker verification (ASV) community has 
+In recent years the automatic speaker verification (ASV) community has 
 started to investigate spoofing and countermeasures 
 actively~\cite{interspeechSpecialSession, Wu2014a}. 
 A growing 
-body of independent work has now demonstrated the vulnerability of ASV 
+body of independent work has demonstrated the vulnerability of ASV 
 systems to spoofing through 
 replayed speech~\cite{Lindberg1999,Villalba2010},
 impersonation~\cite{Blomberg2004,Farrus2008}, voice 
@@ -18,38 +18,40 @@ Common to the bulk of previous work is a focus on attacks
 which require either specific expertise, e.g.~impersonation, or high-level 
 technology, e.g.~speech synthesis and voice conversion. 
 Only replay attacks can be performed with ease, requiring neither specialist 
-expertise nor equipment.  Since they are the most easily 
-implemented and while ignoring potential differences in efficacy, 
-it is reasonable to assume that replay attacks will be the most prolific
-in practice.  Nonetheless, the threat of 
-replay attacks has not been quantified using large, standard 
-datasets and hence never compared to that of the comparatively higher-effort
-attacks which have received considerably greater attention in the
-literature~\cite{Wu2014a,handbookChapter}.
-With replay attacks being considerably the easiest to implement
-and with discreet, high quality audio equipment now available to the masses,
-replay attacks also merit attention.
+expertise nor sophisticated equipment.  They are easily 
+implemented %and while ignoring potential differences in efficacy, 
+with discreet, high-quality audio equipment, now available to the masses.
+Accordingly, it is reasonable to assume that replay attacks represent a tangible threat and that they will be the most prolific
+in practice.  
+%Nonetheless, the threat of 
+%replay attacks has not been quantified using large, standard 
+%datasets and hence never compared to that of the comparatively higher-effort
+%attacks which have received considerably greater attention in the
+%literature~\cite{Wu2014a,handbookChapter}.
+%With replay attacks being considerably the easiest to implement
+%
+%replay attacks also merit attention.
 
 Only few studies have addressed replay.  
-The work in~\cite{Lindberg1999} assessed the vulnerabilities of an HMM-based, text-dependent ASV system with concatenated digits.  
+The work in~\cite{Lindberg1999} assessed the vulnerabilities of a hidden Markov model (HMM) based, text-dependent ASV system using concatenated digits.  
 While results showed that replay attacks are highly effective, experiments were conducted with data collected from only two speakers.
 The work in~\cite{Villalba2010} investigated replay using recordings which were collected with close-talk or far-field microphones and then replayed over an analogue or digital telephony channel. 
-The work was conducted with a similarly small corpus with data collected from five speakers and demonstrated the vulnerability of a joint factor analysis (JFA) ASV system; the FAR at the EER threshold increased from 1\% to almost 70\%. 
+The work was conducted with data collected from five speakers and demonstrated the vulnerability of a joint factor analysis (JFA) ASV system; the false acceptance rate (FAR) at the equal error rate (EER) threshold increased from 1\% to almost 70\%. 
 The authors in~\cite{Wu2014} investigated a text-dependent 
 ASV system exposed to speech replayed using a laptop computer. 
-This first work using the large, standard and publicly available RSR2015 corpus showed that the EER for the HMM-UBM system increased from approximately 4\% to more than 20\%. Unfortunately, none of the authors of the above papers gave any information about the acoustic conditions used in their experiments.
+Using the large, standard and publicly available RSR2015 corpus, this work showed that the EER for an HMM system increased from approximately 4\% to more than 20\%. %Unfortunately, none of the authors of the above papers gave any information about the acoustic conditions used in their experiments.
 
-%%{\bfseries Can you say something further about the thoroughness of the assessments in terms of the number of replay conditions?  Do they all, for example, use only a single replay environment?  It's about trying to identify the new contribution of this work.}
+%%{\bfseries Can you say something further about the thoroughness of the assessments in terms of the number of replay conditions?  Do they all, for example, use only a single replay environment?  It's about trying to identify the new contribution of this work.}  OK - I see the edits but, on reflection, they were perhaps a little dismissive of the past work.  We can't risk insulting these authors who might be reviewers.
 
 Missing from the literature, however, is a reliable comparative assessment 
-of replay attacks to voice conversion and speech synthesis using large, 
-standard databases and using a suitably broad range of replay scenarios. 
-Such a study is needed in order to help prioritise future work on developing
-countermeasures for the greatest threats facing ASV reliability.
+of replay attacks to speech synthesis and voice conversion using large, 
+standard databases and using a representative range of replay scenarios. 
+Such a study is needed in order to help prioritise future work to develop
+countermeasures for the protection of ASV from spoofing.
 This paper accordingly aims to assess ASV vulnerabilities 
-to replay attacks using the same ASV systems and base corpora used in 
-previous assessments involving voice conversion and speech synthesis 
+to replay attacks using the same ASV systems and corpora used in 
+previous assessments involving speech synthesis and voice conversion  
 spoofing attacks.  In addition, the paper investigates the effectiveness of 
 new countermeasures which aim to distinguish between genuine and replayed speech.  
 
-The paper is organised as follows.  Section~2 describes speech synthesis and voice conversion spoofing attacks with a comparison to replay attacks. Section~3 presents previous and ongoing work to develop countermeasures against replay attacks, including our own work using the local binary pattern analysis of speech spectrograms.  A common experimental framework for the assessment of both vulnerabilities and countermeasures is presented in Section~4. Results are presented in Section~5 and our conclusions and ideas for future works are presented in Section~6.
+The paper is organised as follows.  Section~2 describes speech synthesis and voice conversion spoofing attacks with a comparison to replay attacks. Section~3 presents previous and ongoing work to develop countermeasures against replay attacks, including the authors' work using the local binary pattern analysis of speech spectrograms.  A common experimental framework for the assessment of both vulnerabilities and countermeasures is presented in Section~4. Results are presented in Section~5 and our conclusions and ideas for future work are presented in Section~6.

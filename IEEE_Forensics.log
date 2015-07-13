@@ -1,23 +1,21 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.10.19)  23 APR 2015 14:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.6)  13 JUL 2015 09:52
 entering extended mode
 **IEEE_Forensics.tex
 
-("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\IEEE_Forensics.tex"
+(C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\IEEE_Forensics.te
+x
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
 croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
-vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
-an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
-romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
-sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
-senglishmax, welsh, loaded.
-
-("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\IEEEtran.cls"
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+(C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\IEEEtran.cls
 Document Class: IEEEtran 2012/12/27 V1.8 by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -137,10 +135,10 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
 \bigstrutjot=\dimen119
 )
-(C:\Users\Artur\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(C:\Users\Artur\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen120
@@ -171,8 +169,8 @@ ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
 \fi .
 \c@ContinuedFloat=\count93
 )
-("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\IEEE_Forensics.aux")
+(C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\IEEE_Forensics.au
+x)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 170.
 LaTeX Font Info:    ... okay on input line 170.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 170.
@@ -185,8 +183,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 170.
 LaTeX Font Info:    ... okay on input line 170.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 170.
 LaTeX Font Info:    ... okay on input line 170.
-
-(C:\Users\Artur\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count94
 \scratchdimen=\dimen127
@@ -210,15 +207,18 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 246.
 
-("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\introduction.tex")
-("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\replay_vs_others.tex"
+(C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\introduction.tex)
+
+(C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\replay_vs_others.
+tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 1.
- [1{C:/Users/Artur/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
@@ -237,44 +237,35 @@ File: Figs/replay.png Graphic file (type png)
 Package pdftex.def Info: Figs/replay.png used on input line 92.
 (pdftex.def)             Requested size: 252.0pt x 57.96155pt.
 )
-("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\aim_of_the_work.tex"
+(C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\aim_of_the_work.t
+ex
 Underfull \hbox (badness 5189) in paragraph at lines 8--11
 []\OT1/ptm/m/n/10 One ob-vi-ous ap-proach to re-play de-tec-tion in-volves
  []
 
-[3 <C:/Users/Artur/Documents/Dropbox/15 05 IEEE Forensics/IEEE-Forensics-2014.g
-it/trunk/Figs/replay.png>] <Figs/LBP_idea.png, id=25, 910.15031pt x 289.08pt>
+[3 <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/replay.pn
+g>] <Figs/LBP_idea.png, id=25, 910.15031pt x 289.08pt>
 File: Figs/LBP_idea.png Graphic file (type png)
-
-<use Figs/LBP_idea.png>
+ <use Figs/LBP_idea.png>
 Package pdftex.def Info: Figs/LBP_idea.png used on input line 48.
 (pdftex.def)             Requested size: 516.0pt x 163.89069pt.
-)
-("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\methodology.tex")
-("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\ASVs.tex")
-("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\datasets.tex" [4])
-("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\vcss.tex")
-("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\exper_setup.tex" <Figs/IRs.png, id=30, 428.35031pt x 373.395pt>
+) (C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\methodology.tex
+) (C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\ASVs.tex)
+(C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\datasets.tex
+[4]) (C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\vcss.tex)
+(C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\exper_setup.tex
+<Figs/IRs.png, id=30, 428.35031pt x 373.395pt>
 File: Figs/IRs.png Graphic file (type png)
-
-<use Figs/IRs.png>
+ <use Figs/IRs.png>
 Package pdftex.def Info: Figs/IRs.png used on input line 12.
 (pdftex.def)             Requested size: 252.0pt x 219.66872pt.
- [5 <C:/Users/Artur/Documents/Dropbox/15 05 IEEE Forensics/IEEE-Forensics-2014.
-git/trunk/Figs/LBP_idea.png>])
-("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\cm_setup.tex")
-("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\results.tex" <Figs/dist_IV_off.pdf, id=35, 578.16pt x 433.62pt>
+ [5 <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/LBP_idea
+.png>])
+(C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\cm_setup.tex)
+(C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\results.tex
+<Figs/dist_IV_off.pdf, id=35, 578.16pt x 433.62pt>
 File: Figs/dist_IV_off.pdf Graphic file (type pdf)
-
-<use Figs/dist_IV_off.pdf>
+ <use Figs/dist_IV_off.pdf>
 Package pdftex.def Info: Figs/dist_IV_off.pdf used on input line 10.
 (pdftex.def)             Requested size: 252.0pt x 189.00032pt.
 
@@ -296,60 +287,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--31
 \OT1/ptm/m/n/8 Com-02-2012.pdf) and the Bosaris toolkit
  []
 
-[6 <C:/Users/Artur/Documents/Dropbox/15 05 IEEE Forensics/IEEE-Forensics-2014.g
-it/trunk/Figs/IRs.png>]
+[6 <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/IRs.png>]
 <Figs/DETs_IV_ss_vc_rp.pdf, id=40, 578.16pt x 563.70598pt>
 File: Figs/DETs_IV_ss_vc_rp.pdf Graphic file (type pdf)
 
 <use Figs/DETs_IV_ss_vc_rp.pdf>
 Package pdftex.def Info: Figs/DETs_IV_ss_vc_rp.pdf used on input line 146.
 (pdftex.def)             Requested size: 252.0pt x 245.70041pt.
- [7 <C:/Users/Artur/Documents/Dropbox/15 05 IEEE Forensics/IEEE-Forensics-2014.
-git/trunk/Figs/dist_IV_off.pdf> <C:/Users/Artur/Documents/Dropbox/15 05 IEEE Fo
-rensics/IEEE-Forensics-2014.git/trunk/Figs/DET_IVPLDA_counter_Behr.pdf> <C:/Use
-rs/Artur/Documents/Dropbox/15 05 IEEE Forensics/IEEE-Forensics-2014.git/trunk/F
-igs/DETs_IV_ss_vc_rp.pdf>]
-<Figs/DET_CM.png, id=97, 295.85532pt x 296.60812pt>
+ [7 <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/dist_IV_
+off.pdf> <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/DET
+_IVPLDA_counter_Behr.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/evans/Documents/pub/latex/IEEE-Forensic
+s-2014/trunk/Figs/DET_IVPLDA_counter_Behr.pdf): PDF inclusion: multiple pdfs wi
+th page group included in a single page
+> <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/DETs_IV_ss
+_vc_rp.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/evans/Documents/pub/latex/IEEE-Forensic
+s-2014/trunk/Figs/DETs_IV_ss_vc_rp.pdf): PDF inclusion: multiple pdfs with page
+ group included in a single page
+>] <Figs/DET_CM.png, id=97, 295.85532pt x 296.60812pt>
 File: Figs/DET_CM.png Graphic file (type png)
  <use Figs/DET_CM.png>
 Package pdftex.def Info: Figs/DET_CM.png used on input line 227.
 (pdftex.def)             Requested size: 252.0pt x 252.64761pt.
 
-[8 <C:/Users/Artur/Documents/Dropbox/15 05 IEEE Forensics/IEEE-Forensics-2014.g
-it/trunk/Figs/DET_CM.png>])
-("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\conclusions.tex")
-("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\IEEE_Forensics.bbl" [9]
+[8 <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/DET_CM.pn
+g>])
+(C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\conclusions.tex)
+(C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\IEEE_Forensics.bb
+l [9]
 Underfull \hbox (badness 10000) in paragraph at lines 257--259
 []\OT1/ptm/m/n/8 A. Brown, ``Aaron brown sound web page,''
  []
 
 ) [10]
-("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\IEEE_Forensics.aux") ) 
+(C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\IEEE_Forensics.au
+x)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3067 strings out of 494045
- 53178 string characters out of 3148386
- 118922 words of memory out of 3000000
- 6329 multiletter control sequences out of 15000+200000
+ 3067 strings out of 493921
+ 52307 string characters out of 3147283
+ 119063 words of memory out of 3000000
+ 6330 multiletter control sequences out of 15000+200000
  40843 words of font info for 74 fonts, out of 3000000 for 9000
- 718 hyphenation exceptions out of 8191
+ 844 hyphenation exceptions out of 8191
  36i,9n,38p,1339b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontn
-ame/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8
-a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
-/times/utmri8a.pfb>
-Output written on IEEE_Forensics.pdf (10 pages, 323019 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
+r8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on IEEE_Forensics.pdf (10 pages, 331090 bytes).
 PDF statistics:
  147 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
