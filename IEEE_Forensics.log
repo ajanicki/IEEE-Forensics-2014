@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.6)  14 JUL 2015 10:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.6)  14 JUL 2015 15:01
 entering extended mode
 **IEEE_Forensics.tex
 
@@ -215,6 +215,9 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 1.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
@@ -228,13 +231,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Warning: Reference `Bonastre/Matrouf references' on page 2 undefined on i
 nput line 61.
 
-<Figs/replay.png, id=9, 762.59906pt x 175.40532pt>
+[2] <Figs/replay.png, id=19, 762.59906pt x 175.40532pt>
 File: Figs/replay.png Graphic file (type png)
  <use Figs/replay.png>
 Package pdftex.def Info: Figs/replay.png used on input line 92.
 (pdftex.def)             Requested size: 252.0pt x 57.96155pt.
-
-[2])
+)
 (C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\aim_of_the_work.t
 ex
 Underfull \hbox (badness 5189) in paragraph at lines 8--11
@@ -331,11 +333,13 @@ s-2014/trunk/Figs/DETs_IV_ss_vc_rp.pdf): PDF inclusion: multiple pdfs with page
 >] <Figs/DET_CM.png, id=97, 295.85532pt x 296.60812pt>
 File: Figs/DET_CM.png Graphic file (type png)
  <use Figs/DET_CM.png>
-Package pdftex.def Info: Figs/DET_CM.png used on input line 161.
+Package pdftex.def Info: Figs/DET_CM.png used on input line 139.
 (pdftex.def)             Requested size: 252.0pt x 252.64761pt.
 
-[8 <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/DET_CM.pn
-g>])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/DET_CM.p
+ng>])
 (C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\conclusions.tex)
 (C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\IEEE_Forensics.bb
 l [9]
@@ -353,11 +357,11 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  3071 strings out of 493921
  52477 string characters out of 3147283
- 119063 words of memory out of 3000000
+ 120063 words of memory out of 3000000
  6334 multiletter control sequences out of 15000+200000
  40843 words of font info for 74 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
- 36i,9n,38p,1339b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,9n,38p,1508b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fon
@@ -370,7 +374,7 @@ gram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
 r8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on IEEE_Forensics.pdf (10 pages, 329296 bytes).
+Output written on IEEE_Forensics.pdf (10 pages, 329412 bytes).
 PDF statistics:
  147 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
