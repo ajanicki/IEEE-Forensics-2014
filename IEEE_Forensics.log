@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.6)  13 JUL 2015 14:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.6)  14 JUL 2015 10:13
 entering extended mode
 **IEEE_Forensics.tex
 
@@ -282,25 +282,30 @@ Package pdftex.def Info: Figs/IRs.png used on input line 14.
 <Figs/dist_IV_off.pdf, id=35, 578.16pt x 433.62pt>
 File: Figs/dist_IV_off.pdf Graphic file (type pdf)
  <use Figs/dist_IV_off.pdf>
-Package pdftex.def Info: Figs/dist_IV_off.pdf used on input line 10.
+Package pdftex.def Info: Figs/dist_IV_off.pdf used on input line 9.
 (pdftex.def)             Requested size: 252.0pt x 189.00032pt.
 
 <Figs/DET_IVPLDA_counter_Behr.pdf, id=36, 578.16pt x 563.70598pt>
 File: Figs/DET_IVPLDA_counter_Behr.pdf Graphic file (type pdf)
 
 <use Figs/DET_IVPLDA_counter_Behr.pdf>
-Package pdftex.def Info: Figs/DET_IVPLDA_counter_Behr.pdf used on input line 22
+Package pdftex.def Info: Figs/DET_IVPLDA_counter_Behr.pdf used on input line 21
 .
 (pdftex.def)             Requested size: 252.0pt x 245.70041pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-\OT1/ptm/m/n/8 toolkit (http://publications.idiap.ch/downolads/reports/2012/Anj
-os[]Idiap-
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+[][][]\OT1/ptm/m/n/8 The DET plots in this pa-per were pro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-\OT1/ptm/m/n/8 Com-02-2012.pdf) and the Bosaris toolkit
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+\OT1/ptm/m/n/8 duced with the TAB-ULA RASA Score-toolkit
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+\OT1/ptm/m/n/8 (http://publications.idiap.ch/downolads/reports/2012/Anjos[]Idia
+p-Com-02-
  []
 
 [6 <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/IRs.png>]
@@ -308,11 +313,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--31
 File: Figs/DETs_IV_ss_vc_rp.pdf Graphic file (type pdf)
 
 <use Figs/DETs_IV_ss_vc_rp.pdf>
-Package pdftex.def Info: Figs/DETs_IV_ss_vc_rp.pdf used on input line 146.
+Package pdftex.def Info: Figs/DETs_IV_ss_vc_rp.pdf used on input line 87.
 (pdftex.def)             Requested size: 252.0pt x 245.70041pt.
-
-Underfull \vbox (badness 1360) has occurred while \output is active []
-
  [7 <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/dist_IV_
 off.pdf> <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/DET
 _IVPLDA_counter_Behr.pdf
@@ -320,15 +322,20 @@ _IVPLDA_counter_Behr.pdf
 pdfTeX warning: pdflatex (file C:/Users/evans/Documents/pub/latex/IEEE-Forensic
 s-2014/trunk/Figs/DET_IVPLDA_counter_Behr.pdf): PDF inclusion: multiple pdfs wi
 th page group included in a single page
->] <Figs/DET_CM.png, id=93, 295.85532pt x 296.60812pt>
+> <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/DETs_IV_ss
+_vc_rp.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/evans/Documents/pub/latex/IEEE-Forensic
+s-2014/trunk/Figs/DETs_IV_ss_vc_rp.pdf): PDF inclusion: multiple pdfs with page
+ group included in a single page
+>] <Figs/DET_CM.png, id=97, 295.85532pt x 296.60812pt>
 File: Figs/DET_CM.png Graphic file (type png)
  <use Figs/DET_CM.png>
-Package pdftex.def Info: Figs/DET_CM.png used on input line 227.
+Package pdftex.def Info: Figs/DET_CM.png used on input line 161.
 (pdftex.def)             Requested size: 252.0pt x 252.64761pt.
 
-[8 <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/DETs_IV_s
-s_vc_rp.pdf> <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs
-/DET_CM.png>])
+[8 <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/DET_CM.pn
+g>])
 (C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\conclusions.tex)
 (C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\IEEE_Forensics.bb
 l [9]
@@ -363,9 +370,9 @@ gram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
 r8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on IEEE_Forensics.pdf (10 pages, 330247 bytes).
+Output written on IEEE_Forensics.pdf (10 pages, 329296 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
+ 147 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
