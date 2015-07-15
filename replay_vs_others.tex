@@ -103,6 +103,15 @@ h(t) = mic(t) * a(t) * spk(t) * b(t)
 
 \noindent where $mic(t)$ and $spk(t)$ are impulse responses of the microphone and the speaker, respectively, and where $a(t)$ and $b(t)$ are the respective impulse responses of the recording and replay environments.  This scenario is illustrated in Fig.~\ref{fig::Replay}.  Replay attacks may thus be emulated through the convolution of a source signal $s(t)$ with typical impulse responses representing the different replay components.
 
+Since an inordinately large number of different impulse responses would be needed to emulate representative replay attacks using Equation~\ref{eq:replay}, a simplification can be applied to reduce the number of impulse responses.  Since loudspeaker responses deviate more so than microphone response from a regular impulse, and thus dominate in Equation~\ref{eq::playback, }$mic(t)$ can be safely ignored.  Furthermore, since $a(t)$ and $b(t)$ are similar in nature, a reasonable study can be achieved by considering only one.  Thus:
+
+\begin{equation}
+h(t) \simeq spk(t) * b(t)
+\label{eq::playbacksimplified}
+\end{equation}
+
+Equation~\ref{eq::playbacksimplified} thus represents a worst-case scenario where the spoofer obtains a high quality recording of the target speaker's voice, with no recording artefacts.  In this case, only replay components are considered and are the only means by which a replay attack can be detected.
+
 
 
 \subsection{Qualitative comparison}

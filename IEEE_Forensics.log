@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.6)  14 JUL 2015 15:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.6)  15 JUL 2015 18:43
 entering extended mode
 **IEEE_Forensics.tex
 
@@ -236,6 +236,11 @@ File: Figs/replay.png Graphic file (type png)
  <use Figs/replay.png>
 Package pdftex.def Info: Figs/replay.png used on input line 92.
 (pdftex.def)             Requested size: 252.0pt x 57.96155pt.
+
+
+LaTeX Warning: Reference `eq::playback, ' on page 3 undefined on input line 106
+.
+
 )
 (C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\aim_of_the_work.t
 ex
@@ -256,8 +261,8 @@ LaTeX Warning: Citation `ref to an evaluation plan for e.g. '08 data or just th
 e web address to the NIST SRE evaluations' on page 4 undefined on input line 8.
 
 
-) (C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\ASVs.tex)
-[4] (C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\datasets.tex
+) (C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\ASVs.tex
+[4]) (C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\datasets.tex
 
 LaTeX Warning: Citation `HadidSPM2015' on page 5 undefined on input line 14.
 
@@ -266,9 +271,9 @@ LaTeX Warning: Citation `HadidSPM2015' on page 5 undefined on input line 14.
 LaTeX Warning: Citation `Alegre database book chapter' on page 5 undefined on i
 nput line 5.
 
-) (C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\exper_setup.tex
 [5 <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/LBP_idea.
-png>]
+png>])
+(C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\exper_setup.tex
 Underfull \hbox (badness 1681) in paragraph at lines 8--10
 \OT1/ptm/m/n/10 and cor-re-spond to a low-quality smart-phone speaker, a
  []
@@ -279,7 +284,10 @@ File: Figs/IRs.png Graphic file (type png)
 Package pdftex.def Info: Figs/IRs.png used on input line 14.
 (pdftex.def)             Requested size: 252.0pt x 219.66872pt.
 )
-(C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\cm_setup.tex)
+(C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\cm_setup.tex
+Underfull \vbox (badness 3364) has occurred while \output is active []
+
+)
 (C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\results.tex
 <Figs/dist_IV_off.pdf, id=35, 578.16pt x 433.62pt>
 File: Figs/dist_IV_off.pdf Graphic file (type pdf)
@@ -287,7 +295,8 @@ File: Figs/dist_IV_off.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figs/dist_IV_off.pdf used on input line 9.
 (pdftex.def)             Requested size: 252.0pt x 189.00032pt.
 
-<Figs/DET_IVPLDA_counter_Behr.pdf, id=36, 578.16pt x 563.70598pt>
+[6 <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/IRs.png>]
+<Figs/DET_IVPLDA_counter_Behr.pdf, id=39, 578.16pt x 563.70598pt>
 File: Figs/DET_IVPLDA_counter_Behr.pdf Graphic file (type pdf)
 
 <use Figs/DET_IVPLDA_counter_Behr.pdf>
@@ -310,7 +319,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--30
 p-Com-02-
  []
 
-[6 <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/IRs.png>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 <Figs/DETs_IV_ss_vc_rp.pdf, id=40, 578.16pt x 563.70598pt>
 File: Figs/DETs_IV_ss_vc_rp.pdf Graphic file (type pdf)
 
@@ -324,30 +336,25 @@ _IVPLDA_counter_Behr.pdf
 pdfTeX warning: pdflatex (file C:/Users/evans/Documents/pub/latex/IEEE-Forensic
 s-2014/trunk/Figs/DET_IVPLDA_counter_Behr.pdf): PDF inclusion: multiple pdfs wi
 th page group included in a single page
-> <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/DETs_IV_ss
-_vc_rp.pdf
-
-pdfTeX warning: pdflatex (file C:/Users/evans/Documents/pub/latex/IEEE-Forensic
-s-2014/trunk/Figs/DETs_IV_ss_vc_rp.pdf): PDF inclusion: multiple pdfs with page
- group included in a single page
->] <Figs/DET_CM.png, id=97, 295.85532pt x 296.60812pt>
+>] <Figs/DET_CM.png, id=93, 295.85532pt x 296.60812pt>
 File: Figs/DET_CM.png Graphic file (type png)
  <use Figs/DET_CM.png>
 Package pdftex.def Info: Figs/DET_CM.png used on input line 139.
 (pdftex.def)             Requested size: 252.0pt x 252.64761pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8 <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/DET_CM.p
-ng>])
+[8 <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/DETs_IV_s
+s_vc_rp.pdf>])
 (C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\conclusions.tex)
 (C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\IEEE_Forensics.bb
-l [9]
+l [9 <C:/Users/evans/Documents/pub/latex/IEEE-Forensics-2014/trunk/Figs/DET_CM.
+png>]
 Underfull \hbox (badness 10000) in paragraph at lines 257--259
 []\OT1/ptm/m/n/8 A. Brown, ``Aaron brown sound web page,''
  []
 
-) [10]
+[10]) [11
+
+]
 (C:\Users\evans\Documents\pub\latex\IEEE-Forensics-2014\trunk\IEEE_Forensics.au
 x)
 
@@ -355,10 +362,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3071 strings out of 493921
- 52477 string characters out of 3147283
- 120063 words of memory out of 3000000
- 6334 multiletter control sequences out of 15000+200000
+ 3073 strings out of 493921
+ 52517 string characters out of 3147283
+ 121063 words of memory out of 3000000
+ 6336 multiletter control sequences out of 15000+200000
  40843 words of font info for 74 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
  36i,9n,38p,1508b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -374,9 +381,9 @@ gram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
 r8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on IEEE_Forensics.pdf (10 pages, 329412 bytes).
+Output written on IEEE_Forensics.pdf (11 pages, 330560 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
+ 151 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
