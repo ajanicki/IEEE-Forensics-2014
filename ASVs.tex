@@ -1,5 +1,5 @@
 
-Since previous work in ASV anti-spoofing has shown different vulnerabilities for different ASV systems, this work was similarly performed with a range of representative technologies, from the standard to the state-of-the-art.
+Since previous work in ASV anti-spoofing has shown different vulnerabilities for different ASV systems, this work is similarly performed with a range of representative technologies, from the standard to the state-of-the-art.
 They include: 
 (i) a standard Gaussian mixture model with universal background model (GMM-UBM) system;
 (ii) a GMM supervector linear kernel (GSL) system;
@@ -8,11 +8,11 @@ They include:
 (v) a GMM-UBM system with factor analysis;
 (vi) an iVector system~\cite{Dehak2011} (referred to from here on as IV), and 
 (vii) an iVector system  with probabilistic linear discriminant analysis (PLDA)~\cite{Li2012} and length normalisation~\cite{Garcia2011} (referred to from here on as IV-PLDA). 
-All seven ASV systems were tested with and without score normalisation.  
-Symmetric normalisation (S-norm)~\cite{Kenny2010} was applied to IV and IV-PLDA systems while test normalisation (T-norm)~\cite{Auckenthaler2000} was used for the others.
+All seven ASV systems are tested with and without score normalisation.  
+Symmetric normalisation (S-norm)~\cite{Kenny2010} is applied to IV and IV-PLDA systems while test normalisation (T-norm)~\cite{Auckenthaler2000} is used for the others. 
 
 All ASV systems are implemented with the same LIA-SpkDet toolkit~\cite{Bonastre2008} and the ALIZE library~\cite{Bonastre2004} and stem from the work in~\cite{Fauve2007}.
-They use a common UBM with 1024 Gaussian components and a common feature parametrisation: linear frequency cepstral coefficients (LFCCs), their first derivatives and delta energy. 
+They use a common UBM with 1024 Gaussian components and a common feature parametrisation: linear frequency cepstral coefficients (LFCCs), their deltas and delta energy. 
 A speech activity detector is also common to each system.  
 It fits a 3-component GMM to the log-energy distribution and adjusts the speech/non-speech threshold according to the GMM parameters~\cite{Bimbot2004}.
 This approach has been used successfully in many independent studies, e.g.~\cite{magrin2001,fauve2008}. 

@@ -1,3 +1,9 @@
+\begin{figure*}
+	\includegraphics[width=1\linewidth]{Figs/LBP_idea.png}
+	\caption{Schematic diagram of LBP-based feature extraction.}
+%{\bfseries Can you hyphenate antispoofing?  I also suggest to reduce the size of the speech utterance and feature extraction arrow in order that you can increase the size of the textrogram, histograms and fontsizes.  Possibly, remove the speech utterance and feature extraction arros entirely.}
+	\label{fig:LBPfeature}
+\end{figure*}
 
 Attention now turns to the detection of replay spoofing attacks with dedicated countermeasures.  Given that only little work has investigated ASV vulnerabilities to such attacks, it is hardly surprising that work to develop countermeasures is similarly limited.  This section briefly reviews that past work and then describes two particular replay countermeasures which are explored further in this paper.
 
@@ -37,19 +43,11 @@ This idea was first investigated in~\cite{Villalba2011}.  The work compares clos
 \end{itemize}
 
 
-The spectral ratio reflects the level of spectrum flattening or noise and reverberation introduced by far-field recording.  The low frequency ratio reflects the (potentially heightened) level of low-pass filtering, an artefact typical of speech signals produced by small loudspeakers.  The total and sub-band modulation indices reflect the level of additive and, specifically, coloured noise; higher levels of noise present in replay recordings result in lower than average modulation indices.  Experiments were performed with a support vector machine (SVM) classifier and showed that far-field recordings could be detected with 90\% accuracy.  %%{\bfseries what classifier?}
+The spectral ratio reflects the level of spectrum flattening or noise and reverberation introduced by far-field recording.  The low frequency ratio reflects the (potentially heightened) level of high-pass filtering, an artefact typical of speech signals produced by small loudspeakers.  The total and sub-band modulation indices reflect the level of additive and, specifically, coloured noise; higher levels of noise present in replay recordings result in lower than average modulation indices.  Experiments were performed with a support vector machine (SVM) classifier and showed that far-field recordings could be detected with 90\% accuracy.  %%{\bfseries what classifier?}
 
 
 
 \subsection{Local binary patterns}
-
-
-\begin{figure*}
-	\includegraphics[width=1\linewidth]{Figs/LBP_idea.png}
-	\caption{Schematic diagram of LBP-based feature extraction.}
-%{\bfseries Can you hyphenate antispoofing?  I also suggest to reduce the size of the speech utterance and feature extraction arrow in order that you can increase the size of the textrogram, histograms and fontsizes.  Possibly, remove the speech utterance and feature extraction arros entirely.}
-	\label{fig:LBPfeature}
-\end{figure*}
 
 
 The approach to replay detection proposed in~\cite{Alegre2014} is based on the local binary pattern (LBP) analysis of speech spectrograms.  
