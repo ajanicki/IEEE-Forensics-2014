@@ -8,12 +8,11 @@ They include:
 (v) a GMM-UBM system with factor analysis;
 %(vi) an iVector system~\cite{Dehak2011} (referred to from here on as IV), and 
 (vi) an iVector system~\cite{Dehak2011} with probabilistic linear discriminant analysis (PLDA)~\cite{Li2012} and length normalisation~\cite{Garcia2011} (referred to from here on as IV-PLDA). 
-All %seven
-six ASV systems are tested with and without score normalisation.  
-Symmetric normalisation (S-norm)~\cite{Kenny2010} is applied to IV and IV-PLDA systems while test normalisation (T-norm)~\cite{Auckenthaler2000} is used for the others. 
+Experiments were performed with and without score normalisation.  
+Symmetric normalisation (S-norm)~\cite{Kenny2010} was applied to the IV-PLDA system while test normalisation (T-norm)~\cite{Auckenthaler2000} was used for the others. 
 
 All ASV systems are implemented with the same LIA-SpkDet toolkit~\cite{Bonastre2008} and the ALIZE library~\cite{Bonastre2004} and stem from the work in~\cite{Fauve2007}.
 They use a common UBM with 1024 Gaussian components and a common feature parametrisation: linear frequency cepstral coefficients (LFCCs), their deltas and delta energy. 
 A speech activity detector is also common to each system.  
 It fits a 3-component GMM to the log-energy distribution and adjusts the speech/non-speech threshold according to the GMM parameters~\cite{Bimbot2004}.
-This approach has been used successfully in many independent studies, e.g.~\cite{magrin2001,fauve2008}. 
+This approach has been used successfully in many independent studies, e.g.~\cite{fauve2008}. 

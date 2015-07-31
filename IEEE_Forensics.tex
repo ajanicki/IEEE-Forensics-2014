@@ -249,7 +249,10 @@
 % in the abstract or keywords.
 \begin{abstract}
 This article analyses the threat of replay spoofing or presentation attacks in 
-the context of automatic speaker verification (ASV).  Replay may present a significant threat to their reliability.  As relatively high-technology attacks, speech synthesis and voice conversion, which have thus far received far greater attention in the literature, are probably beyond the means of the average fraudster.  The implementation of replay attacks, in contrast, requires no specific expertise nor sophisticated equipment.  Replay attacks are thus likely to be the most prolific in practice.  This paper compares the threat of replay attacks to that of speech synthesis and voice conversion.  The comparison is performed using strictly controlled protocols and with six different ASV systems including a state-of-the-art iVector system with probabilistic linear discriminant analysis.  While comparatively higher-effort spoofing attacks have received far greater attention in the recent past, experiments show, perhaps unsurprisingly, that low-effort replay attacks represent a greater threat, currently under-researched.  %Perhaps surprisingly, score normalisation is shown to increase the vulnerability of ASV to replay attacks.%
+the context of automatic speaker verification (ASV).  
+%Replay may present a significant threat to their reliability.  i
+As relatively high-technology attacks, speech synthesis and voice conversion, which have thus far received far greater attention in the literature, are probably beyond the means of the average fraudster.  The implementation of replay attacks, in contrast, requires no specific expertise nor sophisticated equipment.  Replay attacks are thus likely to be the most prolific in practice, even if their impact is relatively under-researched/thanks.  This paper compares the threat of replay attacks to those of speech synthesis and voice conversion.  The comparison is performed using strictly controlled protocols and with six different ASV systems including a state-of-the-art iVector system with probabilistic linear discriminant analysis.  %While comparatively higher-effort spoofing attacks have received far greater attention in the recent past, 
+Experiments show that low-effort replay attacks present at least a comparable threat to speech synthesis and voice conversion.  %Perhaps surprisingly, score normalisation is shown to increase the vulnerability of ASV to replay attacks.%
 The paper also describes and assesses two replay attack countermeasures.  A relatively new approach based on the local binary pattern (LBP) analysis of speech spectrograms is shown to outperform a competing approach based on the detection of far-field recordings.
 \end{abstract}
 
@@ -299,7 +302,7 @@ speaker verification, spoofing, replay, countermeasures, local binary patterns.
 \section{Experimental setup}
 \label{sec::evaluation}
 
-The comparison of replay, speech synthesis and voice conversion spoofing attacks necessitates controlled experiments with a large, standard corpus and judiciuos experimental protocols.  They are described here.
+The comparison of replay, speech synthesis and voice conversion spoofing attacks necessitates controlled experiments with a large, standard corpus, a variety of ASV systems and judicious experimental protocols.  They are described here.
 
 
 \subsection{Methodology}

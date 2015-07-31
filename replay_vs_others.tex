@@ -17,7 +17,7 @@ Effectiveness & low &  \textbf{(?)} & medium-high & high\\
    \end{center}
 \end{table*}
 
-This section describes speech synthesis, voice conversion and replay spoofing attacks and specific implementations.  In general, a spoofed speech signal $s(t)$ is generated from the speech signal of a target speaker $x(t)$.  Whereas the input to a speech synthesis system is a text string, that to voice conversion and replay attacks originates from a third speech signal of a source speaker (spoofer) $y(t)$.  
+This section describes speech synthesis, voice conversion and replay spoofing attacks and specific implementations.  In general, a spoofed speech signal $s(t)$ is generated from the speech signal of a target speaker $x(t)$.  Whereas the input to a speech synthesis system is a text string, that to voice conversion originates from a third speech signal of a source speaker (spoofer) $y(t)$.  
 
 
 
@@ -75,7 +75,7 @@ x_{fil} = \sum\limits_{i=1}^{M}p(g_{asr}^{i}|y_{asr}) \mu_{fil}^{i}
 
 
 Replay attacks are an example of low-effort spoofing; they require simply the replaying of a previously captured speech signal.  
-In the absence of suitable countermeasures and considering the widespread availability of consumer devices with high-quality sound systems, replay attacks can typically be realised with ease.  Furthermore, used either directly, or through the cutting and pasting of short speech intervals, replayed speech has potential to overcome both text-dependent and text-independent ASV systems.  Even though the processes of recording and replaying introduce additive acoustic and convolutive channel and transducer noise, these effects can be attenuated by noise and other intersession (channel) variability compensation techniques common to most modern recognition systems.  These factors point towards the tangible threat posed by replay attacks.
+In the absence of suitable countermeasures and considering the widespread availability of consumer devices with high-quality sound systems, replay attacks can typically be realised with ease.  Furthermore, used either directly, or through the cutting and pasting of short speech intervals, replayed speech has potential to overcome both text-dependent and text-independent ASV systems.  Even though the processes of recording and replaying introduce additive acoustic and convolutive channel and transducer noise, these effects can be attenuated by noise and other intersession (channel) variability compensation techniques common to most modern speaker recognition systems.  These factors point towards the tangible threat posed by replay attacks.
 
 Ignoring ambient noise in the acoustic environment (which is in any case not specific to the replay spoofing scenario), replayed speech can be represented as:
 
@@ -104,14 +104,14 @@ h(t) = mic(t) * a(t) * spk(t) * b(t),
 
 \noindent where $mic(t)$ and $spk(t)$ are impulse responses of the microphone and the speaker, respectively, and where $a(t)$ and $b(t)$ are the respective impulse responses of the recording and replay environments.  This scenario is illustrated in Fig.~\ref{fig::Replay}.  Replay attacks may thus be emulated through the convolution of a source signal $s(t)$ with typical impulse responses representing the different replay components.
 
-Since an inordinately large number of different impulse responses would be needed to emulate representative replay attacks using Equation~\ref{eq:replay}, a simplification can be applied to reduce the number of impulse responses.  Since loudspeaker responses deviate more so than microphone response from a regular impulse, and thus dominate in Equation~\ref{eq::playback}, $mic(t)$ can be safely ignored.  Furthermore, since $a(t)$ and $b(t)$ are similar in nature, a reasonable study can be achieved by considering only one.  Thus:
+Since an inordinately large number of different impulse responses would be needed to emulate representative replay attacks using Equation~\ref{eq:replay}, a simplification can be applied to reduce the number of impulse responses.  Since typical loudspeaker responses deviate more so from a regular impulse than typical microphone responses, and thus dominate Equation~\ref{eq::playback}, $mic(t)$ can be safely ignored.  Furthermore, since $a(t)$ and $b(t)$ are similar in nature, a reasonable study can be achieved by considering only one.  Thus:
 
 \begin{equation}
 h(t) \simeq spk(t) * b(t)
 \label{eq::playbacksimplified}
 \end{equation}
 
-Equation~\ref{eq::playbacksimplified} thus represents a worst-case scenario where the spoofer obtains a high quality recording of the target speaker's voice, with no recording artefacts.  In this case, only replay components are considered and are the only means by which a replay attack can be detected.
+Equation~\ref{eq::playbacksimplified} represents a worst-case scenario where the spoofer obtains a high quality recording of the target speaker's voice, with no recording artefacts.  In this case, only replay components are considered and are the only means by which a replay attack can be detected.
 
 
 
@@ -120,8 +120,8 @@ Equation~\ref{eq::playbacksimplified} thus represents a worst-case scenario wher
 
 
 
-Replay, voice conversion and speech synthesis spoofing are forms of \emph{concerted-effort} impostor attacks, as opposed to the na\"{i}ve or \emph{zero-effort} impostor attacks normally used to assess ASV system performance.  A qualitative comparison of all four is illustrated in Table~\ref{tab::attacks}, ordered by the level of effort or expertise needed to implement each attack successfully~\cite{Wu2014a}. 
+Replay, voice conversion and speech synthesis spoofing are forms of \emph{concerted-effort} impostor attacks, as opposed to the na\"{i}ve or \emph{zero-effort} impostor attacks normally used to assess ASV system performance.  A qualitative comparison of all four is illustrated in Table~\ref{tab::attacks}, ordered by the level of effort or expertise needed to implement each attack~\cite{Wu2014a}. 
 
 Compared to na\"{i}ve impostor attacks, replay attacks require slightly increased effort; they require recording and replaying. Voice conversion and speech synthesis attacks require specialised, often complex algorithms, in addition to any recording hardware to collect, analyse and parametrise the target and any other auxiliary speech data.  They belong to a class of higher-effort spoofing attacks.  While voice conversion is based upon the conversion of one speech signal to another, speech synthesis converts a text string to a speech signal, which requires a comparatively higher level of effort or expertise.
 
-One may reasonably suppose that the effectiveness of each attack is correlated with the level of effort involved in their implementation; the higher the effort, the more effective the algorithm and hence the greater the impact on ASV performance.  Replay attacks are then assumed to pose only a low threat.  However, the work in~\cite{Alegre2014} suggests the contrary, showing that replay attacks pose a significant threat, being effective in overcoming an ASV system while being the most easily implemented spoofing attack.  It is the objective of this paper to investigate these contradictory findings and to compare objectively and quantitatively the comparative threat of replay spoofing to those of speech synthesis and voice conversion.
+One may reasonably suppose that the effectiveness of each attack is correlated with the level of effort involved in their implementation; the higher the effort, the more effective the algorithm and hence the greater the impact on ASV performance.  Replay attacks are then assumed to pose only a low threat.  However, the work in~\cite{Alegre2014,Wu2014} suggests the contrary, showing that replay attacks pose a significant threat, being effective in overcoming an ASV system while being the most easily implemented spoofing attack.  This paper investigates these contradictory findings and compares objectively and quantitatively the threat of replay spoofing to those of speech synthesis and voice conversion.
