@@ -52,12 +52,12 @@ The spectral ratio reflects the level of spectrum flattening or noise and reverb
 
 The approach to replay detection proposed in~\cite{Alegre2014} is based on the local binary pattern (LBP) analysis of speech spectrograms.  
 Inspired by the original application to image texture analysis~\cite{Ojala2002}, the idea was introduced as an ASV spoofing countermeasure in~\cite{Alegre2013a}.  
-As illustrated in Fig.~\ref{fig:LBPfeature}, LBP analysis is applied to a mel-scaled cepstrogram with appended dynamic features.  Modifications made through spoofing are assumed to disturb the natural `texture' of genuine speech, attributes which are readily detected with LBP.   
+As illustrated in Fig.~\ref{fig:LBPfeature}, LBP analysis is applied to a Mel-scaled cepstrogram with appended dynamic features.  Modifications made through spoofing are assumed to disturb the natural `texture' of genuine speech, attributes which are readily detected with LBP.   
 
 The standard LBP operator is a non-parametric 3x3 kernel which assigns a binary code to each pixel in an image according to the comparison of its intensity value to that of its eight surrounding pixels~\cite{Ojala2002}. 
 A binary value of 1 is assigned when the intensity of neighbouring pixels (here feature components) is higher, whereas a value of 0 is assigned when neighbouring pixels are of lower or equal intensity. Each pixel is thus assigned one of $2^8=256$ binary patterns.
 
-LBPs can be determined for each pixel in a mel-scaled cepstrogram thus resulting in a new matrix of reduced dynamic range, here referred to as a \emph{textrogram}.  
+LBPs can be determined for each pixel in a Mel-scaled cepstrogram thus resulting in a new matrix of reduced dynamic range, here referred to as a \emph{textrogram}.  
 The textrogram captures short-time feature motion beyond that in conventional dynamic parametrisations.  
 Normalised histograms of pixel values constructed for each row of the textrogram   are stacked vertically to obtain the anti-spoofing feature vector in the same manner as GMM mean-vectors are stacked to form supervectors.  
 In the work reported here, LBP-based features are calculated for the both the enrolment and test data.  The two resulting feature vectors are compared using histogram intersection and the resulting score is thresholded to decide if the test signal is genuine speech or a spoofing attack.

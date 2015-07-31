@@ -46,7 +46,7 @@ Fig.~\ref{fig::Dist_IV} shows the effect of replay attacks on the score distribu
 \begin{center}
     \begin{tabular}{ l  c c c c c c}
     \hline
- &  GMM & SGL & SGL-NAP  & SGL-FA & FA & IV-PLDA \\ 
+ &  GMM & GSL & GSL-NAP  & GSL-FA & FA & IV-PLDA \\ 
  \hline \hline
 Baseline & 8.63 & 8.13 & 6.31 & 5.72 & 5.61 & 2.98\\
 \hline
@@ -83,7 +83,7 @@ Rows 2--5 illustrate the degradation in performance when zero-effort impostors a
 EERs in Table~\ref{tab::results_EER} are averaged across the three loudspeaker configurations; other results not reported here showed greater sensitivity to the acoustic environment than to the loudspeaker characteristics.  
 The performance of all six systems degrades significantly.
 The EER of the most sensitive GSL system increases from 8\% to approximately 90\% for all three acoustic environments. This degradation is currently attributed to the effect of T-norm, however this hypothesis requires further investigation.
-Even the EER of the most resistant SGL-FA system increases to between 22\% and 50\%.  
+Even the EER of the most resistant GSL-FA system increases to between 22\% and 50\%.  
 Finally, the EER of the state-of-the-art IV-PLDA system increases to between 25\% and 50\%.  %Even discounting the anechoic environment, the EER is as high as 30\%.
 
 
@@ -174,7 +174,7 @@ These arguments lead naturally to the comparisons regarding the effort and exper
 \section{Future work}
 \label{sec::future}
 
-Some aspects of the results require further work to investigate and explain.  Of particular note is the vulnerability of the SGL system whose EER increases to 90\% when subjected to replay attacks; all other ASV systems have EERs in the order of 25\% to 50\%.  Our initial investigations have shown that score normalisation may be the cause.  Other experiments without score normalisation showed EERs of between 30\% and 50\%.  Accordingly, further work is required to study the impact of score normalisation on ASV vulnerabilities to spoofing. 
+Some aspects of the results require further work to investigate and explain.  Of particular note is the vulnerability of the GSL system whose EER increases to 90\% when subjected to replay attacks; all other ASV systems have EERs in the order of 25\% to 50\%.  Our initial investigations have shown that score normalisation may be the cause.  Other experiments without score normalisation showed EERs of between 30\% and 50\%.  Accordingly, further work is required to study the impact of score normalisation on ASV vulnerabilities to spoofing. 
 
 There are also some as-yet-unanswered questions regarding the impact of channel compensation.  The main idea behind the detection of replay attacks essentially involves the detection of unexpected channel effects.  Thus, while channel compensation has unquestionable utility in ensuring the usability of ASV across different devices, it may also work to the advantage of the fraudster; it can make the very channel characteristics captured by replay countermeasures more difficult to detect.  %There is some evidence of this hypothesis in the difference between results for the IV and IV-PLDA systems.  While the latter gives better baseline performance, it is also marginally more vulnerable to replay attacks.  
 Further work should investigate this link.
