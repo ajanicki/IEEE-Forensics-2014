@@ -16,14 +16,18 @@ Challenge-response mechanisms are a form of passive countermeasure.
 While having potential in preventing some forms of replay attack for some ASV systems, challenge-response countermeasures are not without impacts on usability which may render them undesirable for other ASV systems.
 
 Active countermeasures have also been proposed.
-One such approach involves the storing of previous access attempts and their comparison to new attempts~\cite{Shang2010}.
+{\bfseries One such approach, based on detecting the so-called pop noise, is proposed in~\cite{Shiota2015}. Pop noise is a noise which is produced by humans when uttering certain phonemes, while it is not present when speech is replayed. The authors showed that when testing it with a private corpus independently from an ASV system an EER lower than 4\% can be achieved for a speaker using a headset. Unfortunately, this method is not adequate for telephony speech due to losses caused by the narrowband transmission.}
+
+{\bfseries A different} approach involves the storing of previous access attempts and their comparison to new attempts~\cite{Shang2010}.
 New access attempts which are deemed too close to previous attempts are rejected.
-A somewhat similar technique is proposed in~\cite{Wu2014}, where the authors compare spectral bitmaps between access trials and previously stored recordings in a text-dependent ASV scenario.
-%The detection of high similarity was shown to serve as an effective means of identifying replay attack. 
-% albeit in a rather constrained scenario.   <-- replace after review
+A somewhat similar technique is proposed in~\cite{Wu2014}, where the authors compare spectral bitmaps between access trials and previously stored recordings in a text-dependent ASV scenario. {\bfseries A method recently proposed in~\cite{Galka2015} is based on measuring distances between landmark points in the amplitude spectrum of the speech signal. When testing their algorithm using a fixed phrase spoken by 175 speakers the authors were able to detect replay attacks with EER equal ca. 1\%.
+The detection of high similarity was shown to serve as an effective means of identifying replay attack albeit in a rather constrained scenario. } %  <-- the last sentence was to be replaced after review
+
+
 
 Other, more generally applicable methods not restricted to any particular ASV scenario, are based on the detection of unexpected channel artefacts indicative of recording and replaying.
-Two such algorithms are reported in~\cite{Wang2011} for which the EER for a baseline Gaussian mixture model (GMM) system with a universal background model (UBM) was shown to decrease from 40\% to 10\% with active countermeasures.  Channel detection is the basis of the first approach investigated further in this paper.
+Two such algorithms are reported in~\cite{Wang2011} for which the EER for a baseline Gaussian mixture model (GMM) system with a universal background model (UBM) was shown to decrease from 40\% to 10\% with active countermeasures.  {\bfseries A recent study \cite{Luo2015} describes an application of a deep neural network to detect replay speech. The authors trained such a network to extract necessary information directly from speech samples. When testing their countermeasure on the WSJ corpus independently from an ASV system, the authors reached EER equal 7.5\%.} Channel detection is {\bfseries also} the basis of the first approach investigated further in this paper.
+
 
 
 
@@ -55,7 +59,7 @@ Inspired by the original application to image texture analysis~\cite{Ojala2002},
 As illustrated in Fig.~\ref{fig:LBPfeature}, LBP analysis is applied to a Mel-scaled cepstrogram with appended dynamic features.  Modifications made through spoofing are assumed to disturb the natural `texture' of genuine speech, attributes which are readily detected with LBP.   
 
 The standard LBP operator is a non-parametric 3x3 kernel which assigns a binary code to each pixel in an image according to the comparison of its intensity value to that of its eight surrounding pixels~\cite{Ojala2002}. 
-A binary value of 1 is assigned when the intensity of neighbouring pixels (here feature components) is higher, whereas a value of 0 is assigned when neighbouring pixels are of lower or equal intensity. Each pixel is thus assigned one of $2^8=256$ binary patterns.
+A binary value of 1 is assigned when the intensity of neighbouring pixels (here feature components) is higher, whereas a value of 0 is assigned when neighbouring pixels are of lower or equal intensity. Each pixel is thus assigned one of $2^8=256$ binary patterns. {\bfseries Usually the so-called uniform binary patterns are used, i.e., such LBPs which contain at most two bitwise transitions from 0 to 1 or 1 to 0 when the bit pattern is traversed in circular fashion.}
 
 LBPs can be determined for each pixel in a Mel-scaled cepstrogram thus resulting in a new matrix of reduced dynamic range, here referred to as a \emph{textrogram}.  
 The textrogram captures short-time feature motion beyond that in conventional dynamic parametrisations.  

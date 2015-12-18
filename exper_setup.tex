@@ -9,19 +9,20 @@
 Replay attacks are emulated according to the approach described in Section~\ref{ssec:replay} 
 %{\bfseries Needed here is an explanation of why you ignored $mic(t)$ and $a(t)$.}  
 %Emulations include
-using a random mix of three different loudspeakers impulse responses $spk(t)$ and three different replay environments $b(t)$.  
+using a random mix of three different loudspeakers impulse responses $\mathrm{spk}(t)$ and three different replay environments $b(t)$.  
 %The worst-case scenarios is again considered, i.e., the case where the spoofer possesses a high-quality recording of the target speaker.  Accordingly, $mic(t)$ and $a(t)$ in Equation~\ref{eq::playback} are not considered.  While $a(t)$ can impact on results, as in the case of far-field recordings, loudspeaker effects are known to dominate microphone effects.  Omission of $mic(t)$ is therefore likely to be inconsequential.
-Speaker impulse responses $spk(t)$ are obtained from~\cite{Brown2014} and correspond to a low-quality smartphone speaker, a medium-quality tablet speaker and a high-quality stand-alone speaker.  The impulse response and frequency responses of each are illustrated in Fig.~\ref{fig::IRs}.  There are significant differences in the frequency responses which show in particular the high-pass functions of the smaller (and perhaps lower quality) devices.  The third impulse response is comparatively flat, though with greater high-frequency attenuation.  The first two impulse responses are, however, comparatively short, whereas the third extends to 2ms.  The first two replay environment impulse responses $b(t)$ (not illustrated here) are obtained from~\cite{Jeub2009} and correspond to an enclosed medium-sized office and an open corridor.   %The impulse and frequency responses of each are illustrated in Fig.~\ref{fig::Room_IRs}. {\bfseries Not sure what these show??  No significant differences as far as I can see.  Consider removing them.} %
-The third impulse response simulates an anechoic chamber with a flat frequency response. 
+Speaker impulse responses $\mathrm{spk}(t)$ are obtained from~\cite{Brown2014} and correspond to a low-quality smartphone speaker, a medium-quality tablet speaker and a high-quality stand-alone speaker.  The impulse response and frequency responses of each are illustrated in Fig.~\ref{fig::IRs}.  There are significant differences in the frequency responses which show in particular the high-pass functions of the smaller (and perhaps lower quality) devices.  The third impulse response is comparatively flat, though with greater high-frequency attenuation.  The first two impulse responses are, however, comparatively short, whereas the third extends to 2ms.  The first two replay environment impulse responses $b(t)$ are obtained from~\cite{Jeub2009} and correspond to an enclosed medium-sized office and an open corridor. {\bfseries  The impulse and frequency responses of each are illustrated in Fig.~\ref{fig::Room_IRs}. In this case the impulse responses are significantly longer, the disturbance in frequency is also much higher than in case of the speakers.}  The third impulse response simulates an anechoic chamber with a flat frequency response. 
+
+{\bfseries Thanks to using emulations instead of real recordings we are able to run repetitive experiments in multiple acoustic environments and with multiple replay hardware, what otherwise would not be possible. Using impulse responses originating from professional measurements in real conditions assures high quality of the experiments.} %{\bfseries Not sure what these show??  No significant differences as far as I can see.  Consider removing them.} %
 
 
 
-%\begin{figure}
-%	\centering
-%	\includegraphics[width=1\linewidth]{Figs/Room_IRs.png}
-%	\caption{Impulse (left) and frequency (right) responses for two different replay environments.}
-%	\label{fig::Room_IRs}
-%\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{Figs/Room_IRs.png}
+	\caption{\bfseries Impulse (left) and frequency (right) responses for two different replay environments.}
+	\label{fig::Room_IRs}
+\end{figure}
 
 
 %{\bfseries One potential problem here: in the use case relevant to this work, voice conversion speech synthesis and replay attacks will all involve replay, and thus a particular $b(t)$, yet your experiments only consider $b(t)$ for replay.  The comparison is therefore not fair.  I suggest to remove $b(t)$ in your replay work.  In any case there is no difference between the two impulse responses.}

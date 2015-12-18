@@ -52,10 +52,10 @@ While well-intentioned, the work concerning speech synthesis and voice conversio
 (including that of the authors), may have over-exaggerated the threat given that
 only few people have the necessary capabilities to implement them.  Meanwhile, 
 without appropriate countermeasures, ASV systems may remain vulnerable to replay 
-attacks which are implemented much more easily.
+attacks which are implemented much more easily. 
 This paper accordingly aims to assess ASV vulnerabilities 
 to replay attacks using the same ASV systems and corpora used in 
 previous assessments involving speech synthesis and voice conversion.  In addition, the paper investigates the effectiveness of 
-new countermeasures which aim to distinguish between genuine and replayed speech.  
+new countermeasures which aim to distinguish between genuine and replayed speech. {\bfseries A recent study~\cite{Ergunay2015}, published after the current article was submitted, presents a decent comparison of four kinds of replay attacks, three types of speech synthesis attacks and three types of voice conversion attacks (all forming a corpus named AVspoof), challenging two types of ASV systems. We believe that this article, by using additional ASV systems, multiple replay configurations and in addition, by describing two countermeasures, will provide complementary value to the results shown in~\cite{Ergunay2015}. } 
 
 The paper is organised as follows.  Section~\ref{sec::algorithms} describes speech synthesis and voice conversion spoofing attacks with a comparison to replay attacks. Specific implementations used for the work reported here are also described. Section~\ref{sec::CMs} presents previous and ongoing work to develop countermeasures against replay attacks, including the authors' work using the local binary pattern analysis of speech spectrograms.  A common experimental framework for the assessment of both vulnerabilities and countermeasures is presented in Section~\ref{sec::evaluation}. Results are presented in Section~\ref{sec::results}.  Priorities for future work are discussed in Section~\ref{sec::future} followed by conclusions in Section~\ref{sec::conclusions}.

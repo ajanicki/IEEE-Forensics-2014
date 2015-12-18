@@ -6,7 +6,7 @@ only results for the latter are reported here.
 Due to the significant amount of data necessary to estimate the total variability matrix $T$ used with the IV-PLDA system, the NIST'06 dataset is added to the pool of background data for development whereas the NIST'05 dataset was used for evaluation. 
 $T$ is thus learned using approximately 11,000 utterances from 900 speakers, while independence between development and evaluation datasets is always respected.
  
-All experiments relate to the 8conv4w-1conv4w condition where one conversation corresponds to an average of 2.5~minutes of speech (one side of a 5 minute conversation).  
+All experiments relate to the 8conv4w-1conv4w condition\footnote{\bfseries This condition was selected for consistency with our previous work.} where one conversation corresponds to an average of 2.5~minutes of speech (one side of a 5 minute conversation) {\bfseries in telephone quality, with sampling frequency 8~kHz and $\mu$-law compression}.  
 In all cases, however, only one of the eight, randomly selected training conversations is used for enrolment.
 Results presented in this paper are thus comparable only to those in the literature (not work related to spoofing) for the 1conv4w-1conv4w condition. 
 Standard NIST protocols dictate in the order of 1,000 true client tests and 10,000 impostor tests for development and evaluation datasets. 

@@ -89,6 +89,12 @@ Z.~Wu, S.~Gao, E.~S. Chng, and H.~Li, ``A study on replay attack and
   anti-spoofing for text-dependent speaker verification,'' in \emph{Proc.
   APSIPA ASC 2014}, 2014.
 
+\bibitem{Ergunay2015}
+{\c{S}}.~Erg{\"{u}}nay, E.~Khoury, A.~Lazaridis, and S.~Marcel, ``On the
+  vulnerability of speaker verification to realistic voice spoofing,'' in
+  \emph{Proc. IEEE International Conference on Biometrics: Theory, Applications
+  and Systems (BTAS 2015)}, September 2015.
+
 \bibitem{Klatt1980}
 D.~H. Klatt, ``Software for a cascade/parallel formant synthesizer,'' \emph{the
   Journal of the Acoustical Society of America}, vol.~67, no.~3, pp. 971--995,
@@ -106,26 +112,38 @@ A.~J. Hunt and A.~W. Black, ``Unit selection in a concatenative speech
   International Conference on}, vol.~1.\hskip 1em plus 0.5em minus 0.4em\relax
   IEEE, 1996, pp. 373--376.
 
-\bibitem{Yamagishi2009}
-J.~Yamagishi, T.~Nose, H.~Zen, Z.-H. Ling, T.~Toda, K.~Tokuda, S.~King, and
-  S.~Renals, ``Robust speaker adaptive {HMM} based {Text-to-Speech}
-  {S}ynthesis,'' \emph{IEEE Transactions on Acoustics, Speech and Signal
-  Processing}, vol.~17, no.~6, pp. 1208--1230, 2009.
+\bibitem{Tokuda2000}
+K.~Tokuda, T.~Yoshimura, T.~Masuko, T.~Kobayashi, and T.~Kitamura, ``Speech
+  parameter generation algorithms for {HMM}-based speech synthesis,'' in
+  \emph{Proc. of the IEEE International Conference onAcoustics, Speech, and
+  Signal Processing (ICASSP 2000)}, vol.~3, Istanbul, Turkey, June 2000, pp.
+  1315--1318.
 
 \bibitem{Zen2007a}
 H.~Zen, T.~Nose, J.~Yamagishi, S.~Sako, T.~Masuko, A.~W. Black, and K.~Tokuda,
-  ``The hmm-based speech synthesis system (hts) version 2.0,'' 2007.
+  ``The {HMM}-based speech synthesis system ({HTS}) version 2.0,'' 2007.
+
+\bibitem{Yamagishi2009a}
+J.~Yamagishi, T.~Kobayashi, Y.~Nakano, K.~Ogata, and J.~Isogai, ``Analysis of
+  {S}peaker {A}daptation {A}lgorithms for {HMM}-based {S}peech {S}ynthesis and
+  a {C}onstrained {SMAPLR} {A}daptation {A}lgorithm,'' \emph{IEEE Transactions
+  on Audio, Speech \& Language Processing}, vol.~17, no.~1, pp. 66--83, 2009.
+
+\bibitem{Kawahara2001}
+H.~Kawahara, J.~Estill, and O.~Fujimura, ``Aperiodicity extraction and control
+  using mixed mode excitation and group delay manipulation for a high quality
+  speech analysis, modification and synthesis system {STRAIGHT}.'' in
+  \emph{Proc. MAVEBA}, Firenze, Italy, 2001, pp. 59--64.
 
 \bibitem{Russell1985}
 M.~Russell and R.~Moore, ``Explicit modelling of state occupancy in hidden
   {M}arkov models for automatic speech recognition,'' in \emph{Proc. IEEE Int.
   Conf. Acoust., Speech and Signal Process. (ICASSP)}, 1985, pp. 5--8.
 
-\bibitem{Yamagishi2009a}
-J.~Yamagishi, T.~Kobayashi, Y.~Nakano, K.~Ogata, and J.~Isogai, ``Analysis of
-  {S}peaker {A}daptation {A}lgorithms for {HMM}-based {S}peech {S}ynthesis and
-  a {C}onstrained {SMAPLR} {A}daptation {A}lgorithm,'' \emph{IEEE transactions
-  on Audio, Speech \& Language Processing}, vol.~17, no.~1, pp. 66--83, 2009.
+\bibitem{Imai1983}
+S.~Imai, K.~Sumita, and C.~Furuichi, ``Mel log spectrum approximation ({MLSA})
+  filter for speech synthesis,'' \emph{Electronics and Communications in Japan
+  (Part I: Communications)}, vol.~66, no.~2, pp. 10--18, 1983.
 
 \bibitem{Matrouf2005}
 D.~Matrouf, J.-F. Bonastre, and J.-P. Costa, ``Effect of impostor speech
@@ -145,23 +163,41 @@ J.-F. Bonastre, D.~Matrouf, and C.~Fredouille, ``Transfer function-based voice
 F.~Alegre, A.~Janicki, and N.~Evans, ``Re-assessing the threat of replay
   spoofing attacks against automatic speaker verification,'' in \emph{Proc.
   International Conference of the Biometrics Special Interest Group (BIOSIG
-  2014)}, 2014, (submitted).
+  2014)}, 2014.
 
 \bibitem{Petrovska1998}
 D.~Petrovska-Delacr\'{e}taz and J.~Hennebert, ``Text-prompted speaker
   verification experiments with phoneme specific {MLP}s,'' in \emph{Proc.
   ICASSP'98}, 1998.
 
+\bibitem{Shiota2015}
+S.~Shiota, F.~Villavicencio, J.~Yamagishi, N.~Ono, I.~Echizen, and T.~Matsui,
+  ``Voice liveness detection algorithms based on pop noise caused by human
+  breath for automatic speaker verification,'' in \emph{Proc. Interspeech
+  2015}.\hskip 1em plus 0.5em minus 0.4em\relax International Speech
+  Communication Association, September 2015, pp. 239--243, date of Acceptance:
+  01/06/2015.
+
 \bibitem{Shang2010}
 W.~Shang and M.~Stevenson, ``Score normalization in playback attack
   detection,'' in \emph{Acoustics Speech and Signal Processing (ICASSP), 2010
   IEEE International Conference on}, March 2010, pp. 1678--1681.
+
+\bibitem{Galka2015}
+J.~Ga{\l}ka, M.~Grzywacz, and R.~Samborski, ``Playback attack detection for
+  text-dependent speaker verification over telephone channels,'' \emph{Speech
+  Communication}, vol.~67, pp. 143--153, 2015.
 
 \bibitem{Wang2011}
 Z.-F. Wang, G.~Wei, and Q.-H. He, ``Channel pattern noise based playback attack
   detection algorithm for speaker recognition,'' in \emph{Machine Learning and
   Cybernetics (ICMLC), 2011 International Conference on}, vol.~4, July 2011,
   pp. 1708--1713.
+
+\bibitem{Luo2015}
+D.~Luo, H.~Wu, and J.~Huang, ``Audio recapture detection using deep learning,''
+  in \emph{Proc. IEEE China Summit and International Conference on Signal and
+  Information Processing (ChinaSIP 2015)}, July 2015, pp. 478--482.
 
 \bibitem{Villalba2011}
 J.~Villalba and E.~Lleida, ``Preventing replay attacks on speaker verification
@@ -203,8 +239,8 @@ N.~Dehak, P.~J. Kenny, R.~Dehak, P.~Dumouchel, and P.~Ouellet, ``Front-end
 
 \bibitem{Li2012}
 P.~Li, Y.~Fu, U.~Mohammed, J.~Elder, and S.~Prince, ``Probabilistic models for
-  inference about identity,'' \emph{Pattern Analysis and Machine Intelligence,
-  IEEE Transactions on}, vol.~34, no.~1, pp. 144--157, 2012.
+  inference about identity,'' \emph{IEEE Transactions on Pattern Analysis and
+  Machine Intelligence}, vol.~34, no.~1, pp. 144--157, 2012.
 
 \bibitem{Garcia2011}
 D.~Garcia-Romero and C.~Y. Espy-Wilson, ``Analysis of i-vector length
@@ -240,11 +276,6 @@ F.~Bimbot, J.-F. Bonastre, C.~Fredouille, G.~Gravier, I.~Magrin-Chagnolleau,
   \emph{EURASIP J. Appl. Signal Process.}, vol. 2004, pp. 430--451, Jan. 2004.
   [Online]. Available: \url{http://dx.doi.org/10.1155/S1110865704310024}
 \BIBentrySTDinterwordspacing
-
-\bibitem{magrin2001}
-I.~Magrin-Chagnolleau, G.~Gravier, and R.~Blouet, ``Overview of the 2000-2001
-  {ELISA} consortium research activities,'' in \emph{2001: A Speaker
-  Odyssey-The Speaker Recognition Workshop}, 2001.
 
 \bibitem{fauve2008}
 B.~Fauve, H.~Bredin, W.~Karam, F.~Verdet, A.~Mayoue, G.~Chollet, J.~Hennebert,
@@ -294,9 +325,14 @@ Y.~Freund and R.~E. Schapire, ``A short introduction to boosting,'' in \emph{In
   Intelligence}.\hskip 1em plus 0.5em minus 0.4em\relax Morgan Kaufmann, 1999,
   pp. 1401--1406.
 
+\bibitem{Weka}
+M.~Hall, E.~Frank, G.~Holmes, B.~Pfahringer, P.~Reutemann, and I.~H. Witten,
+  ``The {WEKA} data mining software: An update,'' \emph{SIGKDD Explor. Newsl.},
+  vol.~11, no.~1, pp. 10--18, Nov. 2009.
+
 \bibitem{Wu2015}
-Z.~Wu, T.~Kinnunen, N.~Evans, J.~Yamagishi, C.~Hanilc, M.~Sahidullah, and
-  A.~Sizov, ``{ASV}spoof 2015: the first automatic speaker verification
+Z.~Wu, T.~Kinnunen, N.~Evans, J.~Yamagishi, C.~Hanil{\c{c}}i, M.~Sahidullah,
+  and A.~Sizov, ``{ASV}spoof 2015: the first automatic speaker verification
   spoofing and countermeasures challenge,'' in \emph{in Proc. Interspeech
   2015}, Dresden, Germany, 2015.
 
@@ -305,5 +341,15 @@ P.~L. De~Leon, M.~Pucher, J.~Yamagishi, I.~Hernaez, and I.~Saratxaga,
   ``Evaluation of speaker verification security and detection of {HMM}-based
   synthetic speech,'' \emph{Audio, Speech, and Language Processing, IEEE
   Transactions on}, vol.~20, no.~8, pp. 2280--2290, 2012.
+
+\bibitem{Sahidullah2015}
+M.~Sahidullah, T.~Kinnunen, and C.~Hanil{\c{c}}i, ``A comparison of features
+  for synthetic speech detection,'' in \emph{Proc. Interspeech 2015}, Dresden,
+  Germany, September 2015.
+
+\bibitem{Janicki2015IS}
+A.~Janicki, ``Spoofing countermeasure based on analysis of linear prediction
+  error,'' in \emph{Proc. Interspeech 2015}, Dresden, Germany, September 2015,
+  pp. 2077--2081.
 
 \end{thebibliography}
