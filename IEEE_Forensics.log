@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.6)  21 DEC 2015 09:23
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.6)  21 DEC 2015 10:57
 entering extended mode
-**IEEE_Forensics
+**IEEE_Forensics.tex
 (C:\cygwin64\home\evans\IEEE-Forensics-2014\trunk\IEEE_Forensics.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
@@ -237,7 +237,7 @@ Underfull \hbox (badness 5189) in paragraph at lines 14--17
  []
 
 [3 <C:/cygwin64/home/evans/IEEE-Forensics-2014/trunk/Figs/replay.png>]
-Underfull \vbox (badness 2096) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4 <C:/cygwin64/home/evans/IEEE-Forensics-2014/trunk/Figs/LBP_idea.png>])
 (C:\cygwin64\home\evans\IEEE-Forensics-2014\trunk\methodology.tex)
@@ -260,6 +260,9 @@ Package pdftex.def Info: Figs/Room_IRs.png used on input line 22.
 (C:\cygwin64\home\evans\IEEE-Forensics-2014\trunk\cm_setup.tex [6 <C:/cygwin64/
 home/evans/IEEE-Forensics-2014/trunk/Figs/IRs.png>])
 (C:\cygwin64\home\evans\IEEE-Forensics-2014\trunk\results.tex
+Underfull \vbox (badness 5711) has occurred while \output is active []
+
+
 <Figs/dist_IV_off.pdf, id=38, 578.16pt x 433.62pt>
 File: Figs/dist_IV_off.pdf Graphic file (type pdf)
  <use Figs/dist_IV_off.pdf>
@@ -281,26 +284,33 @@ Package pdftex.def Info: Figs/DET_IVPLDA_counter_Behr.pdf used on input line 92
 .
 (pdftex.def)             Requested size: 252.0pt x 245.70041pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 <Figs/DETs_IV_ss_vc_rp.pdf, id=87, 578.16pt x 563.70598pt>
 File: Figs/DETs_IV_ss_vc_rp.pdf Graphic file (type pdf)
 
 <use Figs/DETs_IV_ss_vc_rp.pdf>
 Package pdftex.def Info: Figs/DETs_IV_ss_vc_rp.pdf used on input line 107.
 (pdftex.def)             Requested size: 252.0pt x 245.70041pt.
+
+Underfull \vbox (badness 4060) has occurred while \output is active []
+
  [8 <C:/cygwin64/home/evans/IEEE-Forensics-2014/trunk/Figs/DET_IVPLDA_counter_B
-ehr.pdf>]
-<Figs/DET_CM.pdf, id=98, 578.16pt x 563.70598pt>
+ehr.pdf> <C:/cygwin64/home/evans/IEEE-Forensics-2014/trunk/Figs/DETs_IV_ss_vc_r
+p.pdf
+
+pdfTeX warning: pdflatex (file C:/cygwin64/home/evans/IEEE-Forensics-2014/trunk
+/Figs/DETs_IV_ss_vc_rp.pdf): PDF inclusion: multiple pdfs with page group inclu
+ded in a single page
+>] <Figs/DET_CM.pdf, id=102, 578.16pt x 563.70598pt>
 File: Figs/DET_CM.pdf Graphic file (type pdf)
  <use Figs/DET_CM.pdf>
 Package pdftex.def Info: Figs/DET_CM.pdf used on input line 158.
 (pdftex.def)             Requested size: 252.0pt x 245.70041pt.
- [9 <C:/cygwin64/home/evans/IEEE-Forensics-2014/trunk/Figs/DETs_IV_ss_vc_rp.pdf
-> <C:/cygwin64/home/evans/IEEE-Forensics-2014/trunk/Figs/DET_CM.pdf
 
-pdfTeX warning: pdflatex.exe (file C:/cygwin64/home/evans/IEEE-Forensics-2014/t
-runk/Figs/DET_CM.pdf): PDF inclusion: multiple pdfs with page group included in
- a single page
->]) (C:\cygwin64\home\evans\IEEE-Forensics-2014\trunk\conclusions.tex)
+[9 <C:/cygwin64/home/evans/IEEE-Forensics-2014/trunk/Figs/DET_CM.pdf>])
+(C:\cygwin64\home\evans\IEEE-Forensics-2014\trunk\conclusions.tex)
 (C:\cygwin64\home\evans\IEEE-Forensics-2014\trunk\IEEE_Forensics.bbl [10]
 Underfull \hbox (badness 10000) in paragraph at lines 219--222
 \OT1/ptm/m/n/8 www.itl.nist.gov/iad/mig/tests/sre/2008/sre08[]evalplan[]release
@@ -314,7 +324,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 307--309
 
 ) [12
 
-] (C:\cygwin64\home\evans\IEEE-Forensics-2014\trunk\IEEE_Forensics.aux) ) 
+] (C:\cygwin64\home\evans\IEEE-Forensics-2014\trunk\IEEE_Forensics.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  3091 strings out of 493921
  52241 string characters out of 3147283
@@ -322,21 +336,20 @@ Here is how much of TeX's memory you used:
  6353 multiletter control sequences out of 15000+200000
  40843 words of font info for 74 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
- 36i,9n,38p,1435b,344s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Pr
-ogram Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/t
-imes/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on IEEE_Forensics.pdf (12 pages, 523988 bytes).
+ 36i,9n,38p,1439b,344s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
+r8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on IEEE_Forensics.pdf (12 pages, 523863 bytes).
 PDF statistics:
  160 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
