@@ -13,10 +13,10 @@ Attention now turns to the detection of replay spoofing attacks with dedicated c
 
 One obvious approach to replay detection involves challenge-response systems which require the speaker to utter a prompted phrase~\cite{Petrovska1998}. 
 Challenge-response mechanisms are a form of passive countermeasure.
-While having potential in preventing some forms of replay attack for some ASV systems, challenge-response countermeasures are not without impacts on usability which may render them undesirable for other ASV systems.
+While having potential in preventing some forms of replay attack for some ASV systems, challenge-response countermeasures are not without impacts on usability which may render them undesirable for other ASV systems.  Challenge-response systems also lack sufficient scientific validation.
 
 Active countermeasures have also been proposed.
-{\bfseries One such approach, based on detecting the so-called pop noise, is proposed in~\cite{Shiota2015}. Pop noise is a noise which is produced by humans when uttering certain phonemes, while it is not present when speech is replayed. The authors showed that when testing it with a private corpus independently from an ASV system an EER lower than 4\% can be achieved for a speaker using a headset. Unfortunately, this method is not adequate for telephony speech due to losses caused by the narrowband transmission.}
+One such approach, based upon the detection of so-called pop noise, is proposed in~\cite{Shiota2015}.  Pop noise is a characteristic of certain phonemes.  {\bfseries Which ones??  Give examples - are they, for instance, fricatives?}.  {\bfseries Pop noise tends to be attenuated upon replay as a result of...} and thus its absence can be used as an indication of replay attacks.  {\bfseries You need to say something about how it is captured / estimated / measured?}  The work in~\cite{Shiota2015} showed that replay attacks can be detected with an EER of less than 4\% using such a detection approach when speech is captured with a {\bfseries high-quality} headset.  Unfortunately, the same approach is not likely to be of use in the case of telephony speech; pop noise is in any case attenuated as a result of narrowband transmission.
 
 {\bfseries A different} approach involves the storing of previous access attempts and their comparison to new attempts~\cite{Shang2010}.
 New access attempts which are deemed too close to previous attempts are rejected.
