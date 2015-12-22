@@ -27,7 +27,7 @@ A alternative method of detecting replay attacks was proposed recently in~\cite{
 Other, more generally applicable methods, not restricted to any particular ASV scenario, are based on the detection of unexpected channel artefacts indicative of recording and replaying.
 Two such algorithms are reported in~\cite{Wang2011} for which the EER for a baseline Gaussian mixture model (GMM) system with a universal background model (UBM) was shown to decrease from 40\% to 10\% with active countermeasures.  A more recent study~\cite{Luo2015} describes the application of a deep neural network to detect replayed speech.  
 %The authors trained such a network to extract necessary information directly from speech samples. 
-When assessed on the standard Wall Street Journal (WSJ) corpus~\cite{WSJ ref.}, adapted to the assessment of replay attack spoofing, a detection EER of 7.5\% was achieved.  The detection of channel artefacts is also the basis of the first approach investigated further in this paper.
+When assessed on the standard Wall Street Journal (WSJ) corpus~\cite{WSJ1993}, adapted to the assessment of replay attack spoofing, a detection EER of 7.5\% was achieved.  The detection of channel artefacts is also the basis of the first approach investigated further in this paper.
 
 
 
@@ -60,7 +60,7 @@ Inspired by the original application to image texture analysis~\cite{Ojala2002},
 As illustrated in Fig.~\ref{fig:LBPfeature}, LBP analysis is applied to a Mel-scaled cepstrogram with appended dynamic features.  Modifications made through spoofing are assumed to disturb the natural `texture' of genuine speech, attributes which are readily detected with LBP.   
 
 The standard LBP operator is a non-parametric 3x3 kernel which assigns a binary code to each pixel in an image according to the comparison of its intensity value to that of its eight surrounding pixels~\cite{Ojala2002}. 
-A binary value of 1 is assigned when the intensity of neighbouring pixels (here feature components) is higher, whereas a value of 0 is assigned when neighbouring pixels are of lower or equal intensity. Each pixel is thus assigned one of $2^8=256$ binary patterns. As is common in other applications, e.g. that in face recognition~\cite{Oulu work}, only a subset of the so-called uniform binary patterns are used, i.e.,  LBPs which contain at most two bitwise transitions from 0 to 1 or 1 to 0 when the bit pattern is traversed in circular fashion.
+A binary value of 1 is assigned when the intensity of neighbouring pixels (here feature components) is higher, whereas a value of 0 is assigned when neighbouring pixels are of lower or equal intensity. Each pixel is thus assigned one of $2^8=256$ binary patterns. As is common in other applications, e.g. that in face recognition~\cite{Ahonen2006}, only a subset of the so-called uniform binary patterns are used, i.e.,  LBPs which contain at most two bitwise transitions from 0 to 1 or 1 to 0 when the bit pattern is traversed in circular fashion.
 
 LBPs can be determined for each pixel in a Mel-scaled cepstrogram thus resulting in a new matrix of reduced dynamic range, here referred to as a \emph{textrogram}.  
 The textrogram captures short-time feature motion beyond that in conventional dynamic parametrisations.  

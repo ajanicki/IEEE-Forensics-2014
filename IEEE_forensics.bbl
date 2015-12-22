@@ -89,12 +89,6 @@ Z.~Wu, S.~Gao, E.~S. Chng, and H.~Li, ``A study on replay attack and
   anti-spoofing for text-dependent speaker verification,'' in \emph{Proc.
   APSIPA ASC 2014}, 2014.
 
-\bibitem{Ergunay2015}
-{\c{S}}.~Erg{\"{u}}nay, E.~Khoury, A.~Lazaridis, and S.~Marcel, ``On the
-  vulnerability of speaker verification to realistic voice spoofing,'' in
-  \emph{Proc. IEEE International Conference on Biometrics: Theory, Applications
-  and Systems (BTAS 2015)}, September 2015.
-
 \bibitem{Klatt1980}
 D.~H. Klatt, ``Software for a cascade/parallel formant synthesizer,'' \emph{the
   Journal of the Acoustical Society of America}, vol.~67, no.~3, pp. 971--995,
@@ -115,9 +109,15 @@ A.~J. Hunt and A.~W. Black, ``Unit selection in a concatenative speech
 \bibitem{Tokuda2000}
 K.~Tokuda, T.~Yoshimura, T.~Masuko, T.~Kobayashi, and T.~Kitamura, ``Speech
   parameter generation algorithms for {HMM}-based speech synthesis,'' in
-  \emph{Proc. of the IEEE International Conference onAcoustics, Speech, and
+  \emph{Proc. of the IEEE International Conference on Acoustics, Speech, and
   Signal Processing (ICASSP 2000)}, vol.~3, Istanbul, Turkey, June 2000, pp.
   1315--1318.
+
+\bibitem{Zen2013}
+H.~Zen, A.~Senior, and M.~Schuster, ``Statistical parametric speech synthesis
+  using deep neural networks,'' in \emph{IEEE International Conference on
+  Acoustics, Speech and Signal Processing (ICASSP 2013)}.\hskip 1em plus 0.5em
+  minus 0.4em\relax IEEE, 2013, pp. 7962--7966.
 
 \bibitem{Zen2007a}
 H.~Zen, T.~Nose, J.~Yamagishi, S.~Sako, T.~Masuko, A.~W. Black, and K.~Tokuda,
@@ -144,6 +144,17 @@ M.~Russell and R.~Moore, ``Explicit modelling of state occupancy in hidden
 S.~Imai, K.~Sumita, and C.~Furuichi, ``Mel log spectrum approximation ({MLSA})
   filter for speech synthesis,'' \emph{Electronics and Communications in Japan
   (Part I: Communications)}, vol.~66, no.~2, pp. 10--18, 1983.
+
+\bibitem{Yamagishi2009}
+J.~Yamagishi, T.~Nose, H.~Zen, Z.-H. Ling, T.~Toda, K.~Tokuda, S.~King, and
+  S.~Renals, ``Robust speaker adaptive {HMM} based {Text-to-Speech}
+  {S}ynthesis,'' \emph{IEEE Transactions on Acoustics, Speech and Signal
+  Processing}, vol.~17, no.~6, pp. 1208--1230, 2009.
+
+\bibitem{Zen2007}
+H.~Zen, T.~Nose, J.~Yamagishi, S.~Sako, T.~Masuko, A.~W. Black, and K.~Tokuda,
+  ``The hmm-based speech synthesis system version 2.0,'' in \emph{In Proc. ISCA
+  SSW6}, 2007, pp. 294--299.
 
 \bibitem{Matrouf2005}
 D.~Matrouf, J.-F. Bonastre, and J.-P. Costa, ``Effect of impostor speech
@@ -174,9 +185,7 @@ D.~Petrovska-Delacr\'{e}taz and J.~Hennebert, ``Text-prompted speaker
 S.~Shiota, F.~Villavicencio, J.~Yamagishi, N.~Ono, I.~Echizen, and T.~Matsui,
   ``Voice liveness detection algorithms based on pop noise caused by human
   breath for automatic speaker verification,'' in \emph{Proc. Interspeech
-  2015}.\hskip 1em plus 0.5em minus 0.4em\relax International Speech
-  Communication Association, September 2015, pp. 239--243, date of Acceptance:
-  01/06/2015.
+  2015}, September 2015, pp. 239--243.
 
 \bibitem{Shang2010}
 W.~Shang and M.~Stevenson, ``Score normalization in playback attack
@@ -199,6 +208,11 @@ D.~Luo, H.~Wu, and J.~Huang, ``Audio recapture detection using deep learning,''
   in \emph{Proc. IEEE China Summit and International Conference on Signal and
   Information Processing (ChinaSIP 2015)}, July 2015, pp. 478--482.
 
+\bibitem{WSJ1993}
+J.~Garofolo, D.~Graff, D.~Paul, and D.~Pallett, ``{CSR-I} ({WSJ0}) complete
+  {LDC}93s6{A},'' DVD, 1993, {L}inguistic {D}ata {C}onsortium, {P}hiladelphia,
+  {US}.
+
 \bibitem{Villalba2011}
 J.~Villalba and E.~Lleida, ``Preventing replay attacks on speaker verification
   systems,'' in \emph{Security Technology (ICCST), 2011 IEEE International
@@ -215,10 +229,26 @@ F.~Alegre, R.~Vipperla, A.~Amehraye, and N.~Evans, ``A new speaker verification
   spoofing countermeasure based on local binary patterns,'' in \emph{Proc.
   Interspeech 2013}, Lyon, France, 2013.
 
+\bibitem{Ahonen2006}
+T.~Ahonen, A.~Hadid, and M.~Pietikainen, ``Face description with local binary
+  patterns: Application to face recognition,'' \emph{IEEE Transactions on
+  Pattern Analysis and Machine Intelligence}, vol.~28, no.~12, pp. 2037--2041,
+  2006.
+
 \bibitem{NISTSRE2008}
 The {NIST} year 2008 speaker recognition evaluation plan. Available:
   www.itl.nist.gov/iad/mig/tests/sre/2008/sre08\_evalplan\_release4.pdf. April
   2008.
+
+\bibitem{Reynolds2000}
+D.~A. Reynolds, T.~F. Quatieri, and R.~B. Dunn, ``Speaker verification using
+  adapted {G}aussian mixture models,'' \emph{Digital Signal Processing},
+  vol.~10, no. 1-3, pp. 19--41, 2000.
+
+\bibitem{Campbell2006b}
+W.~M. Campbell, D.~E. Sturim, and D.~A. Reynolds, ``Support vector machines
+  using {GMM} supervectors for speaker verification,'' \emph{IEEE Signal
+  Processing Letters}, vol.~13, pp. 308--311, 2006.
 
 \bibitem{Campbell2006}
 W.~M. Campbell, D.~Sturim, D.~A. Reynolds, and A.~Solomonoff, ``{SVM} based
@@ -333,8 +363,14 @@ M.~Hall, E.~Frank, G.~Holmes, B.~Pfahringer, P.~Reutemann, and I.~H. Witten,
 \bibitem{Wu2015}
 Z.~Wu, T.~Kinnunen, N.~Evans, J.~Yamagishi, C.~Hanil{\c{c}}i, M.~Sahidullah,
   and A.~Sizov, ``{ASV}spoof 2015: the first automatic speaker verification
-  spoofing and countermeasures challenge,'' in \emph{in Proc. Interspeech
-  2015}, Dresden, Germany, 2015.
+  spoofing and countermeasures challenge,'' in \emph{Proc. Interspeech 2015},
+  Dresden, Germany, 2015.
+
+\bibitem{Ergunay2015}
+{\c{S}}.~Erg{\"{u}}nay, E.~Khoury, A.~Lazaridis, and S.~Marcel, ``On the
+  vulnerability of speaker verification to realistic voice spoofing,'' in
+  \emph{Proc. IEEE International Conference on Biometrics: Theory, Applications
+  and Systems (BTAS 2015)}, September 2015.
 
 \bibitem{DeLeon2012}
 P.~L. De~Leon, M.~Pucher, J.~Yamagishi, I.~Hernaez, and I.~Saratxaga,
@@ -346,10 +382,5 @@ P.~L. De~Leon, M.~Pucher, J.~Yamagishi, I.~Hernaez, and I.~Saratxaga,
 M.~Sahidullah, T.~Kinnunen, and C.~Hanil{\c{c}}i, ``A comparison of features
   for synthetic speech detection,'' in \emph{Proc. Interspeech 2015}, Dresden,
   Germany, September 2015.
-
-\bibitem{Janicki2015IS}
-A.~Janicki, ``Spoofing countermeasure based on analysis of linear prediction
-  error,'' in \emph{Proc. Interspeech 2015}, Dresden, Germany, September 2015,
-  pp. 2077--2081.
 
 \end{thebibliography}
