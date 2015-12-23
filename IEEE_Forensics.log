@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.10.19)  22 DEC 2015 17:53
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.10.19)  23 DEC 2015 10:02
 entering extended mode
 **IEEE_Forensics.tex
 
@@ -232,13 +232,6 @@ File: Figs/replay.png Graphic file (type png)
  <use Figs/replay.png>
 Package pdftex.def Info: Figs/replay.png used on input line 93.
 (pdftex.def)             Requested size: 252.0pt x 55.1873pt.
-
-
-LaTeX Warning: Citation `' on page 3 undefined on input line 127.
-
-
-LaTeX Warning: Citation `' on page 3 undefined on input line 127.
-
 )
 ("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
 \trunk\aim_of_the_work.tex"
@@ -253,8 +246,11 @@ Underfull \hbox (badness 5189) in paragraph at lines 14--17
  []
 
 [3 <C:/Users/Artur/Documents/Dropbox/15 05 IEEE Forensics/IEEE-Forensics-2014.g
-it/trunk/Figs/replay.png>] [4 <C:/Users/Artur/Documents/Dropbox/15 05 IEEE Fore
-nsics/IEEE-Forensics-2014.git/trunk/Figs/LBP_idea.png>])
+it/trunk/Figs/replay.png>]
+Underfull \vbox (badness 2096) has occurred while \output is active []
+
+ [4 <C:/Users/Artur/Documents/Dropbox/15 05 IEEE Forensics/IEEE-Forensics-2014.
+git/trunk/Figs/LBP_idea.png>])
 ("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
 \trunk\methodology.tex")
 ("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
@@ -281,10 +277,11 @@ Package pdftex.def Info: Figs/Room_IRs.png used on input line 25.
 ("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
 \trunk\cm_setup.tex")
 ("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\results.tex" <Figs/dist_IV_off.pdf, id=38, 578.16pt x 433.62pt>
+\trunk\results.tex" [7 <C:/Users/Artur/Documents/Dropbox/15 05 IEEE Forensics/I
+EEE-Forensics-2014.git/trunk/Figs/Room_IRs.png>]
+<Figs/dist_IV_off.pdf, id=42, 578.16pt x 433.62pt>
 File: Figs/dist_IV_off.pdf Graphic file (type pdf)
-
-<use Figs/dist_IV_off.pdf>
+ <use Figs/dist_IV_off.pdf>
 Package pdftex.def Info: Figs/dist_IV_off.pdf used on input line 10.
 (pdftex.def)             Requested size: 252.0pt x 189.00032pt.
 
@@ -293,8 +290,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--73
 p-Com-02-
  []
 
-[7 <C:/Users/Artur/Documents/Dropbox/15 05 IEEE Forensics/IEEE-Forensics-2014.g
-it/trunk/Figs/Room_IRs.png>]
 <Figs/DET_IVPLDA_counter_Behr.pdf, id=43, 578.16pt x 563.70598pt>
 File: Figs/DET_IVPLDA_counter_Behr.pdf Graphic file (type pdf)
 
@@ -302,15 +297,18 @@ File: Figs/DET_IVPLDA_counter_Behr.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figs/DET_IVPLDA_counter_Behr.pdf used on input line 92
 .
 (pdftex.def)             Requested size: 252.0pt x 245.70041pt.
- [8 <C:/Users/Artur/Documents/Dropbox/15 05 IEEE Forensics/IEEE-Forensics-2014.
-git/trunk/Figs/dist_IV_off.pdf> <C:/Users/Artur/Documents/Dropbox/15 05 IEEE Fo
-rensics/IEEE-Forensics-2014.git/trunk/Figs/DET_IVPLDA_counter_Behr.pdf>]
-<Figs/DETs_IV_ss_vc_rp.pdf, id=96, 578.16pt x 563.70598pt>
+
+<Figs/DETs_IV_ss_vc_rp.pdf, id=44, 578.16pt x 563.70598pt>
 File: Figs/DETs_IV_ss_vc_rp.pdf Graphic file (type pdf)
 
 <use Figs/DETs_IV_ss_vc_rp.pdf>
 Package pdftex.def Info: Figs/DETs_IV_ss_vc_rp.pdf used on input line 105.
 (pdftex.def)             Requested size: 252.0pt x 245.70041pt.
+ [8 <C:/Users/Artur/Documents/Dropbox/15 05 IEEE Forensics/IEEE-Forensics-2014.
+git/trunk/Figs/dist_IV_off.pdf> <C:/Users/Artur/Documents/Dropbox/15 05 IEEE Fo
+rensics/IEEE-Forensics-2014.git/trunk/Figs/DET_IVPLDA_counter_Behr.pdf>]
+Underfull \vbox (badness 4429) has occurred while \output is active []
+
 
 <Figs/DET_CM.pdf, id=97, 578.16pt x 563.70598pt>
 File: Figs/DET_CM.pdf Graphic file (type pdf)
@@ -318,52 +316,49 @@ File: Figs/DET_CM.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figs/DET_CM.pdf used on input line 158.
 (pdftex.def)             Requested size: 252.0pt x 245.70041pt.
  [9 <C:/Users/Artur/Documents/Dropbox/15 05 IEEE Forensics/IEEE-Forensics-2014.
-git/trunk/Figs/DETs_IV_ss_vc_rp.pdf> <C:/Users/Artur/Documents/Dropbox/15 05 IE
-EE Forensics/IEEE-Forensics-2014.git/trunk/Figs/DET_CM.pdf>])
+git/trunk/Figs/DETs_IV_ss_vc_rp.pdf>])
 ("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\conclusions.tex") [10]
+\trunk\conclusions.tex" [10 <C:/Users/Artur/Documents/Dropbox/15 05 IEEE Forens
+ics/IEEE-Forensics-2014.git/trunk/Figs/DET_CM.pdf>])
 ("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\IEEE_Forensics.bbl"
-Underfull \hbox (badness 10000) in paragraph at lines 239--242
+\trunk\IEEE_Forensics.bbl" [11]
+Underfull \hbox (badness 10000) in paragraph at lines 245--248
 \OT1/ptm/m/n/8 www.itl.nist.gov/iad/mig/tests/sre/2008/sre08[]evalplan[]release
 4.pdf.
  []
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 337--339
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--351
 []\OT1/ptm/m/n/8 A. Brown, ``Aaron Brown Sound web page,'' Avail-able:
  []
 
 ) [12]
 ("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
-\trunk\IEEE_Forensics.aux")
-
-LaTeX Warning: There were undefined references.
-
- ) 
+\trunk\IEEE_Forensics.aux") ) 
 Here is how much of TeX's memory you used:
  3097 strings out of 494045
- 53572 string characters out of 3148386
- 119922 words of memory out of 3000000
+ 53585 string characters out of 3148386
+ 118922 words of memory out of 3000000
  6359 multiletter control sequences out of 15000+200000
  39736 words of font info for 73 fonts, out of 3000000 for 9000
  718 hyphenation exceptions out of 8191
- 36i,9n,38p,1575b,338s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
-r8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on IEEE_Forensics.pdf (12 pages, 523936 bytes).
+ 36i,9n,38p,1596b,338s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontn
+ame/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8
+a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
+/times/utmri8a.pfb>
+Output written on IEEE_Forensics.pdf (12 pages, 524916 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
+ 160 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
