@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.10.19)  23 DEC 2015 10:02
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.10.5)  6 JAN 2016 09:26
 entering extended mode
 **IEEE_Forensics.tex
 
@@ -322,13 +322,13 @@ git/trunk/Figs/DETs_IV_ss_vc_rp.pdf>])
 ics/IEEE-Forensics-2014.git/trunk/Figs/DET_CM.pdf>])
 ("C:\Users\Artur\Documents\Dropbox\15 05 IEEE Forensics\IEEE-Forensics-2014.git
 \trunk\IEEE_Forensics.bbl" [11]
-Underfull \hbox (badness 10000) in paragraph at lines 245--248
+Underfull \hbox (badness 10000) in paragraph at lines 242--245
 \OT1/ptm/m/n/8 www.itl.nist.gov/iad/mig/tests/sre/2008/sre08[]evalplan[]release
 4.pdf.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--351
+Underfull \hbox (badness 10000) in paragraph at lines 346--348
 []\OT1/ptm/m/n/8 A. Brown, ``Aaron Brown Sound web page,'' Avail-able:
  []
 
@@ -337,7 +337,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 349--351
 \trunk\IEEE_Forensics.aux") ) 
 Here is how much of TeX's memory you used:
  3097 strings out of 494045
- 53585 string characters out of 3148386
+ 53585 string characters out of 3148387
  118922 words of memory out of 3000000
  6359 multiletter control sequences out of 15000+200000
  39736 words of font info for 73 fonts, out of 3000000 for 9000
@@ -356,7 +356,7 @@ a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on IEEE_Forensics.pdf (12 pages, 524916 bytes).
+Output written on IEEE_Forensics.pdf (12 pages, 524849 bytes).
 PDF statistics:
  160 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
