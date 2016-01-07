@@ -69,9 +69,9 @@ T.~Masuko, T.~Hitotsumatsu, K.~Tokuda, and T.~Kobayashi, ``On the security of
   speech,'' in \emph{Proc.~{EUROSPEECH}}, 1999.
 
 \bibitem{Leon2010}
-P.~L.~D. Leon, V.~R. Apsingekar, M.~Pucher, and J.~Yamagishi, ``Revisiting the
-  security of speaker verification systems against imposture using synthetic
-  speech,'' in \emph{ICASSP}, March 2010, pp. 1798--1801.
+P.~L. {De Leon}, V.~R. Apsingekar, M.~Pucher, and J.~Yamagishi, ``Revisiting
+  the security of speaker verification systems against imposture using
+  synthetic speech,'' in \emph{ICASSP}, March 2010, pp. 1798--1801.
 
 \bibitem{Alegre2012a}
 F.~Alegre, R.~Vipperla, N.~Evans, and B.~Fauve, ``On the vulnerability of
@@ -161,6 +161,18 @@ H.~Zen, T.~Nose, J.~Yamagishi, S.~Sako, T.~Masuko, A.~W. Black, and K.~Tokuda,
   ``The {HMM}-based speech synthesis system version 2.0,'' in \emph{Proc. ISCA
   SSW6}, 2007, pp. 294--299.
 
+\bibitem{DeLeon2012}
+P.~L. De~Leon, M.~Pucher, J.~Yamagishi, I.~Hernaez, and I.~Saratxaga,
+  ``Evaluation of speaker verification security and detection of {HMM}-based
+  synthetic speech,'' \emph{IEEE Transactions on Audio, Speech, and Language
+  Processing}, vol.~20, no.~8, pp. 2280--2290, 2012.
+
+\bibitem{Wu2013}
+Z.~Wu, X.~Xiao, E.~S. Chng, and H.~Li, ``Synthetic speech detection using
+  temporal modulation feature,'' in \emph{IEEE International Conference on
+  Acoustics, Speech and Signal Processing (ICASSP 2013)}.\hskip 1em plus 0.5em
+  minus 0.4em\relax IEEE, 2013, pp. 7234--7238.
+
 \bibitem{Ergunay2015}
 {\c{S}}.~Erg{\"{u}}nay, E.~Khoury, A.~Lazaridis, and S.~Marcel, ``On the
   vulnerability of speaker verification to realistic voice spoofing,'' in
@@ -184,7 +196,7 @@ J.-F. Bonastre, D.~Matrouf, and C.~Fredouille, ``Transfer function-based voice
   Speaker and Language Recognition Workshop}, 2006, pp. 1--6.
 
 \bibitem{Bonastre2007}
-------, ``Artificial impostor voice transformation effects on false acceptance
+J.-F. Bonastre, D.~Matrouf, and C.~Fredouille, ``Artificial impostor voice transformation effects on false acceptance
   rates,'' in \emph{Proc. Interspeech}, 2007, pp. 2053--2056.
 
 \bibitem{Alegre2013}
@@ -381,12 +393,6 @@ Y.~Freund and R.~E. Schapire, ``A short introduction to boosting,'' in
 M.~Hall, E.~Frank, G.~Holmes, B.~Pfahringer, P.~Reutemann, and I.~H. Witten,
   ``The {WEKA} data mining software: An update,'' \emph{SIGKDD Explor. Newsl.},
   vol.~11, no.~1, pp. 10--18, Nov. 2009.
-
-\bibitem{DeLeon2012}
-P.~L. De~Leon, M.~Pucher, J.~Yamagishi, I.~Hernaez, and I.~Saratxaga,
-  ``Evaluation of speaker verification security and detection of {HMM}-based
-  synthetic speech,'' \emph{IEEE Transactions on Audio, Speech, and Language
-  Processing}, vol.~20, no.~8, pp. 2280--2290, 2012.
 
 \bibitem{Sahidullah2015}
 M.~Sahidullah, T.~Kinnunen, and C.~Hanil{\c{c}}i, ``A comparison of features
