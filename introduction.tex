@@ -21,16 +21,8 @@ Only replay attacks can be performed with ease, requiring neither specific
 expertise nor sophisticated equipment; they are easily 
 implemented %and while ignoring potential differences in efficacy, 
 with discreet, high-quality audio equipment, now available to the masses.
-Accordingly, it is reasonable to assume that replay attacks represent a tangible threat and that they will be the most prolific
-in practice.  
-%Nonetheless, the threat of 
-%replay attacks has not been quantified using large, standard 
-%datasets and hence never compared to that of the comparatively higher-effort
-%attacks which have received considerably greater attention in the
-%literature~\cite{Wu2014a,handbookChapter}.
-%With replay attacks being considerably the easiest to implement
-%
-%replay attacks also merit attention.
+Accordingly, it is reasonable to assume that replay attacks represent a tangible threat and that they, rather than speech synthesis and voice conversion will be the most prolific in practice.  
+
 
 Only few studies have addressed replay.  
 The work in~\cite{Lindberg1999} assessed the vulnerabilities of a hidden Markov model (HMM) based, text-dependent ASV system using concatenated digits.  
@@ -39,11 +31,7 @@ The work in~\cite{Villalba2010} investigated replay using recordings collected w
 The work was conducted with data collected from five speakers and demonstrated the vulnerability of a joint factor analysis (JFA) ASV system; the false acceptance rate (FAR) at the equal error rate (EER) threshold increased from 1\% to almost 70\%. 
 The authors in~\cite{Wu2014} investigated a text-dependent 
 ASV system which was subjected to speech replayed using a laptop computer. 
-Using the large, standard and publicly available RSR2015 corpus, this work showed that the EER for an HMM system increased from approximately 4\% to more than 20\%. %Unfortunately, none of the authors of the above papers gave any information about the acoustic conditions used in their experiments.
-
-{\bfseries The new work MUST be referenced here, but this refers to the missing references published PRIOR to our paper, not those published afterwards. [AJ] None of these reported any vulnerability assessment.}
-
-%%{\bfseries Can you say something further about the thoroughness of the assessments in terms of the number of replay conditions?  Do they all, for example, use only a single replay environment?  It's about trying to identify the new contribution of this work.}  OK - I see the edits but, on reflection, they were perhaps a little dismissive of the past work.  We can't risk insulting these authors who might be reviewers.
+Using the large, standard and publicly available RSR2015 corpus, this work showed that the EER for an HMM system increased from approximately 4\% to more than 20\%. 
 
 Missing from the literature, however, is a reliable comparative assessment 
 of replay attacks to speech synthesis and voice conversion using large, 

@@ -71,8 +71,7 @@ T.~Masuko, T.~Hitotsumatsu, K.~Tokuda, and T.~Kobayashi, ``On the security of
 \bibitem{Leon2010}
 P.~L.~D. Leon, V.~R. Apsingekar, M.~Pucher, and J.~Yamagishi, ``Revisiting the
   security of speaker verification systems against imposture using synthetic
-  speech,'' in \emph{Proc. IEEE Int. Conf. Acoust., Speech and Signal Process.
-  (ICASSP)}, March 2010, pp. 1798 --1801.
+  speech,'' in \emph{ICASSP}, March 2010, pp. 1798--1801.
 
 \bibitem{Alegre2012a}
 F.~Alegre, R.~Vipperla, N.~Evans, and B.~Fauve, ``On the vulnerability of
@@ -90,7 +89,9 @@ Z.~Wu, S.~Gao, E.~S. Chng, and H.~Li, ``A study on replay attack and
   APSIPA ASC 2014}, 2014.
 
 \bibitem{Klatt1980}
-D.~H. Klatt, ``Software for a cascade/parallel formant synthesizer,'' \emph{Journal of the Acoustical Society of America}, vol.~67, no.~3, pp. 971--995, 1980.
+D.~H. Klatt, ``Software for a cascade/parallel formant synthesizer,'' \emph{the
+  Journal of the Acoustical Society of America}, vol.~67, no.~3, pp. 971--995,
+  1980.
 
 \bibitem{Moulines1990}
 E.~Moulines and F.~Charpentier, ``Pitch-synchronous waveform processing
@@ -100,9 +101,9 @@ E.~Moulines and F.~Charpentier, ``Pitch-synchronous waveform processing
 \bibitem{Hunt1996}
 A.~J. Hunt and A.~W. Black, ``Unit selection in a concatenative speech
   synthesis system using a large speech database,'' in \emph{Proc. IEEE
-  International Conference on Acoustics, Speech,
-  and Signal Processing (ICASSP 1996), 1996 }, vol.~1.\hskip 1em plus 0.5em minus 0.4em\relax
-  IEEE, 1996, pp. 373--376.
+  International Conference on Acoustics, Speech, and Signal Processing (ICASSP
+  1996)}, vol.~1.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 1996, pp.
+  373--376.
 
 \bibitem{Tokuda2000}
 K.~Tokuda, T.~Yoshimura, T.~Masuko, T.~Kobayashi, and T.~Kitamura, ``Speech
@@ -160,6 +161,18 @@ H.~Zen, T.~Nose, J.~Yamagishi, S.~Sako, T.~Masuko, A.~W. Black, and K.~Tokuda,
   ``The {HMM}-based speech synthesis system version 2.0,'' in \emph{Proc. ISCA
   SSW6}, 2007, pp. 294--299.
 
+\bibitem{Ergunay2015}
+{\c{S}}.~Erg{\"{u}}nay, E.~Khoury, A.~Lazaridis, and S.~Marcel, ``On the
+  vulnerability of speaker verification to realistic voice spoofing,'' in
+  \emph{Proc. IEEE International Conference on Biometrics: Theory, Applications
+  and Systems (BTAS 2015)}, September 2015.
+
+\bibitem{Wu2015}
+Z.~Wu, T.~Kinnunen, N.~Evans, J.~Yamagishi, C.~Hanil{\c{c}}i, M.~Sahidullah,
+  and A.~Sizov, ``{ASV}spoof 2015: the first automatic speaker verification
+  spoofing and countermeasures challenge,'' in \emph{Proc. Interspeech 2015},
+  Dresden, Germany, 2015.
+
 \bibitem{Matrouf2005}
 D.~Matrouf, J.-F. Bonastre, and J.-P. Costa, ``Effect of impostor speech
   transformation on automatic speaker recognition,'' \emph{Biometrics on the
@@ -171,8 +184,18 @@ J.-F. Bonastre, D.~Matrouf, and C.~Fredouille, ``Transfer function-based voice
   Speaker and Language Recognition Workshop}, 2006, pp. 1--6.
 
 \bibitem{Bonastre2007}
-J.-F. Bonastre, D.~Matrouf, and C.~Fredouille, ``Artificial impostor voice transformation effects on false acceptance
+------, ``Artificial impostor voice transformation effects on false acceptance
   rates,'' in \emph{Proc. Interspeech}, 2007, pp. 2053--2056.
+
+\bibitem{Alegre2013}
+F.~Alegre, A.~Amehraye, and N.~Evans, ``Spoofing countermeasures to protect
+  automatic speaker verification from voice conversion,'' in \emph{Proc. IEEE
+  Int. Conf. Acoust., Speech and Signal Process. (ICASSP)}, 2013.
+
+\bibitem{Alegre2013a}
+F.~Alegre, R.~Vipperla, A.~Amehraye, and N.~Evans, ``A new speaker verification
+  spoofing countermeasure based on local binary patterns,'' in \emph{Proc.
+  Interspeech 2013}, Lyon, France, 2013.
 
 \bibitem{Alegre2014}
 F.~Alegre, A.~Janicki, and N.~Evans, ``Re-assessing the threat of replay
@@ -193,8 +216,8 @@ S.~Shiota, F.~Villavicencio, J.~Yamagishi, N.~Ono, I.~Echizen, and T.~Matsui,
 
 \bibitem{Shang2010}
 W.~Shang and M.~Stevenson, ``Score normalization in playback attack
-  detection,'' in \emph{Proc. IEEE International Conference on Acoustics Speech and Signal Processing (ICASSP 2010)
-  }, March 2010, pp. 1678--1681.
+  detection,'' in \emph{Acoustics Speech and Signal Processing (ICASSP), 2010
+  IEEE International Conference on}, March 2010, pp. 1678--1681.
 
 \bibitem{Galka2015}
 J.~Ga{\l}ka, M.~Grzywacz, and R.~Samborski, ``Playback attack detection for
@@ -203,8 +226,9 @@ J.~Ga{\l}ka, M.~Grzywacz, and R.~Samborski, ``Playback attack detection for
 
 \bibitem{Wang2011}
 Z.-F. Wang, G.~Wei, and Q.-H. He, ``Channel pattern noise based playback attack
-  detection algorithm for speaker recognition,'' in \emph{Proc. International Conference on Machine Learning and
-  Cybernetics (ICMLC 2011)}, vol.~4, July 2011, pp. 1708--1713.
+  detection algorithm for speaker recognition,'' in \emph{Proc. International
+  Conference on Machine Learning and Cybernetics (ICMLC 2011)}, vol.~4, July
+  2011, pp. 1708--1713.
 
 \bibitem{Luo2015}
 D.~Luo, H.~Wu, and J.~Huang, ``Audio recapture detection using deep learning,''
@@ -226,11 +250,6 @@ T.~Ojala, M.~Pietikainen, and T.~Maenpaa, ``Multiresolution gray-scale and
   rotation invariant texture classification with local binary patterns,''
   \emph{Transactions on Pattern Analysis and Machine Intelligence}, vol.~24,
   no.~7, pp. 971--987, 2002.
-
-\bibitem{Alegre2013a}
-F.~Alegre, R.~Vipperla, A.~Amehraye, and N.~Evans, ``A new speaker verification
-  spoofing countermeasure based on local binary patterns,'' in \emph{Proc.
-  Interspeech 2013}, Lyon, France, 2013.
 
 \bibitem{Ahonen2006}
 T.~Ahonen, A.~Hadid, and M.~Pietikainen, ``Face description with local binary
@@ -267,8 +286,8 @@ B.~Fauve, D.~Matrouf, N.~Scheffer, J.-F. Bonastre, and J.~S.~D. Mason,
 
 \bibitem{Dehak2011}
 N.~Dehak, P.~J. Kenny, R.~Dehak, P.~Dumouchel, and P.~Ouellet, ``Front-end
-  factor analysis for speaker verification,'' \emph{IEEE Transactions on Audio, Speech, and Language
-  Processing}, vol.~19, no.~4, pp. 788--798, 2011.
+  factor analysis for speaker verification,'' \emph{IEEE Transactions on Audio,
+  Speech, and Language Processing}, vol.~19, no.~4, pp. 788--798, 2011.
 
 \bibitem{Li2012}
 P.~Li, Y.~Fu, U.~Mohammed, J.~Elder, and S.~Prince, ``Probabilistic models for
@@ -322,16 +341,10 @@ A.~{H}adid, N.~{E}vans, S.~{M}arcel, and J.~{F}ierrez, ``{B}iometrics systems
   under spoofing attack: an evaluation methodology and lessons learned,''
   \emph{{IEEE} {S}ignal {P}rocessing {M}agazine, {S}eptember 2015}, 09 2015.
 
-\bibitem{Wu2015}
-Z.~Wu, T.~Kinnunen, N.~Evans, J.~Yamagishi, C.~Hanil{\c{c}}i, M.~Sahidullah,
-  and A.~Sizov, ``{ASV}spoof 2015: the first automatic speaker verification
-  spoofing and countermeasures challenge,'' in \emph{Proc. Interspeech 2015},
-  Dresden, Germany, 2015.
-
 \bibitem{Johnson2010}
 P.~Johnson, B.~Tan, and S.~Schuckers, ``Multimodal fusion vulnerability to
-  non-zero effort (spoof) imposters,'' in \emph{Proc. IEEE International Workshop on Information Forensics and
-  Security (WIFS 2010)}, Dec 2010, pp. 1--5.
+  non-zero effort (spoof) imposters,'' in \emph{IEEE International Workshop on
+  Information Forensics and Security (WIFS 2010)}, Dec 2010, pp. 1--5.
 
 \bibitem{handbookChapter}
 N.~Evans, T.~Kinnunen, J.~Yamagishi, Z.~Wu, F.~Alegre, and P.~L.~D. Leon,
@@ -348,10 +361,10 @@ A.~Brown, ``{A}aron {B}rown {S}ound web page,'' Available:
 
 \bibitem{Jeub2009}
 M.~Jeub, M.~Sch\"{a}fer, and P.~Vary, ``A binaural room impulse response
-  database for the evaluation of dereverberation algorithms,'' in
-  \emph{Proc. 16th International Conference on Digital Signal
-  Processing}, ser. DSP'09.\hskip 1em plus 0.5em minus 0.4em\relax Piscataway,
-  NJ, USA: IEEE Press, 2009, pp. 550--554.
+  database for the evaluation of dereverberation algorithms,'' in \emph{Proc.
+  16th International Conference on Digital Signal Processing}, ser.
+  DSP'09.\hskip 1em plus 0.5em minus 0.4em\relax Piscataway, NJ, USA: IEEE
+  Press, 2009, pp. 550--554.
 
 \bibitem{Pearl1988}
 J.~Pearl, \emph{Probabilistic Reasoning in Intelligent Systems: Networks of
@@ -359,7 +372,8 @@ J.~Pearl, \emph{Probabilistic Reasoning in Intelligent Systems: Networks of
   CA, USA: Morgan Kaufmann Publishers Inc., 1988.
 
 \bibitem{Freund1999}
-Y.~Freund and R.~E. Schapire, ``A short introduction to boosting,'' in \emph{Proc. 16th International Joint Conference on Artificial
+Y.~Freund and R.~E. Schapire, ``A short introduction to boosting,'' in
+  \emph{Proc. 16th International Joint Conference on Artificial
   Intelligence}.\hskip 1em plus 0.5em minus 0.4em\relax Morgan Kaufmann, 1999,
   pp. 1401--1406.
 
@@ -368,16 +382,11 @@ M.~Hall, E.~Frank, G.~Holmes, B.~Pfahringer, P.~Reutemann, and I.~H. Witten,
   ``The {WEKA} data mining software: An update,'' \emph{SIGKDD Explor. Newsl.},
   vol.~11, no.~1, pp. 10--18, Nov. 2009.
 
-\bibitem{Ergunay2015}
-{\c{S}}.~Erg{\"{u}}nay, E.~Khoury, A.~Lazaridis, and S.~Marcel, ``On the
-  vulnerability of speaker verification to realistic voice spoofing,'' in
-  \emph{Proc. IEEE International Conference on Biometrics: Theory, Applications
-  and Systems (BTAS 2015)}, September 2015.
-
 \bibitem{DeLeon2012}
 P.~L. De~Leon, M.~Pucher, J.~Yamagishi, I.~Hernaez, and I.~Saratxaga,
   ``Evaluation of speaker verification security and detection of {HMM}-based
-  synthetic speech,'' \emph{IEEE Transactions on Audio, Speech, and Language Processing}, vol.~20, no.~8, pp. 2280--2290, 2012.
+  synthetic speech,'' \emph{IEEE Transactions on Audio, Speech, and Language
+  Processing}, vol.~20, no.~8, pp. 2280--2290, 2012.
 
 \bibitem{Sahidullah2015}
 M.~Sahidullah, T.~Kinnunen, and C.~Hanil{\c{c}}i, ``A comparison of features
