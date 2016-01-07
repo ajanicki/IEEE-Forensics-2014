@@ -38,7 +38,7 @@ J.~Lindberg and M.~Blomberg, ``Vulnerability in speaker verification - a study
 
 \bibitem{Villalba2010}
 J.~Villalba and E.~Lleida, ``Speaker verification performance degradation
-  against spoofing and tampering attacks,'' in \emph{FALA workshop}, 2010, pp.
+  against spoofing and tampering attacks,'' in \emph{Proc. FALA workshop}, 2010, pp.
   131--134.
 
 \bibitem{Blomberg2004}
@@ -213,7 +213,7 @@ F.~Alegre, R.~Vipperla, A.~Amehraye, and N.~Evans, ``A new speaker verification
 F.~Alegre, A.~Janicki, and N.~Evans, ``Re-assessing the threat of replay
   spoofing attacks against automatic speaker verification,'' in \emph{Proc.
   International Conference of the Biometrics Special Interest Group (BIOSIG
-  2014)}, 2014.
+  2014)}, Darmstadt, Germany, 2014.
 
 \bibitem{Petrovska1998}
 D.~Petrovska-Delacr\'{e}taz and J.~Hennebert, ``Text-prompted speaker
@@ -254,8 +254,7 @@ J.~Garofolo, D.~Graff, D.~Paul, and D.~Pallett, ``{CSR-I} ({WSJ0}) complete
 
 \bibitem{Villalba2011}
 J.~Villalba and E.~Lleida, ``Preventing replay attacks on speaker verification
-  systems,'' in \emph{Security Technology (ICCST), 2011 IEEE International
-  Carnahan Conference on}, Oct 2011, pp. 1--8.
+  systems,'' in \emph{Proc. IEEE International Carnahan Conference on Security Technology (ICCST 2011)}, Oct 2011, pp. 1--8.
 
 \bibitem{Ojala2002}
 T.~Ojala, M.~Pietikainen, and T.~Maenpaa, ``Multiresolution gray-scale and
