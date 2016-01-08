@@ -10,9 +10,15 @@ So as to provide suitable training or adaptation data for speech synthesis and v
 In all cases, however, only one of the eight, randomly selected training conversations is used for enrolment. 
 Results presented in this paper are thus comparable to those in the literature (not work related to spoofing) for the 1conv4w-1conv4w condition. 
 
+<<<<<<< .mine
+Standard NIST protocols dictate 1,352 true client tests and 13,170 impostor tests for development and evaluation datasets. 
+To assess replay spoofing, impostor tests are replaced with spoofed versions, whereas genuine client trials are unchanged.
+In the case of replay , this approach naturally reduces the number of feasible attacks; whereas zero-effort impostor trials, speech synthesis and voice conversion attacks can involve any number of impostors, replay spoofing attacks are formulated for a single target speaker, namely that whose model is under attack.  As a result, while all experiments related to replay spoofing or countermeasure assessment involve the same true client tests as for the baseline condition, there is a reduced number of 1,352 spoofed trials.  Given the constraints, the latter is unavoidable whereas speech synthesis and voice conversion attacks still involve the full 13,170 spoofing trials.  This setup broadly conforms to the general protocols outlined in~\cite{Wu2014a,Wu2015} and the general evaluation methodology described in~\cite{Hadid2015}.
+=======
 Standard NIST protocols dictate 1,352 true client tests and 12,648 impostor tests for development and evaluation datasets. 
 To assess spoofing, impostor tests are replaced with spoofed versions of the original utterance, whereas genuine client trials are unchanged.
 This approach naturally reduces the number of feasible impostor/spoof trials; whereas zero-effort impostor trials can involve any number of impostors, spoofing attacks are formulated for a single target speaker, namely that whose model is under attack.  As a result, while all experiments related to spoofing or countermeasure assessment involve the same true client tests as for the baseline condition, there is a reduced number of approximately 1,000 spoofed trials.  Given the constraints, the latter is unavoidable.  This setup broadly conforms to the general protocols outlined in~\cite{Wu2014a,Wu2015} and the general evaluation methodology described in~\cite{Hadid2015}.
+>>>>>>> .r63
 
 %and  the spoofing condition, there are spoofing trials their number is limited 
 %When testing countermeasures independently from the ASV system, all available genuine and spoof trials are used, similarly to the protocol used in~\cite{Wu2015}}.
