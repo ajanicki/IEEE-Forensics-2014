@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.6)  8 JAN 2016 18:30
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.6)  8 JAN 2016 18:32
 entering extended mode
 **IEEE_Forensics.tex
 (C:\cygwin64\home\evans\IEEE-Forensics-2014\trunk\IEEE_Forensics.tex
@@ -239,14 +239,17 @@ ygwin64/home/evans/IEEE-Forensics-2014/trunk/Figs/LBP_idea.png>])
 (C:\cygwin64\home\evans\IEEE-Forensics-2014\trunk\methodology.tex)
 (C:\cygwin64\home\evans\IEEE-Forensics-2014\trunk\ASVs.tex)
 (C:\cygwin64\home\evans\IEEE-Forensics-2014\trunk\datasets.tex [5])
-(C:\cygwin64\home\evans\IEEE-Forensics-2014\trunk\vcss.tex)
+(C:\cygwin64\home\evans\IEEE-Forensics-2014\trunk\vcss.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
 (C:\cygwin64\home\evans\IEEE-Forensics-2014\trunk\exper_setup.tex
 <Figs/IRs.png, id=32, 389.95688pt x 347.04657pt>
 File: Figs/IRs.png Graphic file (type png)
  <use Figs/IRs.png>
 Package pdftex.def Info: Figs/IRs.png used on input line 4.
 (pdftex.def)             Requested size: 252.0pt x 224.2696pt.
- [6 <C:/cygwin64/home/evans/IEEE-Forensics-2014/trunk/Figs/IRs.png>]
+ [6]
 <Figs/Room_IRs.png, id=36, 391.4625pt x 335.75438pt>
 File: Figs/Room_IRs.png Graphic file (type png)
  <use Figs/Room_IRs.png>
@@ -254,7 +257,8 @@ Package pdftex.def Info: Figs/Room_IRs.png used on input line 27.
 (pdftex.def)             Requested size: 252.0pt x 216.14236pt.
 )
 (C:\cygwin64\home\evans\IEEE-Forensics-2014\trunk\cm_setup.tex [7 <C:/cygwin64/
-home/evans/IEEE-Forensics-2014/trunk/Figs/Room_IRs.png>])
+home/evans/IEEE-Forensics-2014/trunk/Figs/IRs.png> <C:/cygwin64/home/evans/IEEE
+-Forensics-2014/trunk/Figs/Room_IRs.png>])
 (C:\cygwin64\home\evans\IEEE-Forensics-2014\trunk\results.tex
 <Figs/dist_IV_off.pdf, id=41, 578.16pt x 433.62pt>
 File: Figs/dist_IV_off.pdf Graphic file (type pdf)
@@ -294,7 +298,9 @@ File: Figs/DET_CM.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figs/DET_CM.pdf used on input line 161.
 (pdftex.def)             Requested size: 252.0pt x 245.70041pt.
 
-[10 <C:/cygwin64/home/evans/IEEE-Forensics-2014/trunk/Figs/DET_CM.pdf>])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10 <C:/cygwin64/home/evans/IEEE-Forensics-2014/trunk/Figs/DET_CM.pdf>])
 (C:\cygwin64\home\evans\IEEE-Forensics-2014\trunk\conclusions.tex)
 (C:\cygwin64\home\evans\IEEE-Forensics-2014\trunk\IEEE_Forensics.bbl [11]
 Underfull \hbox (badness 10000) in paragraph at lines 273--276
@@ -330,7 +336,7 @@ ogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/ut
 mr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on IEEE_Forensics.pdf (13 pages, 517271 bytes).
+Output written on IEEE_Forensics.pdf (13 pages, 517260 bytes).
 PDF statistics:
  160 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
