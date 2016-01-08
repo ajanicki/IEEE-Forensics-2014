@@ -7,7 +7,7 @@ This approach is entirely justified in the case of linear transducers and channe
 %In keeping with the goals of this work, namely to compare the threat of replay with that of voice conversion and speech synthesis with strictly controlled protocols, all spoofing attacks are emulated in similar fashion as with the past work.
 Voice conversion spoofing attacks are emulated with the approach described in Section~\ref{ssec:vconv}. 
 A worst-case scenario is considered; conversion is performed with full prior knowledge of the ASV system, i.e.\ voice conversion is performed with exactly the same front-end processing as that used for ASV.
-$H_y(f)$ and filter $H_x(f)$ use 19 LPCC and LPC coefficients respectively, {\bfseries LPCC filter parameters are obtained according to Eq.~\ref{eq:EMit} using 1024 Gaussian components}.
+$H_y(f)$ and $H_x(f)$ use 19 LPCC and LPC coefficients respectively, with the former being obtained according to Eq.~\ref{eq:EMit} using 1024 Gaussian components.
 Voice conversion is applied to the original impostor utterances which are converted towards the genuine speaker for any given trial.
 
 Speech synthesis attacks are emulated according to the approach described in Section~\ref{ssec:spsyn} using an open source voice cloning toolkit\footnote{http://homepages.inf.ed.ac.uk/jyamagis/software/page37/page37.html} which is based on HTS.  It uses  a default configuration and default, standard speaker-independent models provided with the toolkit.  They are trained using American-English speech data from the Effective Multilingual Interaction in Mobile Environments (EMIME) corpus~\cite{Wester2010}.   
