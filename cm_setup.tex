@@ -6,7 +6,7 @@ The far-field channel detection countermeasure is implemented according to the a
 
 %\subsubsection{LBP setup} 
 The LBP countermeasure is implemented using the toolkit provided by The University of Oulu\footnote{http://www.cse.oulu.fi/CMV/Downloads/LBPMatlab}.
-Normalised acoustic features used for LBP analysis are composed of 51 coefficients: 16 LFCCs and energy plus their corresponding delta and delta-delta coefficients.  Analysis is applied only to speech frames and using only the $58$  uniform LBPs as originally described in~\cite{Ojala2002} and for speech processing in~\cite{Alegre2013a}.  %{\bfseries wasn't there some prior work by Chatlanni et al? [AJ] I couldn't find that name, sorry...}  
+Normalised acoustic features used for LBP analysis are composed of 51 coefficients: 16 LFCCs and energy plus their corresponding delta and delta-delta coefficients.  Analysis is applied only to speech frames and using only the $58$  uniform LBPs as originally described in~\cite{Ojala2002} and first investigated for ASV spoofing research in~\cite{Alegre2013a}.  %{\bfseries wasn't there some prior work by Chatlanni et al? [AJ] I couldn't find that name, sorry...}  
 LBP histograms are created for all but the first and last rows, i.e., for $51 - 2 = 49$ rows.  Non-uniform LBPs are ignored thereby resulting in feature vectors of $58 \times 49 = 2842$ dimensions. 
 %{\bfseries where does the 49 come from?  To what does a frame refer?  For me, a frame is time-dependent so I don't understand how the 49 is fixed??? [AJ] I have corrected the explaination - pls. check if now it's clear.}
 
@@ -15,7 +15,7 @@ LBP histograms are created for all but the first and last rows, i.e., for $51 - 
 
 %\subsubsection{Training the replay detectors} 
 Both countermeasure algorithms are trained using a random subset of 1000 utterances from the NIST'05 dataset which are treated as described in Section~\ref{subsec::evaluation::datasets} in order to generate suitable training data with various acoustic conditions. 
-Room and loudspeaker impulse responses (a lecture room, a staircase and a meeting room) different to those used for ASV experiments aims to minimise countermeasure over-fitting.
+The use of loudspeaker and acoustic environment impulse responses (a lecture room, a staircase and a meeting room) different to those used for ASV experiments aims to minimise countermeasure over-fitting.
 %   of replay attack. Therefore we emulated the following environment:
 %\begin{itemize}
 %\item a lecture room, with concrete walls, glass windows and a parquet;
@@ -27,7 +27,7 @@ Room and loudspeaker impulse responses (a lecture room, a staircase and a meetin
 
 A Bayesian network classifier~\cite{Pearl1988} is learned to differentiate genuine data from spoofed data in the case of the far-field channel detection countermeasure.  This classifier uses a network of probabilistic dependencies between random variables.  In contrast, the AdaBoost M1 meta classifier~\cite{Freund1999} is used for the LBP countermeasure.  This classifier  uses other `weak' classifiers, in this case decision trees, and iteratively boosts their performance by exposing them to previously misclassified instances.  These two classifiers, both implemented using the Weka toolkit~\cite{Weka}, returned the best results in each case for an area-under-the-ROC metric. %Having been trained, both classifiers were applied to detect replay attacks in both spoofing accesses and licit client trials.
 
-Reported later are baseline ASV results, ASV results when subject to spoofing and then the same system with integrated countermeasures.  Countermeasures are also assessed independently from ASV systems as per the protocol described in Section~\ref{subsec::evaluation::datasets}.  This is similar in characteristic to that used in related work, e.g.\ the ASVspoof 2015 evaluation~\cite{Wu2015} (which does not include replay attacks).  There are then 1,352 genuine trials and 1,352 spoofed trials.  These experiments are repeated individually for the nine different replay conditions involving different loudspeakers and acoustic environments, leading to an overall number of 12,168 spoofing trials.
+Reported later are baseline ASV results, ASV results when subject to spoofing and then results for the same system with integrated countermeasures.  Countermeasures are also assessed independently from ASV systems as per the protocol described in Section~\ref{subsec::evaluation::datasets}.  This is similar in characteristic to that used in related work, e.g.\ the ASVspoof 2015 evaluation~\cite{Wu2015} (which does not include replay attacks).  There are then 1,352 genuine trials and 1,352 spoofed trials.  These experiments are repeated individually for the nine different replay conditions involving different loudspeakers and acoustic environments, leading to an overall number of 12,168 spoofing trials.
 
 Countermeasures are integrated with ASV as described in~\cite{Alegre2013a}, once again following the 
 % {\bfseries and, for consistency with the previous research, 

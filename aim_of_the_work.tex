@@ -24,7 +24,9 @@ A somewhat similar technique is proposed in~\cite{Wu2014}, where the authors com
 A alternative method of detecting replay attacks was proposed recently in~\cite{Galka2015}.  It is based on the distances between landmark points in the amplitude spectrum of the speech signal.  When assessed in a fixed-phrase scenario with data collected from 175 speakers, a detection EER of 1\% was achieved.  The detection of high similarity thus serves as an effective means of identifying replay attacks, albeit in somewhat constrained scenarios.
 
 Other, more generally applicable methods, not restricted to a specific ASV scenario, are based on the detection of unexpected channel artefacts indicative of recording and replaying.
-Two such algorithms are reported in~\cite{Wang2011} for which the EER for a baseline Gaussian mixture model (GMM) system with a universal background model (UBM) was shown to decrease from 40\% to 10\% with active countermeasures.  A more recent study~\cite{Luo2015} describes the application of a deep neural network to detect replayed speech.  
+Two such algorithms are reported in~\cite{Wang2011} for which the EER for a baseline Gaussian mixture model (GMM) system with a universal background model (UBM) was shown to decrease from 40\% to 10\% with active countermeasures.  
+
+A more recent study~\cite{Luo2015} describes the application of a deep neural network to detect replayed speech.  
 %The authors trained such a network to extract necessary information directly from speech samples. 
 When assessed on the standard Wall Street Journal (WSJ) corpus~\cite{WSJ1993}, adapted to the assessment of replay attack spoofing, a detection EER of 7.5\% was achieved.  The detection of channel artefacts is also the basis of the first approach investigated further in this paper.
 
@@ -67,4 +69,4 @@ Normalised histograms of pixel values constructed for each row of the textrogram
 In the work reported here, LBP-based features are calculated for the both the enrolment and test data.  The two resulting feature vectors are compared using histogram intersection and the resulting score is thresholded to decide if the test signal is genuine speech or a spoofing attack.
 %{\bfseries What classifier - how are the anti-spoofing feature vectors used?}
 
-Experimental results presented in~\cite{Alegre2013a} showed that the LBP-based textrogram analysis is effective in detecting a range of spoofed speech signals, including artificial signals and speech synthesis (EERs of below 1\%) though less effective in the case of voice conversion (EER in the order of 7\%).  The motivation for using LBP analysis as a means of detecting replay attacks is described in Section IV-D.
+Experimental results presented in~\cite{Alegre2013a} showed that the LBP-based textrogram analysis is effective in detecting a range of spoofed speech signals, including artificial signals, speech synthesis (EERs of below 1\%) and voice conversion (EER in the order of 7\%).  The motivation for using LBP analysis as a means of detecting replay attacks is described in Section IV-D.
