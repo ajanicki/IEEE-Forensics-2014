@@ -38,8 +38,8 @@ J.~Lindberg and M.~Blomberg, ``Vulnerability in speaker verification - a study
 
 \bibitem{Villalba2010}
 J.~Villalba and E.~Lleida, ``Speaker verification performance degradation
-  against spoofing and tampering attacks,'' in \emph{Proc. FALA workshop}, 2010, pp.
-  131--134.
+  against spoofing and tampering attacks,'' in \emph{Proc. FALA workshop},
+  2010, pp. 131--134.
 
 \bibitem{Blomberg2004}
 M.~Blomberg, D.~Elenius, and E.~Zetterholm, ``Speaker verification scores and
@@ -196,7 +196,7 @@ J.-F. Bonastre, D.~Matrouf, and C.~Fredouille, ``Transfer function-based voice
   Speaker and Language Recognition Workshop}, 2006, pp. 1--6.
 
 \bibitem{Bonastre2007}
-J.-F. Bonastre, D.~Matrouf, and C.~Fredouille, ``Artificial impostor voice transformation effects on false acceptance
+------, ``Artificial impostor voice transformation effects on false acceptance
   rates,'' in \emph{Proc. Interspeech}, 2007, pp. 2053--2056.
 
 \bibitem{Alegre2013}
@@ -213,7 +213,7 @@ F.~Alegre, R.~Vipperla, A.~Amehraye, and N.~Evans, ``A new speaker verification
 F.~Alegre, A.~Janicki, and N.~Evans, ``Re-assessing the threat of replay
   spoofing attacks against automatic speaker verification,'' in \emph{Proc.
   International Conference of the Biometrics Special Interest Group (BIOSIG
-  2014)}, Darmstadt, Germany, 2014.
+  2014)}, Darmstadt, Germany, Sept 2014.
 
 \bibitem{Petrovska1998}
 D.~Petrovska-Delacr\'{e}taz and J.~Hennebert, ``Text-prompted speaker
@@ -254,7 +254,8 @@ J.~Garofolo, D.~Graff, D.~Paul, and D.~Pallett, ``{CSR-I} ({WSJ0}) complete
 
 \bibitem{Villalba2011}
 J.~Villalba and E.~Lleida, ``Preventing replay attacks on speaker verification
-  systems,'' in \emph{Proc. IEEE International Carnahan Conference on Security Technology (ICCST 2011)}, Oct 2011, pp. 1--8.
+  systems,'' in \emph{Proc. IEEE International Carnahan Conference on Security
+  Technology (ICCST 2011)}, Oct 2011, pp. 1--8.
 
 \bibitem{Ojala2002}
 T.~Ojala, M.~Pietikainen, and T.~Maenpaa, ``Multiresolution gray-scale and
@@ -376,6 +377,12 @@ M.~Jeub, M.~Sch\"{a}fer, and P.~Vary, ``A binaural room impulse response
   16th International Conference on Digital Signal Processing}, ser.
   DSP'09.\hskip 1em plus 0.5em minus 0.4em\relax Piscataway, NJ, USA: IEEE
   Press, 2009, pp. 550--554.
+
+\bibitem{AlegreBTAS2013}
+F.~Alegre, A.~Amehraye, and N.~Evans, ``A one-class classification approach to
+  generalised speaker verification spoofing countermeasures using local binary
+  patterns,'' in \emph{Proc. Int. Conf. on Biometrics: Theory, Applications and
+  Systems (BTAS)}, Washington DC, USA, 2013.
 
 \bibitem{Pearl1988}
 J.~Pearl, \emph{Probabilistic Reasoning in Intelligent Systems: Networks of
