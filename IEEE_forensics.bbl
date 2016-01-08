@@ -196,7 +196,7 @@ J.-F. Bonastre, D.~Matrouf, and C.~Fredouille, ``Transfer function-based voice
   Speaker and Language Recognition Workshop}, 2006, pp. 1--6.
 
 \bibitem{Bonastre2007}
-------, ``Artificial impostor voice transformation effects on false acceptance
+J.-F. Bonastre, D.~Matrouf, and C.~Fredouille, ``Artificial impostor voice transformation effects on false acceptance
   rates,'' in \emph{Proc. Interspeech}, 2007, pp. 2053--2056.
 
 \bibitem{Alegre2013}
@@ -228,8 +228,8 @@ S.~Shiota, F.~Villavicencio, J.~Yamagishi, N.~Ono, I.~Echizen, and T.~Matsui,
 
 \bibitem{Shang2010}
 W.~Shang and M.~Stevenson, ``Score normalization in playback attack
-  detection,'' in \emph{Acoustics Speech and Signal Processing (ICASSP), 2010
-  IEEE International Conference on}, March 2010, pp. 1678--1681.
+  detection,'' in \emph{Proc. IEEE International Conference on Acoustics Speech
+  and Signal Processing (ICASSP 2010)}, March 2010, pp. 1678--1681.
 
 \bibitem{Galka2015}
 J.~Ga{\l}ka, M.~Grzywacz, and R.~Samborski, ``Playback attack detection for
